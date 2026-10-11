@@ -1,0 +1,41 @@
+{
+ "tested": true,
+ "url": "https://theme-dawn-demo.myshopify.com/",
+ "note": "Banners are often shown only to visitors from some countries; this run reflects the country of the machine that ran it.",
+ "beforeAnyChoice": {
+  "pixels": [
+   {
+    "name": "Shopify analytics",
+    "loaded": true,
+    "hits": 0,
+    "examples": []
+   }
+  ],
+  "consentSignals": [],
+  "cookies": [
+   {
+    "name": "_shopify_marketing",
+    "domain": "theme-dawn-demo.myshopify.com"
+   },
+   {
+    "name": "_shopify_essential",
+    "domain": "theme-dawn-demo.myshopify.com"
+   },
+   {
+    "name": "localization",
+    "domain": "theme-dawn-demo.myshopify.com"
+   },
+   {
+    "name": "cart_currency",
+    "domain": "theme-dawn-demo.myshopify.com"
+   },
+   {
+    "name": "_shopify_analytics",
+    "domain": "theme-dawn-demo.myshopify.com"
+   }
+  ]
+ },
+ "banner": {
+  "found": false
+ }
+}

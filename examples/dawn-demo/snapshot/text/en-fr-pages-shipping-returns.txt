@@ -1,0 +1,7 @@
+URL: https://theme-dawn-demo.myshopify.com/en-fr/pages/shipping-returns
+TITLE: Shipping &amp; Returns
+ &ndash; theme-dawn-demo
+
+Shipping & Returns
+ Free shipping and returns available on all orders! 
+ We ship all US domestic orders within  5-10 business days !

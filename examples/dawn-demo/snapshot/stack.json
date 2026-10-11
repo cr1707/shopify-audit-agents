@@ -1,0 +1,34 @@
+{
+ "theme": {
+  "name": "Dawn",
+  "id": 129690763353,
+  "schema": "Dawn",
+  "version": "15.0.0"
+ },
+ "apps": [],
+ "tech": [],
+ "pixels": [
+  {
+   "name": "Shopify analytics",
+   "pages": 30,
+   "hits": 5
+  }
+ ],
+ "thirdParty": [
+  {
+   "host": "otlp-http-production.shopifysvc.com",
+   "requests": 215,
+   "kb": 0
+  },
+  {
+   "host": "error-analytics-sessions-production.shopifysvc.com",
+   "requests": 20,
+   "kb": 0
+  },
+  {
+   "host": "monorail-edge.shopifysvc.com",
+   "requests": 10,
+   "kb": 0
+  }
+ ]
+}

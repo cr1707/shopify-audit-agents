@@ -1,0 +1,60 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/pages/size-guide",
+ "viewport": "phone",
+ "at": "2026-10-11T16:30:25.667Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/pages/size-guide",
+ "title": "Size Guide \u2013 theme-dawn-demo",
+ "eval": {
+  "innerWidth": 572,
+  "scrollWidth": 572,
+  "tableRight": 572,
+  "tableParentOverflowX": "visible",
+  "firstRow": [
+   {
+    "text": "EUR",
+    "right": 126
+   },
+   {
+    "text": "35",
+    "right": 208
+   },
+   {
+    "text": "36",
+    "right": 274
+   },
+   {
+    "text": "37",
+    "right": 332
+   },
+   {
+    "text": "38",
+    "right": 401
+   },
+   {
+    "text": "39",
+    "right": 459
+   },
+   {
+    "text": "40",
+    "right": 514
+   },
+   {
+    "text": "41",
+    "right": 570
+   }
+  ],
+  "linksToSizeGuideOnThisPage": 0
+ },
+ "overlays": [],
+ "screenshot": "findings/probes/verify-qa-01.jpg",
+ "console": [
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 401 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens"
+  }
+ ],
+ "blockedBySafety": []
+}

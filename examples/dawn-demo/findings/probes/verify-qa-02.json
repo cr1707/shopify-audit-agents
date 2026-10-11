@@ -1,0 +1,23 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/pages/returns",
+ "viewport": "desktop",
+ "at": "2026-10-11T16:35:46.302Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/pages/returns",
+ "title": "Returns – theme-dawn-demo",
+ "eval": {
+  "found": true,
+  "href": "https://dawn-theme-default.myshopify.com/shopify.com",
+  "sentence": null,
+  "linksToShippingReturnsOrSizeGuide": 0
+ },
+ "overlays": [],
+ "console": [],
+ "blockedBySafety": [],
+ "httpCheck": {
+  "url": "https://dawn-theme-default.myshopify.com/shopify.com",
+  "method": "GET (curl)",
+  "status": 404,
+  "at": "2026-10-11T16:35:56Z"
+ }
+}

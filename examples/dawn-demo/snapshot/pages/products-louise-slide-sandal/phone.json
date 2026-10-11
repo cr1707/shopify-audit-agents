@@ -1,0 +1,1297 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+ "viewport": "phone",
+ "slug": "products-louise-slide-sandal",
+ "loadOk": true,
+ "loadMs": 756,
+ "firstScreen": "pages/products-louise-slide-sandal/phone-first.jpg",
+ "overlays": [],
+ "scroll": {
+  "height": 4383,
+  "screens": 5.2
+ },
+ "title": "Louise Slide Sandal – theme-dawn-demo",
+ "lang": "en",
+ "seo": {
+  "description": "This is a demonstration store. You can purchase products like this from Mlouye. Our experimentation with texture continues. Elevated sense of design and craftsmanship manifests in our Italian-made Louise sandals. They have a square-toed silhouette with a wide band formed with leather pleats and extra comfortable leathe",
+  "canonical": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+  "robots": null,
+  "ogTitle": "Louise Slide Sandal",
+  "ogImage": "http://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-louise-slide-sandal-buttermilk-1_b91db288-b05a-4882-ae45-c0c9a4edd5fb.jpg?v=1637106712",
+  "h1Count": 1,
+  "hreflang": 3,
+  "structuredData": [
+   "Organization",
+   "ProductGroup"
+  ],
+  "ldInvalid": 0
+ },
+ "product": {
+  "name": "Louise Slide Sandal",
+  "sku": null,
+  "brand": "Mlouye",
+  "rating": null,
+  "reviewCount": null,
+  "offers": []
+ },
+ "shopify": {
+  "isShopify": true,
+  "shop": "theme-dawn-demo.myshopify.com",
+  "theme": {
+   "name": "Dawn",
+   "id": 129690763353,
+   "schema": "Dawn",
+   "version": "15.0.0"
+  },
+  "currency": "CAD",
+  "locale": "en",
+  "pageType": "product",
+  "productId": 6920722055257
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Louise Slide Sandal",
+   "screen": 1.7
+  },
+  {
+   "tag": "h2",
+   "text": "Materials",
+   "screen": 2.6
+  },
+  {
+   "tag": "h2",
+   "text": "Shipping & Returns",
+   "screen": 2.7
+  },
+  {
+   "tag": "h2",
+   "text": "Care Instructions",
+   "screen": 2.7
+  },
+  {
+   "tag": "h2",
+   "text": "Comfort first. Style second.",
+   "screen": 3.5
+  },
+  {
+   "tag": "h3",
+   "text": "Free Shipping",
+   "screen": 3.8
+  },
+  {
+   "tag": "h3",
+   "text": "Hassle-Free Exchanges",
+   "screen": 4
+  },
+  {
+   "tag": "h2",
+   "text": "You may also like",
+   "screen": 4.2
+  },
+  {
+   "tag": "h3",
+   "text": "Pleated Heel Mule",
+   "screen": 4.5
+  },
+  {
+   "tag": "h3",
+   "text": "Otti Summer Boot",
+   "screen": 4.5
+  },
+  {
+   "tag": "h3",
+   "text": "Pleated Heel Boot",
+   "screen": 4.8
+  },
+  {
+   "tag": "h3",
+   "text": "Sera Tote",
+   "screen": 4.8
+  },
+  {
+   "tag": "h2",
+   "text": "Quick links",
+   "screen": 5
+  },
+  {
+   "tag": "h2",
+   "text": "Info",
+   "screen": 5.2
+  },
+  {
+   "tag": "h2",
+   "text": "Our mission",
+   "screen": 5.5
+  },
+  {
+   "tag": "h2",
+   "text": "Subscribe to our emails",
+   "screen": 5.7
+  },
+  {
+   "tag": "h2",
+   "text": "Country/region",
+   "screen": 6
+  }
+ ],
+ "keyPositions": {
+  "h1": {
+   "screen": 1.7,
+   "text": "Louise Slide Sandal"
+  },
+  "price": {
+   "screen": 1.7,
+   "text": "$395.00 CAD"
+  },
+  "addToCart": {
+   "screen": 2.1,
+   "text": "Add to cart",
+   "sticky": false
+  },
+  "reviews": null,
+  "shipping": {
+   "screen": 1,
+   "text": "Free shipping available on all orders!"
+  },
+  "returns": null
+ },
+ "addToCartButtons": {
+  "total": 1,
+  "visible": 1,
+  "texts": [
+   "Add to cart"
+  ],
+  "soldOutButtons": 0,
+  "soldOutText": null,
+  "buyNowButtons": 1
+ },
+ "ctasFirstScreens": [
+  {
+   "text": "Skip to content",
+   "screen": 1,
+   "w": 122,
+   "h": 47,
+   "fixed": false,
+   "href": "#MainContent"
+  },
+  {
+   "text": "Cart",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/cart"
+  },
+  {
+   "text": "Skip to product information",
+   "screen": 1.2,
+   "w": 122,
+   "h": 47,
+   "fixed": false,
+   "href": "#ProductInfo-template--15968258326617__main"
+  },
+  {
+   "text": "Slide left",
+   "screen": 1.6,
+   "w": 44,
+   "h": 44,
+   "fixed": false,
+   "href": null
+  },
+  {
+   "text": "Slide right",
+   "screen": 1.6,
+   "w": 44,
+   "h": 44,
+   "fixed": false,
+   "href": null
+  },
+  {
+   "text": "Decrease quantity for Louise Slide Sandal",
+   "screen": 2,
+   "w": 45,
+   "h": 47,
+   "fixed": false,
+   "href": null
+  },
+  {
+   "text": "Increase quantity for Louise Slide Sandal",
+   "screen": 2,
+   "w": 45,
+   "h": 47,
+   "fixed": false,
+   "href": null
+  }
+ ],
+ "images": {
+  "total": 28,
+  "missingAlt": 0,
+  "emptyAlt": 12,
+  "broken": [],
+  "oversized": [],
+  "sample": [
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&width=180",
+    "alt": "Dawn",
+    "w": 90,
+    "h": 22,
+    "rw": 90,
+    "rh": 22,
+    "broken": false,
+    "lazy": "eager",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-louise-slide-sandal-gummy-5_b8195bb2-ca28-4d48-8126-b7ecc72ae00d.jpg?v=1637106712&width=713",
+    "alt": "",
+    "w": 326,
+    "h": 326,
+    "rw": 354,
+    "rh": 354,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-louise-slide-sandal-buttermilk-5_04f1f6dd-4f7c-498b-bce7-2932fa651c00.jpg?v=1637106712&width=713",
+    "alt": "",
+    "w": 326,
+    "h": 326,
+    "rw": 354,
+    "rh": 354,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/95501230_3257933697552228_2003752394588059320_n_940x_2_1070x_4162fea0-771c-4e87-8619-1d64dd398e7b.png?v=1642622103&width=360",
+    "alt": "A white boot sits atop two inflated plastic bags. ",
+    "w": 170,
+    "h": 178,
+    "rw": 358,
+    "rh": 433,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-pleated-mules-off-white-1_1800x1800_2c06129f-4e73-4ffa-ad8b-39e8d4486d1a.jpg?v=1637106673&width=360",
+    "alt": "Pleated Heel Mule",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-otti-summer-boots-black-1_f824b8a9-da57-4a23-b354-7f0fe7627e4d.jpg?v=1637106692&width=360",
+    "alt": "Otti Summer Boot",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-pleated-boots-taupe-1_e36064af-8115-43ab-9dd1-6fe2e8403890.jpg?v=1637106683&width=360",
+    "alt": "Pleated Heel Boot",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-sera-tote-butter-1_40a894e5-2624-4582-b8f1-8fbd5e46776d.jpg?v=1637107252&width=360",
+    "alt": "Sera Tote",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   }
+  ]
+ },
+ "links": {
+  "total": 97,
+  "list": [
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#MainContent",
+    "text": "Skip to content",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "Dawn",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Tote bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "Shoulder bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "Crossbody bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "Top handle bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "Mini bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "Sandals",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "Boots",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "Cart",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#ProductInfo-template--15968258326617__main",
+    "text": "Skip to product information",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+    "text": "Louise Slide Sandal",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.mlouye.com/",
+    "text": "Mlouye",
+    "target": "_blank",
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+    "text": "View full details",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/pleated-heel-mule?pr_prod_strat=similar&pr_rec_id=02a3b08e5&pr_rec_pid=6920721104985&pr_ref_pid=6920722055257&pr_seq=uniform",
+    "text": "Pleated Heel Mule",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/pleated-heel-mule?pr_prod_strat=similar&pr_rec_id=02a3b08e5&pr_rec_pid=6920721104985&pr_ref_pid=6920722055257&pr_seq=uniform",
+    "text": "Pleated Heel Mule",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/otti-summer-boot?pr_prod_strat=similar&pr_rec_id=02a3b08e5&pr_rec_pid=6920721498201&pr_ref_pid=6920722055257&pr_seq=uniform",
+    "text": "Otti Summer Boot",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/otti-summer-boot?pr_prod_strat=similar&pr_rec_id=02a3b08e5&pr_rec_pid=6920721498201&pr_ref_pid=6920722055257&pr_seq=uniform",
+    "text": "Otti Summer Boot",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/pleated-heel-boot?pr_prod_strat=similar&pr_rec_id=02a3b08e5&pr_rec_pid=6920721301593&pr_ref_pid=6920722055257&pr_seq=uniform",
+    "text": "Pleated Heel Boot",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/pleated-heel-boot?pr_prod_strat=similar&pr_rec_id=02a3b08e5&pr_rec_pid=6920721301593&pr_ref_pid=6920722055257&pr_seq=uniform",
+    "text": "Pleated Heel Boot",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/sera-tote-pastel?pr_prod_strat=similar&pr_rec_id=02a3b08e5&pr_rec_pid=6920728969305&pr_ref_pid=6920722055257&pr_seq=uniform",
+    "text": "Sera Tote",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/sera-tote-pastel?pr_prod_strat=similar&pr_rec_id=02a3b08e5&pr_rec_pid=6920728969305&pr_ref_pid=6920722055257&pr_seq=uniform",
+    "text": "Sera Tote",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Bags",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shoes",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/about",
+    "text": "About",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+    "text": "Contact us",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/shipping",
+    "text": "Shipping policy",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/blogs/news",
+    "text": "Blog",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "theme-dawn-demo",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+    "text": "Powered by Shopify",
+    "target": "_blank",
+    "rel": "nofollow",
+    "visible": true
+   }
+  ]
+ },
+ "forms": [
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "HeaderCountryMobileForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/search",
+   "method": "get",
+   "id": null,
+   "fields": [
+    {
+     "name": "q",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart",
+   "method": "post",
+   "id": "cart-notification-form",
+   "fields": [
+    {
+     "name": "checkout",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart/add",
+   "method": "post",
+   "id": {},
+   "fields": [],
+   "visible": false
+  },
+  {
+   "action": "/cart/add",
+   "method": "post",
+   "id": {},
+   "fields": [
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Buttermilk Variant sold out or unavailable"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Gummy"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "White"
+    },
+    {
+     "name": "Size-2\n",
+     "type": "radio",
+     "required": false,
+     "label": "35 Variant sold out or unavailable"
+    },
+    {
+     "name": "Size-2\n",
+     "type": "radio",
+     "required": false,
+     "label": "36 Variant sold out or unavailable"
+    },
+    {
+     "name": "Size-2\n",
+     "type": "radio",
+     "required": false,
+     "label": "37 Variant sold out or unavailable"
+    },
+    {
+     "name": "Size-2\n",
+     "type": "radio",
+     "required": false,
+     "label": "38 Variant sold out or unavailable"
+    },
+    {
+     "name": "Size-2\n",
+     "type": "radio",
+     "required": false,
+     "label": "39 Variant sold out or unavailable"
+    },
+    {
+     "name": "Size-2\n",
+     "type": "radio",
+     "required": false,
+     "label": "40"
+    },
+    {
+     "name": "Size-2\n",
+     "type": "radio",
+     "required": false,
+     "label": "41 Variant sold out or unavailable"
+    },
+    {
+     "name": "quantity",
+     "type": "number",
+     "required": false,
+     "label": "Quantity"
+    },
+    {
+     "name": "add",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/contact#ContactFooter",
+   "method": "post",
+   "id": "ContactFooter",
+   "fields": [
+    {
+     "name": "contact[email]",
+     "type": "email",
+     "required": true,
+     "label": "Email"
+    },
+    {
+     "name": "commit",
+     "type": "submit",
+     "label": "Subscribe"
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "FooterCountryForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": true
+  }
+ ],
+ "layout": {
+  "viewport": "390x844",
+  "pageHeight": 4383,
+  "screens": 5.2,
+  "horizontalOverflowPx": 0,
+  "wideElements": [],
+  "smallTapTargets": 7,
+  "smallTapExamples": [
+   {
+    "text": "Mlouye",
+    "size": "49x19"
+   },
+   {
+    "text": "Pleated Heel Mule",
+    "size": "178x16"
+   },
+   {
+    "text": "Otti Summer Boot",
+    "size": "178x16"
+   },
+   {
+    "text": "Pleated Heel Boot",
+    "size": "178x16"
+   },
+   {
+    "text": "Sera Tote",
+    "size": "178x16"
+   },
+   {
+    "text": "theme-dawn-demo",
+    "size": "99x14"
+   },
+   {
+    "text": "Powered by Shopify",
+    "size": "103x14"
+   }
+  ],
+  "tinyTextCount": 1,
+  "tinyTextExamples": [
+   {
+    "text": "Powered by Shopify",
+    "px": 11
+   }
+  ],
+  "fixedBars": [
+   {
+    "top": 39,
+    "height": 65,
+    "text": "Cart"
+   }
+  ],
+  "fixedBarsTotalHeight": 65
+ },
+ "fullTiles": [
+  {
+   "file": "pages/products-louise-slide-sandal/phone-full-01.jpg",
+   "screens": "1-3"
+  },
+  {
+   "file": "pages/products-louise-slide-sandal/phone-full-02.jpg",
+   "screens": "4-5"
+  }
+ ],
+ "network": {
+  "requests": 283,
+  "bytes": 1590271,
+  "failed": [],
+  "http4xx5xx": [
+   {
+    "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens",
+    "status": 401
+   }
+  ]
+ },
+ "detected": {
+  "apps": [],
+  "tech": [],
+  "pixels": [
+   {
+    "name": "Shopify analytics",
+    "loaded": true,
+    "hits": 1,
+    "examples": [
+     "https://monorail-edge.shopifysvc.com/v1/produce"
+    ]
+   }
+  ],
+  "thirdParty": [
+   {
+    "host": "otlp-http-production.shopifysvc.com",
+    "requests": 8,
+    "bytes": 273,
+    "types": [
+     "Other",
+     "Fetch",
+     "Ping"
+    ]
+   },
+   {
+    "host": "error-analytics-sessions-production.shopifysvc.com",
+    "requests": 2,
+    "bytes": 0,
+    "types": [
+     "Other",
+     "Fetch"
+    ]
+   },
+   {
+    "host": "monorail-edge.shopifysvc.com",
+    "requests": 2,
+    "bytes": 0,
+    "types": [
+     "Fetch",
+     "Other"
+    ]
+   }
+  ]
+ },
+ "console": [
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 401 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens"
+  }
+ ],
+ "blockedBySafety": []
+}

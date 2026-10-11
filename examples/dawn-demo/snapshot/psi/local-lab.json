@@ -1,0 +1,41 @@
+{
+ "note": "Local lab run in this machine's Chrome. Thresholds as Core Web Vitals (LCP 2.5/4 s, CLS 0.1/0.25) and Lighthouse TBT (200/600 ms). Lab numbers vary between runs and machines; real-user field data from PageSpeed Insights outranks them.",
+ "pages": {
+  "home": {
+   "url": "https://theme-dawn-demo.myshopify.com/",
+   "profile": "phone 390x844, CPU 4x slower, 150 ms RTT, 1.6 Mbps down, cache disabled",
+   "loadMs": 4949,
+   "fcpMs": 860,
+   "lcpMs": 3344,
+   "lcpElement": "img.banner__media-image-half https://theme-dawn-demo.myshopify.com/cdn/shop/files/Shoes_and_bag.jpg?v=1732889921&width=1100",
+   "cls": 0,
+   "tbtMs": 89,
+   "ratings": {
+    "lcp": "needs improvement",
+    "cls": "good",
+    "tbt": "good"
+   },
+   "requests": 152,
+   "transferKB": 1381,
+   "thirdPartyKB": 0
+  },
+  "products-small-convertible-flex-bag-cappuccino": {
+   "url": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+   "profile": "phone 390x844, CPU 4x slower, 150 ms RTT, 1.6 Mbps down, cache disabled",
+   "loadMs": 3660,
+   "fcpMs": 1124,
+   "lcpMs": 2156,
+   "lcpElement": "img.image-magnify-hover https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n1.jpg?v=1637107143&width=713",
+   "cls": 0,
+   "tbtMs": 128,
+   "ratings": {
+    "lcp": "good",
+    "cls": "good",
+    "tbt": "good"
+   },
+   "requests": 169,
+   "transferKB": 1147,
+   "thirdPartyKB": 0
+  }
+ }
+}

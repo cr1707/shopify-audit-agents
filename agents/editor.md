@@ -20,7 +20,8 @@ The task prompt gives you `AUDIT_DIR`, `PLUGIN_ROOT`, `STORE` and `MODE`. Read:
 ## Steps
 
 1. **Keep** findings with verification status `confirmed` or `downgraded`. Drop `rejected` ones.
-2. **De-duplicate across areas** once more. One root cause, one finding.
+2. **De-duplicate across areas** once more (verifiers each saw only their own batch; `possibleDuplicates` in
+   candidates.json lists likely pairs). One root cause, one finding: keep the clearest, move useful evidence into it.
 3. **Rank** all findings: `rank` 1 = fix first. Order by business impact (severity and how many visitors it touches),
    then confidence (verified before to-test), then effort (small before large). A critical verified bug on the main
    product page outranks everything else.

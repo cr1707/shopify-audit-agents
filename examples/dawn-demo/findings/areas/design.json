@@ -1,0 +1,283 @@
+{
+ "area": "design",
+ "agent": "lead-design",
+ "summary": "Dawn is visually clean and consistent: one logo, one type family, and buttons, cards and headings that behave the same on home, collection, product and cart, with a strong hero and generous galleries. The real gaps are invisible ones (no alt text on any product image, the logo as the share image on the home page) plus faint footer text. This is Shopify's deliberate Dawn demo store, so the demonstration notice on product pages and the placeholder brand are intentional and not reported.",
+ "strengths": [
+  "Every product has several photos: 0 of 32 products have no image or a single image, ranging 5 to 25 images each (shop/catalogue-stats.json, shop/products.json)",
+  "The home page has no horizontal overflow on phone (pages/home/phone.json, horizontalOverflowPx 0)",
+  "Product pages set the product photo as the sharing image (pages/products-helix-denim/desktop.json seo.ogImage)",
+  "Page language is set to \"en\" and no image has a missing alt attribute or is broken on any of the 15 pages tested"
+ ],
+ "findings": [
+  {
+   "id": "design-accessibility-01",
+   "title": "None of the 419 product images in the catalogue has alt text, and 26 of the 57 images on the Small Convertible Flex Bag page render with alt=\"\"",
+   "severity": "medium",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "merchandiser",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+     "viewport": "desktop"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products.json?limit=250 and look at each product's images: every \"alt\" is null",
+    "Open https://theme-dawn-demo.myshopify.com/products/helix-denim, inspect a gallery photo: it has alt=\"\"",
+    "Turn on a screen reader (VoiceOver or NVDA) and move through the gallery: the photos are skipped or read as unnamed images"
+   ],
+   "evidence": [
+    {
+     "file": "shop/catalogue-stats.json",
+     "note": "imagesMissingAlt = 419 (all images in the 32 products)"
+    },
+    {
+     "file": "pages/products-small-convertible-flex-bag-cappuccino/desktop.json",
+     "note": "images.total 57, emptyAlt 26"
+    },
+    {
+     "file": "pages/products-helix-denim/desktop.json",
+     "note": "images.total 54, emptyAlt 26; gallery images have alt \"\""
+    }
+   ],
+   "why_it_matters": "Shoppers who use a screen reader get no description of the bag or shoe they are about to buy, so they cannot judge colour, shape or detail. Images without alt text also give Google Images and AI shopping tools nothing to read. Since every product is affected, one habit fixes the whole catalogue.",
+   "fix": {
+    "summary": "Add a short factual alt text to every product image (product, colour, what the angle shows).",
+    "steps": [
+     "Export products with images, or use Shopify admin bulk editing",
+     "Write alt as \"Helix bag in multicolour leather, side view\"",
+     "Save it via the product Media editor (Alt text) or a bulk tool",
+     "Keep alt empty only for purely decorative images"
+    ],
+    "where_to_change": "Shopify admin > Products > (product) > Media > click an image > Add alt text"
+   },
+   "claude_prompt": "I work on https://theme-dawn-demo.myshopify.com. Use Claude Code in a duplicate (unpublished) copy of the theme, never edit checkout, keep the existing design system, and show me the diff before publishing. Page: any product, for example /products/helix-denim. Current behaviour: all 419 product images have no alt text; gallery images render alt=\"\". Desired behaviour: each product image has a concise alt of the form \"<Product name>, <colour>, <angle>\". Using the Shopify connector, draft alt texts from product title, colour option and image position for the 32 products and show them to me in a table before writing any of them. Do not invent details you cannot see in the image or the product data. To check it worked, reload the page and inspect the rendered HTML.",
+   "verify_fix": "Open /products.json: every image has a non-empty \"alt\". On a product page, inspect the gallery: no photo has alt=\"\".",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "accessibility",
+    "product-page",
+    "images"
+   ]
+  },
+  {
+   "id": "design-imagery-01",
+   "title": "Sharing the home, cart or info pages previews as the small Dawn logo, while product and collection pages use their own photos",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "marketing",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ and view the page source",
+    "Find <meta property=\"og:image\": it points to .../files/Dawn_logo.png with width=1200 and pad_color=ffffff",
+    "Paste the home URL into a chat app or the Facebook Sharing Debugger: the preview is a logo on white, not a product or the hero image",
+    "Do the same for https://theme-dawn-demo.myshopify.com/products/helix-denim: the preview is the Helix photo"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/desktop.json",
+     "note": "seo.ogImage = .../files/Dawn_logo.png?height=628&pad_color=ffffff&v=1637111732&width=1200"
+    },
+    {
+     "file": "pages/pages-about/desktop.json",
+     "note": "same logo as ogImage"
+    },
+    {
+     "file": "pages/cart/desktop.json",
+     "note": "same logo as ogImage"
+    },
+    {
+     "file": "pages/products-helix-denim/desktop.json",
+     "note": "seo.ogImage is the Helix product photo"
+    }
+   ],
+   "why_it_matters": "The home page is the link most often pasted into messages, social posts and ads; it previews as a 90px logo padded to a banner, which looks unfinished and gives people little reason to click. Product links share well, so the gap is on the pages that introduce the brand. The og:image URL also starts with http:// rather than https://, which some platforms handle poorly.",
+   "fix": {
+    "summary": "Set a social sharing image in the store settings: a 1200x628 hero or lifestyle shot with the brand mark.",
+    "steps": [
+     "Pick or export a 1200x628 image from the existing hero photography",
+     "Upload it as the sharing image",
+     "Check the preview in a sharing debugger"
+    ],
+    "where_to_change": "Shopify admin > Online Store > Preferences > Social sharing image"
+   },
+   "claude_prompt": "I work on https://theme-dawn-demo.myshopify.com. The home page, cart and info pages share the Dawn logo as og:image (\"Dawn_logo.png?...width=1200\"). Help me prepare a brief for a 1200x628 social sharing image built from our existing hero photo (Industrial design meets fashion). Give me the exact upload steps in Shopify admin (Online Store > Preferences > Social sharing image) and a checklist to confirm in a sharing debugger. This is a design and settings task, so do not edit theme code.",
+   "verify_fix": "View source of the home page: og:image is the new picture over https; the sharing debugger shows it.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "social-sharing",
+    "images",
+    "home"
+   ]
+  },
+  {
+   "id": "design-accessibility-02",
+   "title": "Footer text (country selector, \"© 2026\" line) is light grey on white; the automated check measured 1.01:1 to 3.79:1 contrast",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "to-test",
+   "owner": "designer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ on desktop and scroll to the very bottom",
+    "Read \"Country/region\", the country button and \"© 2026, theme-dawn-demo\": they are pale grey and hard to read",
+    "Run an accessibility check (axe DevTools or Lighthouse): colour-contrast is flagged on 5 footer elements"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/desktop.json",
+     "note": "a11y color-contrast serious, 5 elements: #FooterCountryLabel 2.55:1 (#a2a2a2 on #ffffff, 13px), country button 3.79:1, copyright 2.55:1 at 11px"
+    },
+    {
+     "file": "pages/pages-about/desktop.json",
+     "note": "same elements measured at 1.01:1 (#fdfdfd on white)"
+    },
+    {
+     "file": "pages/home/desktop-full-03.jpg",
+     "note": "footer country selector and copyright visibly faint"
+    }
+   ],
+   "why_it_matters": "Pale small text is hard to read for people with low vision, on phones in sunlight and on cheaper screens. These are secondary footer items, so the cost is low, but the same flag appears on all 15 pages tested.",
+   "fix": {
+    "summary": "Darken the footer text colour to at least 4.5:1 against the background.",
+    "steps": [
+     "Find the footer text colour or opacity in the theme",
+     "Raise it (for example to #595959 on white)",
+     "Re-run the check"
+    ],
+    "where_to_change": "Online Store > Themes > Customize > Footer (colour scheme), or the theme CSS"
+   },
+   "claude_prompt": "I work on https://theme-dawn-demo.myshopify.com. Use Claude Code in a duplicate (unpublished) copy of the theme, never edit checkout, keep the existing design system, and show me the diff before publishing. Page: footer on every page. Current behaviour: \"Country/region\", the country button and the copyright line are light grey (#a2a2a2 on #ffffff, 2.55:1). Desired behaviour: footer text meets 4.5:1 contrast, without changing the layout.  To check it worked, reload the page and inspect the rendered HTML.",
+   "verify_fix": "Re-run axe on the home page: no colour-contrast violations in the footer.",
+   "manual_check": "The measured value differs by page (1.01:1 on the about page versus 2.55:1 on the home page), which suggests the footer was captured while fading in. Scroll to the footer, wait three seconds and measure again with a contrast checker; if it is at least 4.5:1 once settled, drop this finding.",
+   "intentional_possible": false,
+   "tags": [
+    "accessibility",
+    "contrast",
+    "footer"
+   ]
+  },
+  {
+   "id": "design-accessibility-03",
+   "title": "On phone, product names in the product cards are 16px-high links (178x16px) on the home, collection and cart pages",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/collections/bags",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/collections/bags on a phone",
+    "Tap precisely on a product name under a photo: the link is a single line of text about 16px high",
+    "Count: 18 such small tap targets on this page, 13 on the home page"
+   ],
+   "evidence": [
+    {
+     "file": "pages/collections-bags/phone.json",
+     "note": "layout.smallTapTargets = 18; examples \"Small Naomi\" 178x16, \"Bo Ivy\" 178x16"
+    },
+    {
+     "file": "pages/home/phone.json",
+     "note": "layout.smallTapTargets = 13"
+    }
+   ],
+   "why_it_matters": "Small targets are easy to miss for people with large fingers or tremor and for anyone shopping on the move. The photo above is usually also a link, so the cost is small.",
+   "fix": {
+    "summary": "Give card title links a taller tap area (about 44px) with padding, or confirm the whole card is clickable.",
+    "steps": [
+     "Add vertical padding to the card title link",
+     "Check the photo and title both lead to the product"
+    ],
+    "where_to_change": "Theme CSS for the product card (card__heading link)"
+   },
+   "claude_prompt": "I work on https://theme-dawn-demo.myshopify.com. Use Claude Code in a duplicate (unpublished) copy of the theme, never edit checkout, keep the existing design system, and show me the diff before publishing. Page: /collections/bags on phone. Current behaviour: product title links are 178x16px. Desired behaviour: title links have at least 44px of tap height, with unchanged layout.  To check it worked, reload the page and inspect the rendered HTML.",
+   "verify_fix": "Re-run the audit: smallTapTargets on /collections/bags falls from 18 to near 0 for product cards.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "mobile",
+    "accessibility",
+    "tap-targets"
+   ]
+  },
+  {
+   "id": "design-imagery-02",
+   "title": "On the Bags collection page, bags are shown at very different sizes inside the same square tiles",
+   "severity": "low",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "designer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/collections/bags",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/collections/bags on desktop",
+    "Compare row 1 \"Small Naomi\" (small, low in its tile) with \"Puff Large\" (fills the tile)",
+    "Compare row 4 \"Naomi Mini Wallet\" (a small wallet) with \"Puff\" next to it"
+   ],
+   "evidence": [
+    {
+     "file": "pages/collections-bags/desktop-full-01.jpg",
+     "note": "row 1 tile 1 and row 4 tile 4 versus row 1 tile 4 and row 4 tile 1"
+    }
+   ],
+   "why_it_matters": "The grey background and square crop are consistent, but the product fills a quarter of some tiles and most of others. Shoppers comparing products cannot judge real size from the grid and small items look less valued. Real size differences between a wallet and a shoulder bag are partly legitimate, which is why this is only polish.",
+   "fix": {
+    "summary": "Re-export the packshots with the same margin around the product, or add the size in the card text.",
+    "steps": [
+     "Pick a standard padding (for example 10 percent)",
+     "Re-crop the outliers",
+     "Optionally show the dimensions in the card"
+    ],
+    "where_to_change": "Product media in Shopify admin (re-upload the first image)"
+   },
+   "claude_prompt": "I work on https://theme-dawn-demo.myshopify.com. On /collections/bags some first product images fill the square tile (Puff Large) and others are small (Small Naomi, Naomi Mini Wallet). This needs new photo crops, not code. Write a short brief for our retoucher: target square size, product filling about 80 percent of the frame, same grey background, and the list of handles to redo.",
+   "verify_fix": "Open the collection: product sizes within the tiles look even across the first two rows.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "images",
+    "collection-page"
+   ]
+  }
+ ],
+ "handoffs": [
+  {
+   "to": "seo",
+   "note": "Home page has no meta description (seo.description is null) and its og:title is just \"theme-dawn-demo\" (pages/home/desktop.json)."
+  },
+  {
+   "to": "ux",
+   "note": "The cart page reports 2 h1 elements in pages/cart/desktop.json seo.h1Count while only one is listed in headings; worth checking."
+  }
+ ]
+}

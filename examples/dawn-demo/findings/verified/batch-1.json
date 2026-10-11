@@ -1,0 +1,1104 @@
+{
+ "verifier": "batch-1",
+ "areas": [
+  "qa",
+  "ux",
+  "design",
+  "copy"
+ ],
+ "findings": [
+  {
+   "id": "copy-01",
+   "title": "On product pages the Shipping & Returns tab says orders ship \"within 5-10 business days\", while the Shipping page promises delivery in \"2-4 business days\"",
+   "severity": "high",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+     "viewport": "any"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+     "viewport": "any"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/shipping",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/helix-denim and open the \"Shipping & Returns\" tab under the description: \"Free shipping and returns available on all orders! We ship all US domestic orders within 5-10 business days!\"",
+    "Scroll a little further on the same page to \"Free Shipping\": \"You'll receive your order an estimated 1–4 days after shipment.\"",
+    "In the footer click \"Shipping policy\" (/pages/shipping): \"Delivery takes between 2-4 business days depending on your location\" and \"Please allow 2 business days to receive your shipment notification email after placing your order.\""
+   ],
+   "evidence": [
+    {
+     "file": "findings/probes/verify-copy-01.json",
+     "note": "live 2026-10-11, Helix page: Shipping & Returns tab text and the Free Shipping block text"
+    },
+    {
+     "file": "findings/probes/verify-copy-05.json",
+     "note": "live, Louise Slide Sandal page: same Shipping & Returns tab text"
+    },
+    {
+     "file": "text/pages-shipping-returns.txt",
+     "note": "lines 6-7: the same text as the tab, on /pages/shipping-returns"
+    },
+    {
+     "file": "pages/products-helix-denim/text.txt",
+     "note": "\"You'll receive your order an estimated 1–4 days after shipment.\""
+    },
+    {
+     "file": "pages/pages-shipping/text.txt",
+     "note": "line 12: \"We ship worldwide\", \"2-4 business days\", \"allow 2 business days to receive your shipment notification\""
+    }
+   ],
+   "why_it_matters": "A buyer reading the product page and the footer's shipping page cannot tell whether the order leaves within 2 business days or takes up to 10, so cannot work out when it will arrive. Mixed promises lead to \"where is my order?\" contacts and disputes when the shorter promise is missed. The tab also speaks of \"US domestic orders\" while the store prices in CAD and the shipping page says \"We ship worldwide\".",
+   "fix": {
+    "summary": "Pick one dispatch time and one delivery window per region and use the same words in the product-page tab, the Free Shipping block and the Shipping page.",
+    "steps": [
+     "Decide the real dispatch (handling) time and transit time per region",
+     "Edit the text behind the product page's \"Shipping & Returns\" tab (it matches /pages/shipping-returns word for word, so the tab probably shows that page) and the \"Free Shipping\" block in the product template",
+     "Update /pages/shipping to the same numbers, stating dispatch and delivery separately (for example: dispatched within X business days, delivered Y to Z business days later)"
+    ],
+    "where_to_change": "Online Store > Pages > Shipping & Returns and Shipping; Online Store > Themes > Customize > Product page (Shipping & Returns tab, Free Shipping block)"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. Three places give different timings: the product page \"Shipping & Returns\" tab says \"We ship all US domestic orders within 5-10 business days!\", the product page \"Free Shipping\" block says \"You'll receive your order an estimated 1–4 days after shipment.\", and /pages/shipping says \"Delivery takes between 2-4 business days\" and \"Please allow 2 business days to receive your shipment notification email\". I will give you the real dispatch and transit times per region. Draft one consistent wording for each of the three places, then list exactly which page or theme block holds each text. Constraints: edit pages as drafts and theme blocks on a duplicate, unpublished theme; never touch checkout; show me the before and after text before publishing. Check: open a product page, its Shipping & Returns tab and /pages/shipping, and confirm every timing matches.",
+   "verify_fix": "Open a product page, open the Shipping & Returns tab, read the Free Shipping block, then open the footer's Shipping policy page: dispatch and delivery times match in all three.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "shipping",
+    "consistency"
+   ],
+   "area": "copy",
+   "verification": {
+    "status": "confirmed",
+    "note": "Quotes match the sources word for word (pages-shipping/text.txt line 12, text/pages-shipping-returns.txt lines 6-7, products-helix-denim/text.txt). The live probe found the '5-10 business days' text inside the product page's Shipping & Returns tab on both product pages opened, so the conflict sits on the product page itself, not on an unlinked page. Title rewritten: '5-10 business days' is a shipping time, not a delivery time; the direct clash is dispatch within 2 business days (Shipping page) versus 5-10 (tab). Removed 'reachable only by direct URL'. Severity high kept: contradictory delivery terms on product pages. Same root cause as trust-03 (other batch); the editor should keep one.",
+    "probe": "findings/probes/verify-copy-01.json"
+   }
+  },
+  {
+   "id": "copy-02",
+   "title": "Return terms differ by page: product pages say returns are free and exchanges are collected, Returns gives 14 days and no cost, About sets no limit",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+     "viewport": "any"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/returns",
+     "viewport": "any"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/about",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/helix-denim and open the \"Shipping & Returns\" tab: \"Free shipping and returns available on all orders!\"",
+    "On the same page, under \"Hassle-Free Exchanges\": \"Exchanges are free. Try from the comfort of your home. We will collect from your home, work or an alternative address.\" Only exchanges are mentioned, not refunds.",
+    "Open https://theme-dawn-demo.myshopify.com/pages/returns: return \"within 14 days of receiving it\", unused, with tags, in original packaging; nothing on who pays return postage, collection, refund versus exchange, or how to start a return.",
+    "Open https://theme-dawn-demo.myshopify.com/pages/about: \"If our product doesn't satisfy you, we'll take it back.\" with no time limit."
+   ],
+   "evidence": [
+    {
+     "file": "findings/probes/verify-copy-01.json",
+     "note": "live: Shipping & Returns tab on the Helix page holds \"Free shipping and returns available on all orders!\""
+    },
+    {
+     "file": "pages/products-helix-denim/text.txt",
+     "note": "\"Hassle-Free Exchanges\" block with home collection"
+    },
+    {
+     "file": "pages/pages-returns/text.txt",
+     "note": "line 12: 14 days, condition rules, 5 to 7 business days processing; no cost, collection or how-to-start"
+    },
+    {
+     "file": "pages/pages-about/text.txt",
+     "note": "\"If our product doesn't satisfy you, we'll take it back.\""
+    },
+    {
+     "file": "text/pages-shipping-returns.txt",
+     "note": "line 6: \"Free shipping and returns available on all orders!\" (the tab's source text)"
+    }
+   ],
+   "why_it_matters": "With a median price of 460 CAD, buyers check the return terms before paying. Here they cannot tell whether a return is free, whether the store collects it, whether they get money back or only an exchange, or how to start one; the About promise sets no time limit while the Returns page sets 14 days. Unclear terms make people hesitate and produce support contacts after purchase.",
+   "fix": {
+    "summary": "Write one returns policy that states window, refund versus exchange, who pays return shipping, collection and how to start, and reuse its wording on product pages and About.",
+    "steps": [
+     "Decide the facts: window, refund or exchange, return postage, collection, how to start a return",
+     "Rewrite the Returns page with all five points",
+     "Align the text behind the product page Shipping & Returns tab (/pages/shipping-returns), the \"Hassle-Free Exchanges\" block and the About quality promise with it"
+    ],
+    "where_to_change": "Online Store > Pages > Returns, Shipping & Returns and About; Online Store > Themes > Customize > Product page (Hassle-Free Exchanges block)"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. Return terms are spread over four places: the product page Shipping & Returns tab says \"Free shipping and returns available on all orders!\", the product page block says \"Exchanges are free. ... We will collect from your home, work or an alternative address.\", /pages/returns says returns are accepted \"within 14 days of receiving it\" with no word on cost, collection or how to start, and /pages/about says \"If our product doesn't satisfy you, we'll take it back.\" I will tell you the real policy. Draft one full Returns page and short matching versions for the product page tab, the exchanges block and the About paragraph. Constraints: edit pages as drafts and theme blocks on a duplicate, unpublished theme; never touch checkout; show me the before and after text before publishing. Check: read the Returns page, a product page and About side by side and confirm window, refund or exchange, cost and collection say the same thing.",
+   "verify_fix": "Read the Returns page and the product-page block side by side: window, refund/exchange and who pays are the same.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "returns",
+    "consistency"
+   ],
+   "area": "copy",
+   "verification": {
+    "status": "downgraded",
+    "note": "Quotes checked word for word; the live probe confirms the 'Free shipping and returns' text sits in the product page tab. Rewrote see_it to start from the product page, where shoppers meet it. Severity high -> medium: the terms are incomplete and loosely worded rather than directly contradictory (the only direct clash is About's open-ended 'we'll take it back' against the 14-day window). Same root cause as trust-02 (other batch); the editor should keep one.",
+    "probe": "findings/probes/verify-copy-01.json"
+   }
+  },
+  {
+   "id": "copy-03",
+   "title": "The Contact us page shows template placeholders: \"Your Business Name Inc.\", \"yourbusinessemail@address.com\" and VAT \"FRXX999999999\"",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/contact-us"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/contact-us.",
+    "Read the business details block: \"Trade name: Your Business Name Inc.\", \"Email: yourbusinessemail@address.com\", \"VAT number: FRXX999999999\", \"Trade number: 123456789\", \"Phone number: +1 123-456-7891\"."
+   ],
+   "evidence": [
+    {
+     "file": "pages/pages-contact-us/text.txt",
+     "note": "lines 12-17: trade name, phone, email, VAT and trade number are template values"
+    }
+   ],
+   "why_it_matters": "A shopper who wants to ask about delivery or returns finds a fake email and company name, which reads as an untrustworthy store. This is the standard Dawn demo content, so likely deliberate here; on a live store it would be a trust problem on the page people use to reach you.",
+   "fix": {
+    "summary": "Replace each placeholder with the real business details, or remove lines that do not apply (for example the VAT number).",
+    "steps": [
+     "Edit the Contact us page text with the real trade name, email, phone, address and tax number."
+    ],
+    "where_to_change": "Online Store > Pages > Contact us"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com, page /pages/contact-us. It shows template values: \"Trade name: Your Business Name Inc.\", \"Phone number: +1 123-456-7891\", \"Email: yourbusinessemail@address.com\", \"VAT number: FRXX999999999\", \"Trade number: 123456789\". I will give you the real details. Using the Shopify connector, show me the page's current HTML and a version with the real values (remove lines that do not apply), and save only after I approve. Do not touch the theme or checkout. Check: reload /pages/contact-us and confirm no placeholder text remains.",
+   "verify_fix": "Open the Contact us page: no placeholder text remains.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "placeholder",
+    "trust"
+   ],
+   "area": "copy",
+   "verification": {
+    "status": "confirmed",
+    "note": "Quotes match pages/pages-contact-us/text.txt word for word. Fixed the unclosed quote in the title, cleared manual_check (the values are plainly template text), made the prompt self-contained. Same root cause as trust-06 (other batch); the editor should keep one.",
+    "probe": null
+   }
+  },
+  {
+   "id": "copy-04",
+   "title": "The store goes by four names: \"DAWN\" (header logo), \"theme-dawn-demo\" (footer and page titles), \"Mlouye\" (About) and \"Rure\" (a home page press quote)",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/about",
+     "viewport": "any"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ on a phone: the header logo reads \"DAWN\", and the footer says \"© 2026, theme-dawn-demo\"",
+    "Scroll to screen 4 of 5: under the Refinery29 logo, a press quote ends \"...where Rure is based and everything is assembled by hand.\"",
+    "Open https://theme-dawn-demo.myshopify.com/pages/about: the brand is \"Mlouye\", Rure is given as the founder's surname, and \"Istanbul is where Mlouye was born, the company's headquarters is now split between the US, and Turkey.\"",
+    "Open https://theme-dawn-demo.myshopify.com/pages/contact-us: the address is in Aurora, Ontario. Product pages add \"This is a demonstration store. You can purchase products like this from Mlouye.\""
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/phone-first.jpg",
+     "note": "header logo \"DAWN\""
+    },
+    {
+     "file": "pages/home/phone-full-02.jpg",
+     "note": "press quote with \"Rure\" under the Refinery29 logo; footer \"© 2026, theme-dawn-demo\""
+    },
+    {
+     "file": "pages/home/text.txt",
+     "note": "line 56: the press quote"
+    },
+    {
+     "file": "pages/pages-about/text.txt",
+     "note": "\"Mlouye\" throughout; Rure as the founder's surname; headquarters US and Turkey"
+    },
+    {
+     "file": "pages/pages-contact-us/text.txt",
+     "note": "physical address in Aurora, Ontario"
+    },
+    {
+     "file": "pages/products-helix-denim/text.txt",
+     "note": "\"This is a demonstration store. You can purchase products like this from Mlouye.\""
+    }
+   ],
+   "why_it_matters": "A visitor meets a different name in the logo, the footer, the About story and the press quote, and two different bases (US and Turkey on About, Ontario on Contact). That weakens the origin story, which is the brand's main claim. The product pages say \"This is a demonstration store\", so this is sample content here.",
+   "fix": {
+    "summary": "Use one brand name and one set of origin facts across home, About, footer and Contact.",
+    "steps": [
+     "Pick the official brand name and base.",
+     "Fix the home quote, About, footer text and Contact address."
+    ],
+    "where_to_change": "Themes > Customize > Home page > quote blocks; Pages > About; Settings > Store details"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. The brand appears as \"DAWN\" (header logo), \"theme-dawn-demo\" (store name in the footer and page titles), \"Mlouye\" (About page and product-page notice) and \"Rure\" (home page press quote), and the base as US and Turkey (About) versus Aurora, Ontario (Contact). I will give you the correct brand name and location. List every place each name appears (theme settings, store name in Settings > Store details, pages, home page blocks) and draft the corrected text. Constraints: theme changes on a duplicate, unpublished theme; pages as drafts; never touch checkout; show me the diff before publishing. Check: search the home, About, Contact and a product page for the old names and confirm only the agreed name and location remain.",
+   "verify_fix": "Search the site for the old names: only the agreed brand name and location remain.",
+   "manual_check": "Confirm the real brand name and headquarters with the merchant.",
+   "intentional_possible": true,
+   "tags": [
+    "brand",
+    "demo-content"
+   ],
+   "area": "copy",
+   "verification": {
+    "status": "confirmed",
+    "note": "Quotes checked against home text.txt line 56, pages-about and pages-contact-us text. Corrected: the quote is on screen 4 of 5, not 3; it does not treat 'Rure' as a place ('where Rure is based' names Rure as the maker, and About gives Rure as the founder's surname); it is a press quote under the Refinery29 logo; added the \"DAWN\" header logo as a fourth name; dropped the founder's first name. Clearly demo content (intentional_possible true kept).",
+    "probe": null
+   }
+  },
+  {
+   "id": "copy-05",
+   "title": "The Louise Slide Sandal page has no fit advice and no link to the Size Guide, whose only fit tip is \"Runs large. Take a half size down.\"",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+     "viewport": "any"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/size-guide",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal: read the description and open the Materials, Shipping & Returns and Care Instructions tabs; there is no fit advice and no size guide link",
+    "Open https://theme-dawn-demo.myshopify.com/pages/size-guide by typing the address (none of the 15 pages checked links to it): \"Fit tip: Runs large. Take a half size down.\" above an EUR/US/UK/FR table that names no product"
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-louise-slide-sandal/text.txt",
+     "note": "lines 12-52: description and blocks with no size or fit information"
+    },
+    {
+     "file": "findings/probes/verify-copy-05.json",
+     "note": "live: the three tabs hold materials, shipping and care text only; no size or fit wording and no size links on the page"
+    },
+    {
+     "file": "pages/pages-size-guide/text.txt",
+     "note": "\"Fit tip: Runs large. Take a half size down.\" and the table"
+    },
+    {
+     "file": "pages/products-louise-slide-sandal/desktop.json",
+     "note": "links.list has no link to /pages/size-guide; same on the other 13 pages"
+    }
+   ],
+   "why_it_matters": "A shopper choosing a size for a 395 CAD sandal is never told it runs large, because the advice sits on a page they cannot reach from the product. Those who order their usual size are more likely to need an exchange, and the store has promised free exchanges collected from home, so each one costs it a pickup and a second delivery.",
+   "fix": {
+    "summary": "Add one line of fit advice to each shoe product and link the Size Guide next to the Size selector.",
+    "steps": [
+     "Confirm per shoe style whether \"Runs large. Take a half size down.\" applies",
+     "Add the fit line to each shoe description, or as a text block in the shoe product template",
+     "Add a \"Size guide\" link or pop-up next to the Size options (Dawn has a pop-up block for this in Customize > Product page)"
+    ],
+    "where_to_change": "Products > (shoe) > Description; Online Store > Themes > Customize > Product page"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com, product /products/louise-slide-sandal. Current behaviour: the description and the Materials, Shipping & Returns and Care Instructions tabs give no fit advice, and nothing links to /pages/size-guide, whose fit tip says \"Runs large. Take a half size down.\" Desired: shoe pages show a one-line fit note and a Size guide link next to the Size options. Draft the fit note for each shoe I confirm, and set up the link on a duplicate, unpublished theme (for example Dawn's pop-up block pointing at the Size Guide page), keeping Dawn's design and never touching checkout. Show me the diff before publishing. Check: open the sandal page on a 390px phone and confirm the fit note and the Size guide link are visible near the Size buttons.",
+   "verify_fix": "Open the sandal page: the fit tip and a Size guide link sit next to the Size options, and the link opens the guide.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "product-page",
+    "sizing"
+   ],
+   "area": "copy",
+   "verification": {
+    "status": "confirmed",
+    "note": "Description and all three tabs on the sandal page contain no fit or size advice (live probe: no size wording, no size links), and no page in the snapshot links to /pages/size-guide. Removed the step claiming 6 of 7 sizes are unavailable 'for Buttermilk': the screenshot shows Gummy selected with only size 40 available and Buttermilk struck through, which is beside the point here. Replaced 'the size table is generic for all shoes' with what the page shows (no product named). Related: qa-01.",
+    "probe": "findings/probes/verify-copy-05.json"
+   }
+  },
+  {
+   "id": "copy-06",
+   "title": "The home page claims \"environmentally friendly tanneries\" with no proof next to it",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ and find the quote: \"The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey...\"",
+    "Look for a certification, link or detail nearby: none on the home page."
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/text.txt",
+     "note": "sustainability claim with no supporting detail"
+    }
+   ],
+   "why_it_matters": "Environmental claims with no named standard or link are easy for shoppers to doubt; a short proof point makes the main brand promise believable.",
+   "fix": {
+    "summary": "Name the tannery standard or certification, or link to a page that explains it.",
+    "steps": [
+     "Add the certification name or a link to the sourcing explanation."
+    ],
+    "where_to_change": "Themes > Customize > Home page > quote block"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com home page claims \"environmentally friendly tanneries\". I will provide the certifications we hold. Draft a one-sentence proof line and a short sourcing page, using a duplicate theme.",
+   "verify_fix": "The claim is followed by a named standard or link.",
+   "manual_check": "Ask the merchant for any tannery certifications.",
+   "intentional_possible": false,
+   "tags": [
+    "claims"
+   ],
+   "area": "copy",
+   "verification": {
+    "status": "rejected",
+    "note": "The sentence is not an unattributed brand claim: on the page it is a press quote shown under the Refinery29 logo (pages/home/phone-full-02.jpg), next to a second quote under The Cut logo. Press attribution is the supporting detail the finding says is missing. What remains (the quotes do not link to the articles) is minor polish on demo content.",
+    "probe": null
+   }
+  },
+  {
+   "id": "design-accessibility-01",
+   "title": "On all 5 product pages checked, every gallery photo has empty alt text (69 photos), so screen readers skip the product images",
+   "severity": "medium",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "merchandiser",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+     "viewport": "desktop"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+     "viewport": "desktop"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/helix-denim on desktop",
+    "Right-click the main photo > Inspect: the <img> has alt=\"\"; every other photo in the gallery is the same",
+    "Compare a \"You may also like\" card lower on the page: its image alt is the product name (for example \"Brick\")",
+    "With a screen reader (VoiceOver or NVDA), move through the gallery: the photos are skipped, because an empty alt marks an image as decorative"
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-helix-denim/desktop.json",
+     "note": "images.sample: 20 of 20 visible gallery photos have alt \"\"; recommendation cards have alt \"Brick\", \"Stormi\", \"Small Naomi\", \"Lantern Bag\""
+    },
+    {
+     "file": "pages/products-small-convertible-flex-bag-cappuccino/desktop.json",
+     "note": "22 of 22 visible gallery photos alt \"\" (images.emptyAlt 26 of 57)"
+    },
+    {
+     "file": "pages/products-louise-slide-sandal/desktop.json",
+     "note": "8 of 8 visible gallery photos alt \"\""
+    },
+    {
+     "file": "pages/products-studio-denim/desktop.json",
+     "note": "8 of 8 visible gallery photos alt \"\""
+    },
+    {
+     "file": "pages/products-mini-naomi-bag-harvest/desktop.json",
+     "note": "11 of 11 visible gallery photos alt \"\""
+    }
+   ],
+   "why_it_matters": "Shoppers using a screen reader get no description of the bag or shoe they are about to buy, so they cannot judge colour, shape or detail from the gallery. Alt text is also one of the signals Google Images uses to understand a photo. The pattern is the same on all 5 product pages checked, so it is likely catalogue-wide.",
+   "fix": {
+    "summary": "Add a short factual alt text to each product photo (product, colour, what the angle shows).",
+    "steps": [
+     "In Shopify admin > Products > (product) > Media, click a photo > Add alt text, for example \"Helix bag in multicolour leather, side view\"",
+     "For the whole catalogue, draft the alts in bulk (CSV export or the Shopify connector) and review them before saving",
+     "Reload a product page and inspect a gallery photo: the alt should now be filled; if it still shows alt=\"\", ask a developer to check the theme's product media snippet"
+    ],
+    "where_to_change": "Shopify admin > Products > (product) > Media > click an image > Add alt text"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. Current behaviour: on product pages such as /products/helix-denim every gallery photo renders with alt=\"\", so screen readers skip them; product cards elsewhere use only the product name. Desired: each product photo has a concise alt of the form \"<product name>, <colour>, <what the angle shows>\". Using the Shopify connector, list the products and their media, draft alt texts from the product title, the colour option linked to each image and the image position, and show them to me in a table before writing anything. Do not invent details you cannot see in the image or the product data. After I approve, write the alts as media alt text only (no theme edits, nothing in checkout). Check: reload /products/helix-denim, inspect two gallery photos and confirm their alt attributes match the approved text.",
+   "verify_fix": "On /products/helix-denim, inspect any gallery photo: its alt holds a description, not \"\". Re-run the audit: gallery photos no longer count as empty alt.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "accessibility",
+    "product-page",
+    "images"
+   ],
+   "area": "design",
+   "verification": {
+    "status": "confirmed",
+    "note": "Core issue confirmed on the rendered pages, claim narrowed. The '419 images have no alt text' figure is not evidence: the public products.json it comes from has no alt field at all (0 of 419 images carry an 'alt' key), so the stat counts every image whatever the admin holds. Rewrote title, see_it and prompt around what the pages show: on 5 of 5 product pages every visible gallery photo has alt=\"\" (20 + 22 + 8 + 8 + 11 = 69), while recommendation cards carry the product name. Removed 'read as unnamed images' (empty alt makes screen readers skip) and 'every product is affected' (5 of 32 checked). products-04 (other batch) relies on the same 419 figure.",
+    "probe": null
+   }
+  },
+  {
+   "id": "design-imagery-01",
+   "title": "Links to the home page and 7 other non-product pages share as the 180x44px DAWN logo enlarged to 1200x628; product links share their photo",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "marketing",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "any"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/about",
+     "viewport": "any"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/cart",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ and view the page source",
+    "Find <meta property=\"og:image\": it points to .../files/Dawn_logo.png?height=628&pad_color=ffffff&v=1637111732&width=1200",
+    "Open that image URL: the DAWN wordmark, from a 180x44px file, is enlarged across a white 1200x628 image and looks soft",
+    "Do the same on https://theme-dawn-demo.myshopify.com/products/helix-denim: og:image is the Helix product photo"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/desktop.json",
+     "note": "seo.ogImage = .../files/Dawn_logo.png?height=628&pad_color=ffffff&v=1637111732&width=1200"
+    },
+    {
+     "file": "pages/cart/desktop.json",
+     "note": "same logo as ogImage (also blogs-news, pages-about, pages-contact-us, pages-returns, pages-shipping, pages-size-guide: 8 of 15 pages)"
+    },
+    {
+     "file": "pages/products-helix-denim/desktop.json",
+     "note": "seo.ogImage is the Helix product photo; both collection pages use their collection photo"
+    },
+    {
+     "file": "findings/probes/verify-ux-05.json",
+     "note": "live: og:image:secure_url is https, og:image:width 1200, height 628; source Dawn_logo.png is 180x44px"
+    },
+    {
+     "file": "findings/probes/verify-design-imagery-01-og-home.jpg",
+     "note": "the share image as served: enlarged DAWN wordmark on white"
+    }
+   ],
+   "why_it_matters": "Chat apps and social networks build link previews from og:image. A shared link to the home, cart, blog or info pages shows an enlarged, soft wordmark instead of a product or the hero photo, which gives people little reason to tap. Product and collection links already share well. On Shopify's theme demo the DAWN wordmark may be the intended share image.",
+   "fix": {
+    "summary": "Set a social sharing image in the store settings: a 1200x628 hero or lifestyle shot with the brand mark.",
+    "steps": [
+     "Pick or export a 1200x628 image from the existing hero photography",
+     "Upload it as the sharing image",
+     "Check the preview in a sharing debugger"
+    ],
+    "where_to_change": "Shopify admin > Online Store > Preferences > Social sharing image"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. The home page, cart, blog and info pages use the logo as og:image (\"Dawn_logo.png?height=628&pad_color=ffffff&...&width=1200\"), a 180x44px wordmark enlarged onto a white 1200x628 canvas, so link previews look soft and show no product. Help me write a brief for a 1200x628 social sharing image built from our existing hero photo (\"Industrial design meets fashion.\") with the logo placed small, give me the exact upload steps in Shopify admin (Online Store > Preferences > Social sharing image), and a checklist to confirm the preview in a sharing debugger. This is a design and settings task: do not edit theme code.",
+   "verify_fix": "View source of the home page: og:image is the new picture; a sharing debugger preview shows it sharp, and product pages still share their own photo.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "social-sharing",
+    "images",
+    "home"
+   ],
+   "area": "design",
+   "verification": {
+    "status": "downgraded",
+    "note": "og:image is the padded logo on 8 of 15 pages (home, cart, blog, about, contact, returns, shipping, size guide); product and collection pages use their own photo. Live: og:image:secure_url is https, so the 'http:// handled poorly' remark was removed; the source logo is 180x44px (not a '90px logo'); the downloaded share image is the enlarged wordmark. Removed the unsupported claim that the home page is the link most pasted into ads. Severity medium -> low and intentional_possible true: it affects link previews only, product links share correctly, and the wordmark may be the intended image on the theme demo.",
+    "probe": "findings/probes/verify-ux-05.json"
+   }
+  },
+  {
+   "id": "design-accessibility-02",
+   "title": "Footer text (country selector, \"© 2026\" line) is light grey on white; the automated check measured 1.01:1 to 3.79:1 contrast",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "to-test",
+   "owner": "designer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ on desktop and scroll to the very bottom",
+    "Read \"Country/region\", the country button and \"© 2026, theme-dawn-demo\": they are pale grey and hard to read",
+    "Run an accessibility check (axe DevTools or Lighthouse): colour-contrast is flagged on 5 footer elements"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/desktop.json",
+     "note": "a11y color-contrast serious, 5 elements: #FooterCountryLabel 2.55:1 (#a2a2a2 on #ffffff, 13px), country button 3.79:1, copyright 2.55:1 at 11px"
+    },
+    {
+     "file": "pages/pages-about/desktop.json",
+     "note": "same elements measured at 1.01:1 (#fdfdfd on white)"
+    },
+    {
+     "file": "pages/home/desktop-full-03.jpg",
+     "note": "footer country selector and copyright visibly faint"
+    }
+   ],
+   "why_it_matters": "Pale small text is hard to read for people with low vision, on phones in sunlight and on cheaper screens. These are secondary footer items, so the cost is low, but the same flag appears on all 15 pages tested.",
+   "fix": {
+    "summary": "Darken the footer text colour to at least 4.5:1 against the background.",
+    "steps": [
+     "Find the footer text colour or opacity in the theme",
+     "Raise it (for example to #595959 on white)",
+     "Re-run the check"
+    ],
+    "where_to_change": "Online Store > Themes > Customize > Footer (colour scheme), or the theme CSS"
+   },
+   "claude_prompt": "I work on https://theme-dawn-demo.myshopify.com. Use Claude Code in a duplicate (unpublished) copy of the theme, never edit checkout, keep the existing design system, and show me the diff before publishing. Page: footer on every page. Current behaviour: \"Country/region\", the country button and the copyright line are light grey (#a2a2a2 on #ffffff, 2.55:1). Desired behaviour: footer text meets 4.5:1 contrast, without changing the layout.  To check it worked, reload the page and inspect the rendered HTML.",
+   "verify_fix": "Re-run axe on the home page: no colour-contrast violations in the footer.",
+   "manual_check": "The measured value differs by page (1.01:1 on the about page versus 2.55:1 on the home page), which suggests the footer was captured while fading in. Scroll to the footer, wait three seconds and measure again with a contrast checker; if it is at least 4.5:1 once settled, drop this finding.",
+   "intentional_possible": false,
+   "tags": [
+    "accessibility",
+    "contrast",
+    "footer"
+   ],
+   "area": "design",
+   "verification": {
+    "status": "rejected",
+    "note": "Measurement artefact, as the manual_check suspected. Live, after scrolling to the footer: 300ms later the footer still had ancestor opacity 0.01 (fade-in running, contrast 1.02:1); after 4 seconds opacity was 1 and contrast was 8.42:1 for \"Country/region\" and the copyright line (rgba(18,18,18,0.75) on white) and 18.73:1 for the country button. All pass 4.5:1 once the animation ends; axe ran mid fade-in.",
+    "probe": "findings/probes/verify-design-accessibility-02.json"
+   }
+  },
+  {
+   "id": "design-accessibility-03",
+   "title": "On phone, product names in the product cards are 16px-high links (178x16px) on the home, collection and cart pages",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/collections/bags",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/collections/bags on a phone",
+    "Tap precisely on a product name under a photo: the link is a single line of text about 16px high",
+    "Count: 18 such small tap targets on this page, 13 on the home page"
+   ],
+   "evidence": [
+    {
+     "file": "pages/collections-bags/phone.json",
+     "note": "layout.smallTapTargets = 18; examples \"Small Naomi\" 178x16, \"Bo Ivy\" 178x16"
+    },
+    {
+     "file": "pages/home/phone.json",
+     "note": "layout.smallTapTargets = 13"
+    }
+   ],
+   "why_it_matters": "Small targets are easy to miss for people with large fingers or tremor and for anyone shopping on the move. The photo above is usually also a link, so the cost is small.",
+   "fix": {
+    "summary": "Give card title links a taller tap area (about 44px) with padding, or confirm the whole card is clickable.",
+    "steps": [
+     "Add vertical padding to the card title link",
+     "Check the photo and title both lead to the product"
+    ],
+    "where_to_change": "Theme CSS for the product card (card__heading link)"
+   },
+   "claude_prompt": "I work on https://theme-dawn-demo.myshopify.com. Use Claude Code in a duplicate (unpublished) copy of the theme, never edit checkout, keep the existing design system, and show me the diff before publishing. Page: /collections/bags on phone. Current behaviour: product title links are 178x16px. Desired behaviour: title links have at least 44px of tap height, with unchanged layout.  To check it worked, reload the page and inspect the rendered HTML.",
+   "verify_fix": "Re-run the audit: smallTapTargets on /collections/bags falls from 18 to near 0 for product cards.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "mobile",
+    "accessibility",
+    "tap-targets"
+   ],
+   "area": "design",
+   "verification": {
+    "status": "rejected",
+    "note": "Not a small tap target in practice. Live on /collections/bags at phone width, each card title link (178x16px box) has an ::after layer with position absolute and inset 0 that covers the whole 178x251px card; a tap at the image centre or the price area lands on the same product link (3 of 3 cards tested). The audit counted the text box only.",
+    "probe": "findings/probes/verify-design-accessibility-03.json"
+   }
+  },
+  {
+   "id": "design-imagery-02",
+   "title": "On the Bags collection page, bags are shown at very different sizes inside the same square tiles",
+   "severity": "low",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "designer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/collections/bags",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/collections/bags on desktop",
+    "Compare row 1 \"Small Naomi\" (small, low in its tile) with \"Puff Large\" (fills the tile)",
+    "Compare row 4 \"Naomi Mini Wallet\" (a small wallet) with \"Puff\" next to it"
+   ],
+   "evidence": [
+    {
+     "file": "pages/collections-bags/desktop-full-01.jpg",
+     "note": "row 1 tile 1 and row 4 tile 4 versus row 1 tile 4 and row 4 tile 1"
+    }
+   ],
+   "why_it_matters": "The grey background and square crop are consistent, but the product fills a quarter of some tiles and most of others. Shoppers comparing products cannot judge real size from the grid and small items look less valued. Real size differences between a wallet and a shoulder bag are partly legitimate, which is why this is only polish.",
+   "fix": {
+    "summary": "Re-export the packshots with the same margin around the product, or add the size in the card text.",
+    "steps": [
+     "Pick a standard padding (for example 10 percent)",
+     "Re-crop the outliers",
+     "Optionally show the dimensions in the card"
+    ],
+    "where_to_change": "Product media in Shopify admin (re-upload the first image)"
+   },
+   "claude_prompt": "I work on https://theme-dawn-demo.myshopify.com. On /collections/bags some first product images fill the square tile (Puff Large) and others are small (Small Naomi, Naomi Mini Wallet). This needs new photo crops, not code. Write a short brief for our retoucher: target square size, product filling about 80 percent of the frame, same grey background, and the list of handles to redo.",
+   "verify_fix": "Open the collection: product sizes within the tiles look even across the first two rows.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "images",
+    "collection-page"
+   ],
+   "area": "design",
+   "verification": {
+    "status": "rejected",
+    "note": "Subjective and not supported by the evidence. In desktop-full-01.jpg the product size in each tile follows the product type (Naomi Mini Wallet and the mini bags small, Puff and Puff Large large), which is what same-scale packshots look like, so the claim that shoppers 'cannot judge real size from the grid' runs the other way; the proposed re-crop to fill 80 percent would remove that size cue. The see_it step also misplaces Puff (row 4 tile 1, not next to the wallet in tile 4).",
+    "probe": null
+   }
+  },
+  {
+   "id": "qa-01",
+   "title": "On phone, the Size Guide table is cut off after size 38 and the page scrolls sideways by 182px",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/size-guide",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/size-guide on a phone (390px wide)",
+    "Look at the table under \"Fit tip: Runs large. Take a half size down.\": the columns stop at EUR 38 / US 8 / UK 5 / FR 39",
+    "Swipe sideways: the columns for EUR 39, 40 and 41 are off screen to the right"
+   ],
+   "evidence": [
+    {
+     "file": "pages/pages-size-guide/phone-first.jpg",
+     "note": "table visible only up to EUR 38 (US 8, UK 5, FR 39); 39 to 41 are off screen"
+    },
+    {
+     "file": "pages/pages-size-guide/phone.json",
+     "note": "layout.horizontalOverflowPx = 182; table.ks-table right edge at 572px on a 390px screen; cell 38 ends at 401px"
+    },
+    {
+     "file": "findings/probes/verify-qa-01.json",
+     "note": "live re-test 2026-10-11: same widths (table right edge 572px, cells 39/40/41 end at 459/514/570px)"
+    },
+    {
+     "file": "findings/probes/verify-qa-01.jpg",
+     "note": "live phone screenshot, table still cut off after 38"
+    },
+    {
+     "file": "pages/products-louise-slide-sandal/desktop.json",
+     "note": "links.list has no link to /pages/size-guide; the same holds for the other 13 pages in the snapshot"
+    }
+   ],
+   "why_it_matters": "Phone shoppers who open the Size Guide see sizes 35 to 38 only; EUR 39 to 41 appear only if they discover the sideways swipe, and the whole page then shifts sideways. It is the only one of 15 phone pages with sideways scroll. Today no other page checked links to the Size Guide (header, footer and the Louise Slide Sandal page have no link), so few shoppers reach it; it matters as soon as shoe pages link to it (see copy-05).",
+   "fix": {
+    "summary": "Make the size table fit or scroll inside its own box on phone.",
+    "steps": [
+     "Wrap the table in a container with overflow-x: auto, or let the table shrink with smaller cell padding on narrow screens",
+     "Check on a 390px wide phone that all seven sizes (EUR 35 to 41) are visible or clearly scrollable"
+    ],
+    "where_to_change": "Online Store > Pages > Size Guide (the table is built in the page's HTML), or the theme's custom CSS"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com/pages/size-guide the size table (class ks-table) is 572px wide on a 390px phone, so columns EUR 39, 40 and 41 are cut off and the page scrolls sideways by 182px. Work on a duplicate or unpublished theme and do not touch checkout. Make the table fit the screen width on phones, or wrap it in a container with overflow-x: auto and a visible scroll hint, keeping the existing design system. Show me the diff before publishing. Check at 390px width that sizes 35 to 41 are all reachable and the page itself no longer scrolls sideways.",
+   "verify_fix": "Open the Size Guide on a 390px phone: all seven size columns are visible or scroll inside the table, and the page has no sideways scroll.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "mobile",
+    "size-guide"
+   ],
+   "area": "qa",
+   "verification": {
+    "status": "downgraded",
+    "note": "Opened phone-first.jpg (columns stop at 38) and phone.json (horizontalOverflowPx 182, ks-table right edge 572px); re-tested live, unchanged. Severity medium -> low: none of the 14 other snapshot pages links to /pages/size-guide (checked every phone and desktop link list, header menu included), so the page reaches few shoppers today. Related to copy-05 (no size guide link on the sandal page).",
+    "probe": "findings/probes/verify-qa-01.json"
+   }
+  },
+  {
+   "id": "qa-02",
+   "title": "The word \"original\" in the Returns page text links to a page that does not exist (404)",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/returns",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/returns",
+    "In the sentence \"All returns should be sent back to us in their original packaging\", click the word \"original\" (it is a link)",
+    "You land on \"404 Not Found\" at dawn-theme-default.myshopify.com/shopify.com, a different store address"
+   ],
+   "evidence": [
+    {
+     "file": "links.json",
+     "note": "broken[0]: text \"original\", foundOn /pages/returns, url https://dawn-theme-default.myshopify.com/shopify.com, status 404"
+    },
+    {
+     "file": "pages/pages-returns/text.txt",
+     "note": "line 12, the returns paragraph containing \"in their original packaging\""
+    },
+    {
+     "file": "findings/probes/verify-qa-02.json",
+     "note": "live 2026-10-11: link still present with the same href; GET of the target returns 404"
+    }
+   ],
+   "why_it_matters": "It is the only broken link found among the 75 links checked (67 internal, 8 external). A shopper who clicks it while reading the return terms leaves the store for an error page on another store's address, which looks careless on a page meant to reassure. This is Shopify's public demo store, so the stray link is probably leftover sample content, but a real store would want it gone.",
+   "fix": {
+    "summary": "Remove the link from the word \"original\" (it points to nothing useful).",
+    "steps": [
+     "Open the Returns page in the page editor, switch to the HTML view",
+     "Remove the <a> tag around \"original\" and save"
+    ],
+    "where_to_change": "Online Store > Pages > Returns"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com/pages/returns the word \"original\" in \"their original packaging\" is a link to https://dawn-theme-default.myshopify.com/shopify.com, which returns 404. Using the Shopify connector, find the page with handle returns, remove only that link (keep the text), and leave all other wording unchanged. Show me the before and after HTML before saving. Then re-open the page and confirm the word is plain text.",
+   "verify_fix": "Open /pages/returns and click \"original\": nothing happens, no link is shown.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "links",
+    "policy-page"
+   ],
+   "area": "qa",
+   "verification": {
+    "status": "confirmed",
+    "note": "links.json broken[0] and the returns page link list show the href; text.txt line 12 has the sentence. Live: link still there and the target still returns 404. Changed viewport 'both' to 'any' (schema value). Same root cause as ux-04 (rejected here as duplicate), tech-03 (other batch) and part of trust-02's evidence; the editor should keep only this one.",
+    "probe": "findings/probes/verify-qa-02.json"
+   }
+  },
+  {
+   "id": "ux-01",
+   "title": "3 of the first 4 products on the home page grid are marked \"Sold out\"",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "merchandiser",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ on a phone",
+    "Scroll down one screen, past the hero and the \"Obsessive Attention. Intelligent Effort.\" text: the product grid fills screen 2 of 5",
+    "The first four cards are Small Convertible Flex Bag (\"Sold out\"), Studio Bag (\"Sold out\"), Louise Slide Sandal (\"Sale\") and Mini Naomi Bag (\"Sold out\")"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/phone-full-01.jpg",
+     "note": "top of the grid: cards 1, 2 and 4 carry a Sold out badge, card 3 a Sale badge"
+    },
+    {
+     "file": "pages/home/text.txt",
+     "note": "lines 16-37: \"Sold out\" before Small Convertible Flex Bag, Studio Bag and Mini Naomi Bag"
+    },
+    {
+     "file": "pages/home/phone.json",
+     "note": "headings: the first four card titles sit at screen 2.1 and 2.4"
+    },
+    {
+     "file": "shop/catalogue-stats.json",
+     "note": "soldOutProducts: studio-denim, mini-naomi-bag-harvest, small-convertible-flex-bag-cappuccino, thelma-sandal (4 of 32)"
+    }
+   ],
+   "why_it_matters": "Phone visitors who scroll past the hero meet mostly products they cannot buy: 3 of the first 4 cards, and 3 of the 8 in the section, are sold out. The first products shown set the impression of the range, and a sold-out card is a dead end. This may be demo content kept as it is on purpose.",
+   "fix": {
+    "summary": "Show in-stock products first in the home page product grid, or move sold-out items to the end.",
+    "steps": [
+     "In Online Store > Themes > Customize > Home page, open the featured collection section and note which collection it uses",
+     "In Products > Collections, open that collection and either set Sort to Manually and drag in-stock products to the top, or use an automated collection with the condition \"Inventory stock is greater than 0\"",
+     "Reload the home page on a phone and check the first four cards"
+    ],
+    "where_to_change": "Shopify admin > Products > Collections (the collection behind the home page featured collection section)"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. On the home page, the featured collection grid starts with Small Convertible Flex Bag, Studio Bag, Louise Slide Sandal and Mini Naomi Bag; 3 of these 4 show a \"Sold out\" badge. Desired: the first cards are products that can be bought. Using the Shopify connector, find which collection the home page section uses, list its products in current order with their availability, and propose a new order with available products first (or an automated collection with the condition inventory stock greater than 0). Show me the proposal before changing anything; do not edit the theme or checkout. After I approve, apply it, then reload the home page at 390px width and confirm none of the first four cards shows \"Sold out\".",
+   "verify_fix": "Reload the home page on a phone: the first four cards have no Sold out badge.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "home",
+    "merchandising",
+    "mobile"
+   ],
+   "area": "ux",
+   "verification": {
+    "status": "confirmed",
+    "note": "Checked phone-full-01.jpg (badges on cards 1, 2 and 4), home text.txt lines 16-37 and catalogue-stats. Corrected the scroll position (grid fills screen 2, not 2 to 3), removed the 'mixed signals' remark about the next \"Back in stock!\" section, and rewrote the fix steps and prompt around the collection that feeds the section. Same root cause as products-01 (other batch); the editor should keep one.",
+    "probe": null
+   }
+  },
+  {
+   "id": "ux-02",
+   "title": "On phone, the Add to cart button on product pages starts just below the first screen and there is no sticky buy bar",
+   "severity": "low",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal on a phone",
+    "The first screen shows the photo, title, price ($395.00 CAD) and the Color and Size buttons; Add to cart starts just below it (screen 2.1)",
+    "Scroll further down to the tabs and the shipping details: no Add to cart bar stays on screen"
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-louise-slide-sandal/phone-first.jpg",
+     "note": "first screen ends on the size buttons, no Add to cart"
+    },
+    {
+     "file": "pages/products-louise-slide-sandal/phone.json",
+     "note": "keyPositions.addToCart.screen = 2.1, sticky = false"
+    },
+    {
+     "file": "clicktest/results.json",
+     "note": "phone: Add to cart at screen 2 to 2.1 on 5 of 5 in-stock pages tested, sticky false; desktop: sticky true"
+    },
+    {
+     "file": "findings/probes/verify-copy-05.json",
+     "note": "live 2026-10-11: button 953px down on an 844px screen; after scrolling to 2459px no fixed or sticky Add to cart is on screen"
+    }
+   ],
+   "why_it_matters": "A phone shopper who has picked colour and size has to scroll to reach the button, and loses it again once they scroll down to read the tabs and shipping details. The same layout holds on all 5 in-stock product pages in the click test. On desktop the product column is sticky, so the button stays in view. The extra step is small, hence low severity.",
+   "fix": {
+    "summary": "Add a sticky Add to cart bar on phone, or shorten the phone gallery so the button shows in the first screen.",
+    "steps": [
+     "Dawn's product section makes the product column sticky on desktop only, so a phone bar needs a small theme addition (developer) or a theme app block",
+     "Show the bar only after the main button scrolls out of view, with price, selected variant and Add to cart",
+     "Alternatively, reduce the phone gallery height so Add to cart fits in the first screen"
+    ],
+    "where_to_change": "Online Store > Themes > Edit code (product section) on a duplicate theme"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com, product pages on phone (for example /products/louise-slide-sandal). Current behaviour: Add to cart sits at about 953px on an 844px-high phone screen and nothing keeps it in view when the shopper scrolls down; on desktop the product column is sticky. Desired: on screens under 750px, a slim bar with price, selected variant and an Add to cart button appears once the main button has scrolled out of view, and submits the same product form. Constraints: work in Claude Code on a duplicate, unpublished copy of the Dawn theme, never edit checkout, reuse Dawn's existing button and colour styles, and show me the diff before publishing. Check: at 390px width, scroll past the button and confirm the bar appears, adds the selected variant to the cart, and does not cover the cart notification.",
+   "verify_fix": "Open a product page on a phone and scroll: an Add to cart control stays visible.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "mobile",
+    "product-page"
+   ],
+   "area": "ux",
+   "verification": {
+    "status": "confirmed",
+    "note": "Checked phone-first.jpg (first screen ends on the size buttons), phone.json (addToCart screen 2.1, sticky false) and clicktest (5 of 5 in-stock pages at screen 2 to 2.1 on phone, sticky on desktop). Corrected the count from '4 of 4' to 5 of 5 and made the prompt self-contained. Live check on the sandal page confirms no sticky Add to cart after scrolling.",
+    "probe": "findings/probes/verify-copy-05.json"
+   }
+  },
+  {
+   "id": "ux-03",
+   "title": "No product page shows star ratings or reviews near the price",
+   "severity": "medium",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "marketing",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/collections/bags",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+    "Look around the title and price, then scroll to the footer: no stars, rating count or review section",
+    "Open https://theme-dawn-demo.myshopify.com/collections/bags: the cards show only name and price"
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-louise-slide-sandal/phone.json",
+     "note": "keyPositions.reviews = null (also null on the other 4 product pages)"
+    },
+    {
+     "file": "pages/collections-bags/text.txt",
+     "note": "cards list only name and price, e.g. \"Small Naomi\", \"Regular price\", \"$485.00 CAD\""
+    },
+    {
+     "file": "stack.json",
+     "note": "apps: [] (no review app detected)"
+    },
+    {
+     "file": "shop/catalogue-stats.json",
+     "note": "priceMin 119, priceMedian 460, priceMax 615 (CAD)"
+    }
+   ],
+   "why_it_matters": "With prices from $119 to $615 CAD (median $460), shoppers get no customer feedback next to the price on any of the 5 product pages checked, nor on collection cards. Shoppers unsure about fit or quality have no other buyers' experience to go on. This is a demo store, so the absence may be deliberate.",
+   "fix": {
+    "summary": "Add a reviews app and show its star rating under the product title and on product cards.",
+    "steps": [
+     "Pick a reviews app that supports Dawn's product rating",
+     "In Customize > Product page, add the \"Product rating\" block under the title",
+     "Turn on \"Show product rating\" in the collection and featured collection sections",
+     "Ask recent buyers for reviews so the stars are not empty at launch"
+    ],
+    "where_to_change": "Shopify admin > Apps, then Online Store > Themes > Customize (Product page; Collection and Home page sections)"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. Current behaviour: none of the product pages (for example /products/louise-slide-sandal) or collection cards (/collections/bags) shows a star rating, review count or reviews, and no review app is installed. Desired: a rating summary under the product title, a reviews section lower on the product page, and stars on product cards. Help me compare 2 or 3 review apps that work with the Dawn theme (price, review requests by email, photo reviews, rating metafields), then give me exact Customize steps to add the Product rating block and turn on Show product rating. Constraints: set it up on a duplicate, unpublished theme, keep Dawn's design, never edit checkout, show me the changes before publishing. Check: a product with reviews shows stars under its title and on its collection card.",
+   "verify_fix": "A product page shows a star rating and review count near the price.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "product-page",
+    "trust"
+   ],
+   "area": "ux",
+   "verification": {
+    "status": "confirmed",
+    "note": "keyPositions.reviews is null on all 5 product pages, none of the 15 page texts mentions reviews or ratings, stack.json lists no apps, and collection cards show only name and price. Made the prompt self-contained. Same root cause as trust-04 (other batch); the editor should keep one.",
+    "probe": null
+   }
+  },
+  {
+   "id": "ux-04",
+   "title": "A link labelled \"original\" in the Returns page text goes to a 404 page",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/returns",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/returns",
+    "In the sentence ending \"...in their original packaging\", click the word \"original\"",
+    "It leads to https://dawn-theme-default.myshopify.com/shopify.com, which shows 404 Not Found"
+   ],
+   "evidence": [
+    {
+     "file": "links.json",
+     "note": "broken[0]: status 404, foundOn /pages/returns"
+    }
+   ],
+   "why_it_matters": "A shopper reading the returns terms hits a dead end on the page that should reassure them. It is 1 broken link of 75 checked. Likely a leftover from the demo content.",
+   "fix": {
+    "summary": "Remove the link from the word \"original\" in the Returns page.",
+    "steps": [
+     "Edit the page and clear the link on \"original\""
+    ],
+    "where_to_change": "Shopify admin > Online Store > Pages > Returns"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com/pages/returns, remove the hyperlink on the word \"original\" (it 404s) and leave the text as is. Show me the HTML diff.",
+   "verify_fix": "Open the page and click \"original\": nothing leads to a 404.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "links",
+    "policy-pages"
+   ],
+   "area": "ux",
+   "verification": {
+    "status": "rejected",
+    "note": "duplicate of qa-02 (same broken \"original\" link on /pages/returns); qa-02 has the fuller evidence and a live re-check.",
+    "probe": null
+   }
+  },
+  {
+   "id": "ux-05",
+   "title": "The home page main heading (h1) is empty",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open the page source or an accessibility tool on https://theme-dawn-demo.myshopify.com/",
+    "The h1 element has no text; the visible headline \"Industrial design meets fashion.\" is an h2"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/phone.json",
+     "note": "headings[0] = h1 with empty text at screen 1.1; the headline is h2"
+    }
+   ],
+   "why_it_matters": "Screen readers and search engines get no main heading for the home page. Visitors do not notice. Passing to SEO and accessibility areas.",
+   "fix": {
+    "summary": "Make the hero headline the h1 or give the logo h1 text.",
+    "steps": [
+     "Set the hero heading level to h1 in the section settings or theme code"
+    ],
+    "where_to_change": "Online Store > Themes > Edit code"
+   },
+   "claude_prompt": "On a duplicate of the Dawn theme for https://theme-dawn-demo.myshopify.com, make the home hero headline the page h1 and keep the logo as plain link. Show the diff.",
+   "verify_fix": "Inspect the home page: one h1 with the headline text.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "home",
+    "accessibility"
+   ],
+   "area": "ux",
+   "verification": {
+    "status": "rejected",
+    "note": "The h1 is not empty: live markup is <h1 class=\"header__heading\"><a href=\"/\"><img alt=\"Dawn\" ...></a></h1>, the header logo with alt \"Dawn\", so screen readers announce a level-1 heading \"Dawn\" and search engines can read the alt. innerText is empty only because the content is an image. This is Dawn's standard home page header. What remains (the h1 names the logo rather than the headline) is a minor SEO point outside UX and is left to tech.",
+    "probe": "findings/probes/verify-ux-05.json"
+   }
+  }
+ ]
+}

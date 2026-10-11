@@ -1,0 +1,14 @@
+{
+ "checkedInternal": 67,
+ "checkedExternal": 8,
+ "broken": [
+  {
+   "url": "https://dawn-theme-default.myshopify.com/shopify.com",
+   "text": "original",
+   "foundOn": "https://theme-dawn-demo.myshopify.com/pages/returns",
+   "status": 404,
+   "title": "404 Not Found\n &ndash; dawn-theme-default"
+  }
+ ],
+ "note": "Some sites (social networks, marketplaces) block automated checks with 403/429; treat those as \"to test\" by hand."
+}

@@ -1,0 +1,109 @@
+{
+ "overall": 89,
+ "areas": {
+  "qa": {
+   "score": 96,
+   "label": "Strong",
+   "count": 2,
+   "bySev": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 2
+   },
+   "covered": true
+  },
+  "ux": {
+   "score": 93,
+   "label": "Strong",
+   "count": 2,
+   "bySev": {
+    "critical": 0,
+    "high": 0,
+    "medium": 1,
+    "low": 1
+   },
+   "covered": true
+  },
+  "design": {
+   "score": 93,
+   "label": "Strong",
+   "count": 2,
+   "bySev": {
+    "critical": 0,
+    "high": 0,
+    "medium": 1,
+    "low": 1
+   },
+   "covered": true
+  },
+  "copy": {
+   "score": 68,
+   "label": "Needs work",
+   "count": 5,
+   "bySev": {
+    "critical": 0,
+    "high": 1,
+    "medium": 4,
+    "low": 0
+   },
+   "covered": true
+  },
+  "products": {
+   "score": 94,
+   "label": "Strong",
+   "count": 3,
+   "bySev": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 3
+   },
+   "covered": true
+  },
+  "tech": {
+   "score": 88,
+   "label": "Strong",
+   "count": 3,
+   "bySev": {
+    "critical": 0,
+    "high": 0,
+    "medium": 2,
+    "low": 1
+   },
+   "covered": true
+  },
+  "growth": {
+   "score": 95,
+   "label": "Strong",
+   "count": 3,
+   "bySev": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 3
+   },
+   "covered": true
+  },
+  "trust": {
+   "score": 84,
+   "label": "Good",
+   "count": 4,
+   "bySev": {
+    "critical": 0,
+    "high": 0,
+    "medium": 3,
+    "low": 1
+   },
+   "covered": true
+  }
+ },
+ "counts": {
+  "total": 24,
+  "verified": 22,
+  "critical": 0,
+  "high": 1,
+  "medium": 11,
+  "low": 12
+ }
+}

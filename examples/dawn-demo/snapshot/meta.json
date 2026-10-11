@@ -1,0 +1,94 @@
+{
+ "tool": "shopify-audit-agents",
+ "version": "0.1.0",
+ "collectedAt": "2026-10-11T16:21:29.372Z",
+ "durationS": 534,
+ "store": "https://theme-dawn-demo.myshopify.com",
+ "inputUrl": "https://theme-dawn-demo.myshopify.com/",
+ "platform": "shopify",
+ "shop": {
+  "name": "theme-dawn-demo",
+  "currency": "CAD",
+  "country": "CA",
+  "shipsTo": [
+   "*",
+   "CA",
+   "US"
+  ]
+ },
+ "browser": "Chrome/154.0.8037.98",
+ "userAgent": "Mozilla/5.0 (compatible; shopify-audit-agents/0.1; +https://github.com/cr1707/shopify-audit-agents)",
+ "robots": {
+  "rules": 63,
+  "crawlDelay": null
+ },
+ "pages": {
+  "rendered": [
+   "https://theme-dawn-demo.myshopify.com/",
+   "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+   "https://theme-dawn-demo.myshopify.com/products/studio-denim",
+   "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+   "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest",
+   "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+   "https://theme-dawn-demo.myshopify.com/collections/bags",
+   "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+   "https://theme-dawn-demo.myshopify.com/cart",
+   "https://theme-dawn-demo.myshopify.com/pages/about",
+   "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+   "https://theme-dawn-demo.myshopify.com/pages/shipping",
+   "https://theme-dawn-demo.myshopify.com/pages/returns",
+   "https://theme-dawn-demo.myshopify.com/pages/size-guide",
+   "https://theme-dawn-demo.myshopify.com/blogs/news"
+  ],
+  "textOnly": [
+   "https://theme-dawn-demo.myshopify.com/policies/refund-policy",
+   "https://theme-dawn-demo.myshopify.com/policies/shipping-policy",
+   "https://theme-dawn-demo.myshopify.com/policies/terms-of-service",
+   "https://theme-dawn-demo.myshopify.com/policies/privacy-policy",
+   "https://theme-dawn-demo.myshopify.com/pages/shipping-returns",
+   "https://theme-dawn-demo.myshopify.com/pages/lookbook",
+   "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+   "https://theme-dawn-demo.myshopify.com/pages/shoe-care-instructions",
+   "https://theme-dawn-demo.myshopify.com/pages/style-guide",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/lookbook",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/about",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/returns",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/lookbook-summer",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/size-guide",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/shoe-care-instructions",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/contact-us",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/shipping",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/shipping-returns",
+   "https://theme-dawn-demo.myshopify.com/en-fr/pages/style-guide"
+  ],
+  "products": [
+   "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+   "https://theme-dawn-demo.myshopify.com/products/studio-denim",
+   "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+   "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest",
+   "https://theme-dawn-demo.myshopify.com/products/helix-denim"
+  ],
+  "collections": [
+   "https://theme-dawn-demo.myshopify.com/collections/bags",
+   "https://theme-dawn-demo.myshopify.com/collections/tote-bags"
+  ],
+  "clickTested": [
+   "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+   "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+   "https://theme-dawn-demo.myshopify.com/products/puff-olive-leaf",
+   "https://theme-dawn-demo.myshopify.com/products/puff-large-latte",
+   "https://theme-dawn-demo.myshopify.com/products/mini-sera-tote-butter"
+  ]
+ },
+ "options": {
+  "products": 5,
+  "pages": 16,
+  "cart": true,
+  "psi": true,
+  "a11y": true,
+  "links": true
+ },
+ "notes": [
+  "Sold-out products among the product pages chosen from the home page: /products/small-convertible-flex-bag-cappuccino, /products/studio-denim, /products/mini-naomi-bag-harvest"
+ ]
+}

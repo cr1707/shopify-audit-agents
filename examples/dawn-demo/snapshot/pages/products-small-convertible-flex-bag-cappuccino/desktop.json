@@ -1,0 +1,1562 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+ "viewport": "desktop",
+ "slug": "products-small-convertible-flex-bag-cappuccino",
+ "loadOk": true,
+ "loadMs": 788,
+ "firstScreen": "pages/products-small-convertible-flex-bag-cappuccino/desktop-first.jpg",
+ "after12s": "pages/products-small-convertible-flex-bag-cappuccino/desktop-after-12s.jpg",
+ "overlays": [],
+ "scroll": {
+  "height": 6713,
+  "screens": 7.5
+ },
+ "title": "Small Convertible Flex Bag – theme-dawn-demo",
+ "lang": "en",
+ "seo": {
+  "description": "This is a demonstration store. You can purchase products like this from Mlouye. Our architectural, origami inspired shoulder bag, now has a new dimension. It can be converted into a wrist bag just with a quick move. The shoulder strap can easily be removed, so you can slung it from your wrist or use as a clutch. It has",
+  "canonical": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+  "robots": null,
+  "ogTitle": "Small Convertible Flex Bag",
+  "ogImage": "http://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n1.jpg?v=1637107143",
+  "h1Count": 1,
+  "hreflang": 3,
+  "structuredData": [
+   "Organization",
+   "ProductGroup"
+  ],
+  "ldInvalid": 0
+ },
+ "product": {
+  "name": "Small Convertible Flex Bag",
+  "sku": null,
+  "brand": "Mlouye",
+  "rating": null,
+  "reviewCount": null,
+  "offers": []
+ },
+ "shopify": {
+  "isShopify": true,
+  "shop": "theme-dawn-demo.myshopify.com",
+  "theme": {
+   "name": "Dawn",
+   "id": 129690763353,
+   "schema": "Dawn",
+   "version": "15.0.0"
+  },
+  "currency": "CAD",
+  "locale": "en",
+  "pageType": "product",
+  "productId": 6920727593049
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Small Convertible Flex Bag",
+   "screen": 1.2
+  },
+  {
+   "tag": "h2",
+   "text": "Materials",
+   "screen": 2.2
+  },
+  {
+   "tag": "h2",
+   "text": "Shipping & Returns",
+   "screen": 2.3
+  },
+  {
+   "tag": "h2",
+   "text": "Dimensions",
+   "screen": 2.3
+  },
+  {
+   "tag": "h2",
+   "text": "Care Instructions",
+   "screen": 2.4
+  },
+  {
+   "tag": "h2",
+   "text": "A new kind of bag.",
+   "screen": 6.5
+  },
+  {
+   "tag": "h3",
+   "text": "Free Shipping",
+   "screen": 7
+  },
+  {
+   "tag": "h3",
+   "text": "Hassle-Free Exchanges",
+   "screen": 7
+  },
+  {
+   "tag": "h2",
+   "text": "You may also like",
+   "screen": 7.2
+  },
+  {
+   "tag": "h3",
+   "text": "Mini Woven Bag",
+   "screen": 7.6
+  },
+  {
+   "tag": "h3",
+   "text": "Small Naomi",
+   "screen": 7.6
+  },
+  {
+   "tag": "h3",
+   "text": "Helix",
+   "screen": 7.6
+  },
+  {
+   "tag": "h3",
+   "text": "Naomi Bag",
+   "screen": 7.6
+  },
+  {
+   "tag": "h2",
+   "text": "Quick links",
+   "screen": 7.8
+  },
+  {
+   "tag": "h2",
+   "text": "Info",
+   "screen": 7.8
+  },
+  {
+   "tag": "h2",
+   "text": "Our mission",
+   "screen": 7.8
+  },
+  {
+   "tag": "h2",
+   "text": "Subscribe to our emails",
+   "screen": 8.1
+  },
+  {
+   "tag": "h2",
+   "text": "Country/region",
+   "screen": 8.3
+  }
+ ],
+ "keyPositions": {
+  "h1": {
+   "screen": 1.2,
+   "text": "Small Convertible Flex Bag"
+  },
+  "price": {
+   "screen": 7.7,
+   "text": "$245.00 CAD"
+  },
+  "addToCart": null,
+  "reviews": null,
+  "shipping": {
+   "screen": 1,
+   "text": "Free shipping available on all orders!"
+  },
+  "returns": null
+ },
+ "addToCartButtons": {
+  "total": 0,
+  "visible": 0,
+  "texts": [],
+  "soldOutButtons": 1,
+  "soldOutText": "Sold out",
+  "buyNowButtons": 1
+ },
+ "ctasFirstScreens": [
+  {
+   "text": "Skip to content",
+   "screen": 1,
+   "w": 122,
+   "h": 47,
+   "fixed": false,
+   "href": "#MainContent"
+  },
+  {
+   "text": "Lookbook",
+   "screen": 1.1,
+   "w": 87,
+   "h": 42,
+   "fixed": true,
+   "href": "/pages/lookbook-summer"
+  },
+  {
+   "text": "Log in",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/account/login"
+  },
+  {
+   "text": "Cart",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/cart"
+  },
+  {
+   "text": "Skip to product information",
+   "screen": 1.2,
+   "w": 122,
+   "h": 47,
+   "fixed": true,
+   "href": "#ProductInfo-template--15968258293849__main"
+  },
+  {
+   "text": "Decrease quantity for Small Convertible Flex Bag",
+   "screen": 1.5,
+   "w": 45,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Increase quantity for Small Convertible Flex Bag",
+   "screen": 1.5,
+   "w": 45,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Sold out",
+   "screen": 1.6,
+   "w": 345,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Buy it now",
+   "screen": 1.7,
+   "w": 345,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  }
+ ],
+ "images": {
+  "total": 57,
+  "missingAlt": 0,
+  "emptyAlt": 26,
+  "broken": [],
+  "oversized": [],
+  "sample": [
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&width=90",
+    "alt": "Dawn",
+    "w": 90,
+    "h": 22,
+    "rw": 90,
+    "rh": 22,
+    "broken": false,
+    "lazy": "eager",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n1.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 713,
+    "rh": 713,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n2.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n3.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n4.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n5.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n6.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n8.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n10.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-cappuccino-n12.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-clay-2_1.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-clay-3_6fb17082-d2ed-46f9-a530-5714b96ebe56.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-clay-4_590e232c-1974-4d7c-871e-705d0298bed2.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-clay-12_ae6c226f-224d-4c91-b2ba-91c9cb43eb04.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-denim-2_837bc7f6-0a13-4b23-bff6-34a6dd3f1e38.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-denim-3_79d0d821-844e-4a87-aa2f-da39d6d8ff84.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-denim-4_3d3d4a96-eabf-45f4-a995-6c3a1af8b051.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-denim-11_1.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-harvest-2_68faba66-9634-48cc-b8fd-12c15ef67bb6.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-harvest-3_96dd2fc1-5c07-4080-b2ff-759a5b2421dc.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-harvest-4_626adc70-e218-475b-af2b-ca2bf97ac926.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-harvest-6_f72f7f55-8e85-4312-96b4-dca59bb12dfc.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-convertible-flex-bag-harvest-12_6295c6ff-bb1d-4b31-a423-0959d5ab307d.jpg?v=1637107143&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/imgwithtext_1070x_91914dd5-dcb3-4f6b-a829-e6e75fb5813e.png?v=1642553858&width=750",
+    "alt": "A colorful collection of handbags against a blue background.",
+    "w": 550,
+    "h": 492,
+    "rw": 548,
+    "rh": 458,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/wl1.jpg?v=1637107610&width=360",
+    "alt": "Mini Woven Bag",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-naomi-gummy-n1.jpg?v=1637107770&width=360",
+    "alt": "Small Naomi",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-multicolor-2_1800x1800_10c62242-6743-4d46-a251-defa246dd195.jpg?v=1637107119&width=360",
+    "alt": "Helix",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-naomi-milky-2.jpg?v=1637107212&width=360",
+    "alt": "Naomi Bag",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   }
+  ]
+ },
+ "links": {
+  "total": 97,
+  "list": [
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#MainContent",
+    "text": "Skip to content",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Tote bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "Shoulder bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "Crossbody bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "Top handle bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "Mini bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "Sandals",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "Boots",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "Dawn",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "Cart",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#ProductInfo-template--15968258293849__main",
+    "text": "Skip to product information",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+    "text": "Small Convertible Flex Bag",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.mlouye.com/",
+    "text": "Mlouye",
+    "target": "_blank",
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+    "text": "View full details",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-woven-bag-latte?pr_prod_strat=similar&pr_rec_id=128dce778&pr_rec_pid=6920731623513&pr_ref_pid=6920727593049&pr_seq=uniform",
+    "text": "Mini Woven Bag",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-woven-bag-latte?pr_prod_strat=similar&pr_rec_id=128dce778&pr_rec_pid=6920731623513&pr_ref_pid=6920727593049&pr_seq=uniform",
+    "text": "Mini Woven Bag",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-naomi-gummy?pr_prod_strat=similar&pr_rec_id=128dce778&pr_rec_pid=6920733229145&pr_ref_pid=6920727593049&pr_seq=uniform",
+    "text": "Small Naomi",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-naomi-gummy?pr_prod_strat=similar&pr_rec_id=128dce778&pr_rec_pid=6920733229145&pr_ref_pid=6920727593049&pr_seq=uniform",
+    "text": "Small Naomi",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim?pr_prod_strat=similar&pr_rec_id=128dce778&pr_rec_pid=6920727330905&pr_ref_pid=6920727593049&pr_seq=uniform",
+    "text": "Helix",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim?pr_prod_strat=similar&pr_rec_id=128dce778&pr_rec_pid=6920727330905&pr_ref_pid=6920727593049&pr_seq=uniform",
+    "text": "Helix",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/naomi-milky?pr_prod_strat=similar&pr_rec_id=128dce778&pr_rec_pid=6920728707161&pr_ref_pid=6920727593049&pr_seq=uniform",
+    "text": "Naomi Bag",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/naomi-milky?pr_prod_strat=similar&pr_rec_id=128dce778&pr_rec_pid=6920728707161&pr_ref_pid=6920727593049&pr_seq=uniform",
+    "text": "Naomi Bag",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Bags",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shoes",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/about",
+    "text": "About",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+    "text": "Contact us",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/shipping",
+    "text": "Shipping policy",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/blogs/news",
+    "text": "Blog",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "theme-dawn-demo",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+    "text": "Powered by Shopify",
+    "target": "_blank",
+    "rel": "nofollow",
+    "visible": true
+   }
+  ]
+ },
+ "forms": [
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "HeaderCountryMobileForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/search",
+   "method": "get",
+   "id": null,
+   "fields": [
+    {
+     "name": "q",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart",
+   "method": "post",
+   "id": "cart-notification-form",
+   "fields": [
+    {
+     "name": "checkout",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart/add",
+   "method": "post",
+   "id": {},
+   "fields": [],
+   "visible": false
+  },
+  {
+   "action": "/cart/add",
+   "method": "post",
+   "id": {},
+   "fields": [
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Cappuccino Variant sold out or unavailable"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Clay Variant sold out or unavailable"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Denim Variant sold out or unavailable"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Harvest Variant sold out or unavailable"
+    },
+    {
+     "name": "quantity",
+     "type": "number",
+     "required": false,
+     "label": "Quantity"
+    },
+    {
+     "name": "add",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/contact#ContactFooter",
+   "method": "post",
+   "id": "ContactFooter",
+   "fields": [
+    {
+     "name": "contact[email]",
+     "type": "email",
+     "required": true,
+     "label": "Email"
+    },
+    {
+     "name": "commit",
+     "type": "submit",
+     "label": "Subscribe"
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "FooterCountryForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": true
+  }
+ ],
+ "layout": {
+  "viewport": "800x900",
+  "pageHeight": 6713,
+  "screens": 7.5,
+  "horizontalOverflowPx": 640,
+  "wideElements": [
+   {
+    "tag": "div",
+    "cls": "shopify-section shopify-section-group-header-group announcem",
+    "right": 1440,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "utility-bar color-background-1 gradient utility-bar--bottom-",
+    "right": 1440,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "page-width utility-bar__grid",
+    "right": 1320,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "announcement-bar",
+    "right": 1270,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "p",
+    "cls": "announcement-bar__message h5",
+    "right": 837,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "span",
+    "cls": "",
+    "right": 837,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "shopify-section shopify-section-group-header-group section-h",
+    "right": 1440,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   },
+   {
+    "tag": "sticky-header",
+    "cls": "header-wrapper color-background-1 gradient header-wrapper--b",
+    "right": 1440,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   }
+  ],
+  "smallTapTargets": 7,
+  "smallTapExamples": [
+   {
+    "text": "Mlouye",
+    "size": "52x21"
+   },
+   {
+    "text": "Mini Woven Bag",
+    "size": "269x17"
+   },
+   {
+    "text": "Small Naomi",
+    "size": "269x17"
+   },
+   {
+    "text": "Helix",
+    "size": "269x17"
+   },
+   {
+    "text": "Naomi Bag",
+    "size": "269x17"
+   },
+   {
+    "text": "theme-dawn-demo",
+    "size": "99x14"
+   },
+   {
+    "text": "Powered by Shopify",
+    "size": "103x14"
+   }
+  ],
+  "tinyTextCount": 1,
+  "tinyTextExamples": [
+   {
+    "text": "Powered by Shopify",
+    "px": 11
+   }
+  ],
+  "fixedBars": [
+   {
+    "top": 39,
+    "height": 85,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   },
+   {
+    "top": 160,
+    "height": 4692,
+    "text": "Skip to product information"
+   }
+  ],
+  "fixedBarsTotalHeight": 4777
+ },
+ "fullTiles": [
+  {
+   "file": "pages/products-small-convertible-flex-bag-cappuccino/desktop-full-01.jpg",
+   "screens": "1-2"
+  },
+  {
+   "file": "pages/products-small-convertible-flex-bag-cappuccino/desktop-full-02.jpg",
+   "screens": "3-4"
+  },
+  {
+   "file": "pages/products-small-convertible-flex-bag-cappuccino/desktop-full-03.jpg",
+   "screens": "5-6"
+  },
+  {
+   "file": "pages/products-small-convertible-flex-bag-cappuccino/desktop-full-04.jpg",
+   "screens": "7-7"
+  }
+ ],
+ "a11y": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+   "count": 5,
+   "examples": [
+    {
+     "target": "#FooterCountryLabel",
+     "html": "<h2 class=\"caption-large text-body\" id=\"FooterCountryLabel\">Country/region</h2>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fdfdfd, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast rati"
+    },
+    {
+     "target": "button[aria-controls=\"FooterCountry-country-results\"] > span",
+     "html": "<span>Canada |\n      CAD\n      $</span>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fdfdfd, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast rati"
+    },
+    {
+     "target": ".copyright__content:nth-child(1)",
+     "html": "<small class=\"copyright__content\">© 2026, <a href=\"/\" title=\"\">theme-dawn-demo</a></small>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fdfdfd, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast rati"
+    }
+   ]
+  }
+ ],
+ "network": {
+  "requests": 304,
+  "bytes": 2175335,
+  "failed": [],
+  "http4xx5xx": []
+ },
+ "detected": {
+  "apps": [],
+  "tech": [],
+  "pixels": [
+   {
+    "name": "Shopify analytics",
+    "loaded": true,
+    "hits": 0,
+    "examples": []
+   }
+  ],
+  "thirdParty": [
+   {
+    "host": "otlp-http-production.shopifysvc.com",
+    "requests": 10,
+    "bytes": 345,
+    "types": [
+     "Other",
+     "Fetch",
+     "Ping"
+    ]
+   },
+   {
+    "host": "error-analytics-sessions-production.shopifysvc.com",
+    "requests": 2,
+    "bytes": 0,
+    "types": [
+     "Other",
+     "Fetch"
+    ]
+   }
+  ]
+ },
+ "console": [],
+ "blockedBySafety": []
+}

@@ -1,0 +1,117 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/policies/refund-policy",
+ "viewport": "desktop",
+ "at": "2026-10-11T16:30:19.639Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/policies/refund-policy",
+ "title": "404 Not Found – theme-dawn-demo",
+ "eval": {
+  "status": {
+   "/policies/refund-policy": 404,
+   "/policies/privacy-policy": 404,
+   "/policies/terms-of-service": 404,
+   "/policies/shipping-policy": 404,
+   "/policies/contact-information": 404,
+   "/pages/returns": 200,
+   "/pages/shipping-returns": 200,
+   "/pages/shipping": 200
+  },
+  "pageH1": "Page not found",
+  "footerLinks": [
+   "Bags -> /collections/bags",
+   "Shoes -> /collections/shoes",
+   "Lookbook -> /pages/lookbook",
+   "About -> /pages/about",
+   "Contact us -> /pages/contact-us",
+   "Shipping policy -> /pages/shipping",
+   "Blog -> /blogs/news",
+   "Facebook -> https://facebook.com/shopify",
+   "Instagram -> http://instagram.com/shopify",
+   "YouTube -> https://www.youtube.com/shopify",
+   "TikTok -> https://tiktok.com/@shopify",
+   "X (Twitter) -> https://twitter.com/shopify",
+   "theme-dawn-demo -> /",
+   "Powered by Shopify -> https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"
+  ],
+  "headerItems": [
+   "Bags",
+   "Shop all",
+   "Tote bags",
+   "Shoulder bags",
+   "Crossbody bags",
+   "Top handle bags",
+   "Mini bags",
+   "Shoes",
+   "Sandals",
+   "Boots",
+   "Lookbook",
+   "Log in",
+   "Algeria\n              \n                DZD\n                د.ج",
+   "Australia\n              \n                AUD\n                $",
+   "Brazil\n              \n                CAD\n                $",
+   "Canada\n              \n                CAD\n                $",
+   "China\n              \n                CNY\n                ¥",
+   "Egypt\n              \n                EGP\n                ج.م",
+   "France\n              \n                EUR\n                €",
+   "Germany\n              \n                EUR\n                €",
+   "Italy\n              \n                EUR\n                €",
+   "Mexico\n              \n                CAD\n                $",
+   "New Zealand\n              \n                NZD\n                $",
+   "Nigeria\n              \n                NGN\n                ₦",
+   "Saudi Arabia\n              \n                SAR\n                ر.س",
+   "Senegal\n              \n                XOF\n                Fr",
+   "South Africa\n              \n                CAD\n                $",
+   "Spain\n              \n                EUR\n                €",
+   "Switzerland\n              \n                CHF\n                CHF",
+   "Türkiye\n              \n                CAD\n                $",
+   "United Kingdom\n              \n                GBP\n                £",
+   "United States\n              \n                USD\n                $",
+   "X (Twitter)",
+   "Facebook",
+   "Instagram",
+   "TikTok",
+   "YouTube",
+   "Cart"
+  ]
+ },
+ "overlays": [],
+ "console": [
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 404 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/policies/refund-policy"
+  },
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 404 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/policies/refund-policy"
+  },
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 404 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/policies/privacy-policy"
+  },
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 404 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/policies/terms-of-service"
+  },
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 404 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/policies/shipping-policy"
+  },
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 404 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/policies/contact-information"
+  }
+ ],
+ "blockedBySafety": []
+}

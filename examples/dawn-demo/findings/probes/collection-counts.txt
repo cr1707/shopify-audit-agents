@@ -1,0 +1,4 @@
+sale 26 4
+featured-collection-2 26 4
+bags 26 4
+frontpage 10 3

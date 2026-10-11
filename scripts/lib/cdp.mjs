@@ -141,6 +141,9 @@ export class Page {
     await this.send('Emulation.setDeviceMetricsOverride', { width: this.vp.width, height: this.vp.height, deviceScaleFactor: this.vp.deviceScaleFactor, mobile: this.vp.mobile });
     await this.send('Emulation.setUserAgentOverride', { userAgent: ua });
     if (this.vp.mobile) await this.send('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 5 });
+    // Reduced motion: themes skip fade-in and slide-in effects, so screenshots and the contrast scan see the
+    // final state instead of half-transparent elements.
+    await this.send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] });
     const ft = await this.send('Page.getFrameTree');
     this.mainFrameId = ft.frameTree?.frame?.id;
     // Safety net: requests matching a block rule never leave the browser (checkout, login, form posts).

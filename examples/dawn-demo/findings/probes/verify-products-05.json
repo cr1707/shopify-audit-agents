@@ -1,0 +1,212 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+ "viewport": "desktop",
+ "at": "2026-10-11T16:32:47.328Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+ "title": "Helix – theme-dawn-demo",
+ "eval": {
+  "source": "/products/<handle>.js for all 32 products in shop/products.json",
+  "products": 32,
+  "variants": 266,
+  "withBarcode": 26,
+  "withSku": 107,
+  "perProduct": {
+   "puff-olive-leaf": {
+    "variants": 6,
+    "withBarcode": 1,
+    "withSku": 6
+   },
+   "puff-large-latte": {
+    "variants": 3,
+    "withBarcode": 1,
+    "withSku": 3
+   },
+   "studio-denim": {
+    "variants": 2,
+    "withBarcode": 1,
+    "withSku": 2
+   },
+   "mini-sera-tote-butter": {
+    "variants": 8,
+    "withBarcode": 1,
+    "withSku": 6
+   },
+   "bo-ivy-black": {
+    "variants": 7,
+    "withBarcode": 1,
+    "withSku": 7
+   },
+   "mini-eddy-cappuccino": {
+    "variants": 7,
+    "withBarcode": 1,
+    "withSku": 6
+   },
+   "small-naomi-gummy": {
+    "variants": 5,
+    "withBarcode": 1,
+    "withSku": 5
+   },
+   "stormi-olive-leaf": {
+    "variants": 7,
+    "withBarcode": 1,
+    "withSku": 7
+   },
+   "naomi-mini-wallet-cotton-candy": {
+    "variants": 10,
+    "withBarcode": 1,
+    "withSku": 10
+   },
+   "bo-soft-strap-brown": {
+    "variants": 4,
+    "withBarcode": 1,
+    "withSku": 4
+   },
+   "mini-woven-bag-latte": {
+    "variants": 2,
+    "withBarcode": 1,
+    "withSku": 2
+   },
+   "brick-apple": {
+    "variants": 6,
+    "withBarcode": 1,
+    "withSku": 6
+   },
+   "sera-tote-pastel": {
+    "variants": 6,
+    "withBarcode": 1,
+    "withSku": 6
+   },
+   "mini-naomi-bag-harvest": {
+    "variants": 2,
+    "withBarcode": 1,
+    "withSku": 2
+   },
+   "naomi-milky": {
+    "variants": 3,
+    "withBarcode": 1,
+    "withSku": 3
+   },
+   "lantern-bag-earth": {
+    "variants": 2,
+    "withBarcode": 1,
+    "withSku": 1
+   },
+   "small-convertible-flex-bag-cappuccino": {
+    "variants": 4,
+    "withBarcode": 1,
+    "withSku": 4
+   },
+   "helix-denim": {
+    "variants": 4,
+    "withBarcode": 1,
+    "withSku": 3
+   },
+   "naomi-airpods-case-black-gray": {
+    "variants": 6,
+    "withBarcode": 1,
+    "withSku": 6
+   },
+   "wave-wallet-earth": {
+    "variants": 2,
+    "withBarcode": 1,
+    "withSku": 2
+   },
+   "mini-lantern-bag-pleated-mint": {
+    "variants": 1,
+    "withBarcode": 1,
+    "withSku": 1
+   },
+   "art-deco-cyclamen": {
+    "variants": 4,
+    "withBarcode": 1,
+    "withSku": 4
+   },
+   "business-bag-tan": {
+    "variants": 3,
+    "withBarcode": 1,
+    "withSku": 2
+   },
+   "hobo-l-latte": {
+    "variants": 3,
+    "withBarcode": 1,
+    "withSku": 3
+   },
+   "hobo-m-latte": {
+    "variants": 3,
+    "withBarcode": 1,
+    "withSku": 3
+   },
+   "hobo-xs-latte": {
+    "variants": 3,
+    "withBarcode": 1,
+    "withSku": 3
+   },
+   "louise-slide-sandal": {
+    "variants": 21,
+    "withBarcode": 0,
+    "withSku": 0
+   },
+   "otti-combat-boot": {
+    "variants": 20,
+    "withBarcode": 0,
+    "withSku": 0
+   },
+   "otti-summer-boot": {
+    "variants": 21,
+    "withBarcode": 0,
+    "withSku": 0
+   },
+   "pleated-heel-boot": {
+    "variants": 14,
+    "withBarcode": 0,
+    "withSku": 0
+   },
+   "pleated-heel-mule": {
+    "variants": 35,
+    "withBarcode": 0,
+    "withSku": 0
+   },
+   "thelma-sandal": {
+    "variants": 42,
+    "withBarcode": 0,
+    "withSku": 0
+   }
+  },
+  "samples": [
+   {
+    "handle": "puff-olive-leaf",
+    "sku": "10-039-065",
+    "barcode": "8682035409243"
+   },
+   {
+    "handle": "puff-large-latte",
+    "sku": "10-041-040",
+    "barcode": "8682035408420"
+   },
+   {
+    "handle": "studio-denim",
+    "sku": "10-011-037",
+    "barcode": "8682035406259"
+   },
+   {
+    "handle": "mini-sera-tote-butter",
+    "sku": "10-030-060",
+    "barcode": "8682035406235"
+   },
+   {
+    "handle": "bo-ivy-black",
+    "sku": "10-034-001",
+    "barcode": "8682035405917"
+   },
+   {
+    "handle": "mini-eddy-cappuccino",
+    "sku": "10-036-003",
+    "barcode": "8682035406419"
+   }
+  ]
+ },
+ "overlays": [],
+ "console": [],
+ "blockedBySafety": []
+}

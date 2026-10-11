@@ -17,8 +17,17 @@ Built for Shopify (it reads Shopify's public catalogue data and theme informatio
 
 ## Example
 
-[`examples/dawn-demo/`](examples/dawn-demo/) is a full quick-mode audit of Shopify's public
-[Dawn theme demo store](https://theme-dawn-demo.myshopify.com). Open `report.html` in a browser.
+[`examples/dawn-demo/`](examples/dawn-demo/) is a real quick-mode run on Shopify's public
+[Dawn theme demo store](https://theme-dawn-demo.myshopify.com), audited as if it were a live shop. Download
+`report.html` and open it in a browser, or read [`report.md`](examples/dawn-demo/report.md) and
+[`FIX-WITH-CLAUDE.md`](examples/dawn-demo/FIX-WITH-CLAUDE.md) on GitHub.
+
+![Example report: headline, scores and the fix-first table](examples/dawn-demo/report-preview.png)
+
+The audit trail is included. The 8 leads proposed 40 findings (`findings/areas/`). The verifiers re-checked
+each one against the evidence and the live store and rejected 13: 7 as wrong or unsupported, 6 as duplicates (`findings/verified/`,
+live probes in `findings/probes/`). The editor merged the remaining duplicates into 24 ranked findings
+(`findings.json`).
 
 ## Install
 

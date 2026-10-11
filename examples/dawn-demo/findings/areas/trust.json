@@ -1,0 +1,366 @@
+{
+ "area": "trust",
+ "agent": "lead-trust",
+ "summary": "Strengths are free shipping stated in the header on every page, a real founder story with a quality promise, and a footer email sign-up. The gaps are missing policy pages and footer links (the /policies/ URLs return 404), inconsistent shipping and returns details, and no reviews or back-in-stock option; much of this is deliberate demo content.",
+ "strengths": [
+  "A \"Free shipping available on all orders!\" bar shows at screen 1 on all 5 product pages checked",
+  "The About page names a founder, a start year (2015) and a \"quality promise\" with a take-back line",
+  "A contact page with phone, email, address and a contact form exists; a Returns page states a 14-day window and condition rules",
+  "Footer has an email sign-up and social links; none of 14 pages triggered a pop-up on phone"
+ ],
+ "findings": [
+  {
+   "id": "trust-01",
+   "title": "The footer links to \"Shipping policy\" but has no link to returns, privacy or terms, and the standard /policies/ pages return 404",
+   "severity": "high",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "operations",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/policies/refund-policy",
+     "viewport": "desktop"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ and scroll to the footer: links are Bags, Shoes, Lookbook, About, Contact us, Shipping policy, Blog",
+    "Look for Returns, Refund, Privacy or Terms: none appear",
+    "Open https://theme-dawn-demo.myshopify.com/policies/refund-policy, /policies/privacy-policy, /policies/terms-of-service and /policies/shipping-policy: each shows a 404 page"
+   ],
+   "evidence": [
+    {
+     "file": "text/index.json",
+     "note": "all four /policies/ URLs have status 404"
+    },
+    {
+     "file": "pages/home/desktop.json",
+     "note": "links list: footer has Contact us, Shipping policy (to /pages/shipping), Blog; no returns, privacy or terms link"
+    }
+   ],
+   "why_it_matters": "A shopper checking returns or privacy before buying cannot find them from any page. The returns text exists at /pages/returns but nothing in the footer or menu points to it, so it is reachable only by typing the address. Hesitant first-time buyers are the ones who look for this. Worth checking with whoever owns compliance whether the privacy and terms texts should be published.",
+   "fix": {
+    "summary": "Fill in the four store policies in Shopify admin and add footer links to Returns, Privacy and Terms.",
+    "steps": [
+     "Settings > Policies: add refund, shipping, privacy and terms texts (or use the generator)",
+     "Online Store > Navigation > Footer menu: add Returns, Privacy policy, Terms of service",
+     "Point the 'Shipping policy' link to the same text the checkout shows"
+    ],
+    "where_to_change": "Settings > Policies and Online Store > Navigation"
+   },
+   "claude_prompt": "For https://theme-dawn-demo.myshopify.com the footer has no link to returns, privacy or terms and /policies/* returns 404. Draft clear refund, shipping, privacy and terms texts for me to review with the owner (I will confirm the real terms), and list the exact footer menu changes. Work on a duplicate or unpublished theme, never edit checkout, keep the existing design system, and show the diff before publishing. Check by opening each policy URL and the footer on phone.",
+   "verify_fix": "Open the footer on phone: Returns, Privacy and Terms links are present and each opens a filled-in page; /policies/refund-policy no longer shows 404.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "policies",
+    "footer"
+   ]
+  },
+  {
+   "id": "trust-02",
+   "title": "The returns page gives a 14-day window but does not say who pays return shipping or how to start a return, while another page says returns are free",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/returns",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/shipping-returns",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/returns: it says items can be returned \"within 14 days of receiving it\", unused, with tags, in original packaging",
+    "Look for who pays postage, a returns address or steps to start a return: none",
+    "Open https://theme-dawn-demo.myshopify.com/pages/shipping-returns: it says \"Free shipping and returns available on all orders!\""
+   ],
+   "evidence": [
+    {
+     "file": "pages/pages-returns/text.txt",
+     "note": "14-day window, condition rules, processing time 5 to 7 business days; no cost or how-to-start"
+    },
+    {
+     "file": "text/pages-shipping-returns.txt",
+     "note": "\"Free shipping and returns available on all orders!\""
+    },
+    {
+     "file": "links.json",
+     "note": "broken link on /pages/returns to dawn-theme-default.myshopify.com/shopify.com (404), likely a leftover template link"
+    }
+   ],
+   "why_it_matters": "A buyer cannot tell if returning costs them money or what to do next, and two pages give different levels of detail. This raises pre-purchase doubt and support questions. No returns or guarantee line appears near Add to cart on any of the 5 product pages checked (keyPositions.returns is empty on all 5), so the reassurance is not where the decision is made.",
+   "fix": {
+    "summary": "Merge the two pages into one returns policy that states window, who pays postage, how to start, and link it from product pages.",
+    "steps": [
+     "State who pays return shipping and how to start a return (email or form)",
+     "Remove the duplicate /pages/shipping-returns or make it match",
+     "Add a one-line returns note under Add to cart on the product template",
+     "Remove or fix the broken link on /pages/returns"
+    ],
+    "where_to_change": "Online Store > Pages, and Themes > Customize > Product page"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com/pages/returns the policy lacks who pays return shipping and how to start a return, and /pages/shipping-returns says returns are free. Draft one consistent returns text from facts I provide, and a short 'Free 14-day returns' line for the product page under Add to cart. Work on a duplicate or unpublished theme, never edit checkout, keep the existing design system, and show the diff before publishing. ",
+   "verify_fix": "Returns pages agree, state cost and steps, and a returns line shows under Add to cart on phone.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "returns",
+    "product-page"
+   ]
+  },
+  {
+   "id": "trust-03",
+   "title": "Shipping times differ between pages: \"2-4 business days\" worldwide on one, \"US domestic orders within 5-10 business days\" on another",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/shipping",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/shipping-returns",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/shipping: \"We ship worldwide ... Delivery takes between 2-4 business days\"",
+    "Open https://theme-dawn-demo.myshopify.com/pages/shipping-returns: \"We ship all US domestic orders within 5-10 business days\""
+   ],
+   "evidence": [
+    {
+     "file": "pages/pages-shipping/text.txt",
+     "note": "worldwide, 2-4 business days, free on all orders"
+    },
+    {
+     "file": "text/pages-shipping-returns.txt",
+     "note": "US domestic, 5-10 business days"
+    }
+   ],
+   "why_it_matters": "A shopper reading both gets two delivery promises, which causes doubt before buying and \"where is my order\" contacts after. The footer 'Shipping policy' link opens only the first page. This looks like leftover template text on a demo store, so treat it as deliberate placeholder content, but a real store would need one source of truth.",
+   "fix": {
+    "summary": "Keep one shipping page with real times per region and delete or redirect the other.",
+    "steps": [
+     "Decide the real delivery times by region",
+     "Edit /pages/shipping and remove /pages/shipping-returns"
+    ],
+    "where_to_change": "Online Store > Pages"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com two pages give different delivery times (2-4 vs 5-10 business days). Help me write one shipping page with a table by region from times I confirm, and a redirect from the old page. Work on a duplicate or unpublished theme, never edit checkout, keep the existing design system, and show the diff before publishing. ",
+   "verify_fix": "Only one shipping page exists and its times match checkout.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "shipping",
+    "consistency"
+   ]
+  },
+  {
+   "id": "trust-04",
+   "title": "None of the 5 product pages checked shows a star rating, review count or customer review",
+   "severity": "medium",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "marketing",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/helix-denim on a phone and scroll the whole page (about 5 screens)",
+    "Look near the price and below the description for stars or reviews: none",
+    "Repeat on /products/louise-slide-sandal: none"
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-helix-denim/phone.json",
+     "note": "keyPositions.reviews is null; product.rating and reviewCount are null"
+    },
+    {
+     "file": "pages/products-louise-slide-sandal/phone.json",
+     "note": "same"
+    },
+    {
+     "file": "stack.json",
+     "note": "apps: [] so no review app detected"
+    }
+   ],
+   "why_it_matters": "Items cost 119 to 615 CAD (median 460), so buyers weigh the purchase. With no ratings on the page and none in structured data, shoppers have no outside voice and Google cannot show stars in results. The only proof on the site are two quotes on the home page. The product pages also say \"This is a demonstration store\", so the absence may be deliberate for a demo.",
+   "fix": {
+    "summary": "Add a reviews app or section and show the rating beside the price.",
+    "steps": [
+     "Install a review tool and send review requests after delivery",
+     "Show rating and count under the product title",
+     "Make sure rating appears in product structured data"
+    ],
+    "where_to_change": "Shopify App Store, then Themes > Customize > Product page"
+   },
+   "claude_prompt": "For https://theme-dawn-demo.myshopify.com product pages show no reviews. Recommend a review setup for a Dawn theme with a rating shown beside the price, and write the post-purchase review request email copy. Work on a duplicate or unpublished theme, never edit checkout, keep the existing design system, and show the diff before publishing. ",
+   "verify_fix": "Product pages show a star rating and count near the price on phone, and the structured data contains aggregateRating.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "reviews",
+    "product-page"
+   ]
+  },
+  {
+   "id": "trust-05",
+   "title": "The 3 sold-out products among 5 checked offer no back-in-stock alert, only a disabled \"Sold out\" button",
+   "severity": "medium",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/studio-denim",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/studio-denim",
+    "The button reads \"Sold out\" and \"Variant sold out or unavailable\" shows; there is no email field or notify option",
+    "Repeat on /products/mini-naomi-bag-harvest and /products/small-convertible-flex-bag-cappuccino"
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-studio-denim/text.txt",
+     "note": "lines 16-25: \"Sold out\", \"Variant sold out or unavailable\", no notify option"
+    },
+    {
+     "file": "INDEX.md",
+     "note": "collector note listing the 3 sold-out pages"
+    }
+   ],
+   "why_it_matters": "A shopper who wanted a sold-out bag has nothing to do but leave, and the store loses the chance to email them when it returns. The home page itself shows a \"Back in stock!\" section, so shoppers are told restocks happen but cannot ask to be told.",
+   "fix": {
+    "summary": "Add a notify-me form on sold-out variants.",
+    "steps": [
+     "Install a back-in-stock app or use the email tool's form",
+     "Show it only when the variant is unavailable"
+    ],
+    "where_to_change": "Shopify App Store or the email platform; theme product template"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com sold-out product pages have no back-in-stock capture. Propose a minimal notify-me block in the Dawn product template that shows only for unavailable variants and posts to the store's email tool; show the diff first. Work on a duplicate or unpublished theme, never edit checkout, keep the existing design system, and show the diff before publishing. Never submit real forms during testing.",
+   "verify_fix": "On a sold-out product a notify form appears and a test address receives the alert after restock.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "retention",
+    "sold-out"
+   ]
+  },
+  {
+   "id": "trust-06",
+   "title": "The contact page shows template placeholders as business details: \"Your Business Name Inc.\", \"yourbusinessemail@address.com\", VAT \"FRXX999999999\"",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "operations",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/contact-us",
+    "Read the block above the contact form"
+   ],
+   "evidence": [
+    {
+     "file": "pages/pages-contact-us/text.txt",
+     "note": "Trade name, phone +1 123-456-7891, email, address, VAT and trade numbers are placeholder values"
+    }
+   ],
+   "why_it_matters": "A shopper wanting to check who runs the store or email them would get an invalid address and a fake company name; the brand elsewhere is \"Mlouye\" and the store name is \"theme-dawn-demo\". Clearly deliberate demo content, so low severity. A real store should show a real, monitored email and legal name.",
+   "fix": {
+    "summary": "Replace placeholders with real identity and support details, and state a reply time.",
+    "steps": [
+     "Edit the page text",
+     "Set the store email in Settings > Store details"
+    ],
+    "where_to_change": "Online Store > Pages > Contact us"
+   },
+   "claude_prompt": "Rewrite the contact page of https://theme-dawn-demo.myshopify.com with real business details I will supply and a promised reply time. Work on a duplicate or unpublished theme, never edit checkout, keep the existing design system, and show the diff before publishing. ",
+   "verify_fix": "Contact page shows a working email, real business name and address.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "identity",
+    "contact"
+   ]
+  },
+  {
+   "id": "trust-07",
+   "title": "Welcome and abandoned-cart emails could not be observed from outside; the footer sign-up states no offer",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "to-test",
+   "owner": "email",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Scroll to the footer: \"Subscribe to our emails\" with an Email field and Subscribe button, no incentive or frequency stated",
+    "No pop-up appeared on phone on any of the 14 pages"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/desktop.json",
+     "note": "forms: ContactFooter email subscribe form, visible"
+    },
+    {
+     "file": "INDEX.md",
+     "note": "0 overlays on phone for all pages"
+    }
+   ],
+   "why_it_matters": "Email is the only capture point found, and what happens after sign-up cannot be seen. Without a welcome or abandoned-cart email, first-time visitors who leave are not brought back.",
+   "fix": {
+    "summary": "Test the flows with a test inbox, then state the sign-up benefit in the footer.",
+    "steps": [
+     "Run the manual plan",
+     "Add a line such as what subscribers get"
+    ],
+    "where_to_change": "Email tool and footer section in the theme editor"
+   },
+   "claude_prompt": "Give me a checklist to test welcome, abandoned-checkout and browse emails on https://theme-dawn-demo.myshopify.com using a test inbox, and a table to log what arrives at 24 and 72 hours. This is a human test; do not submit forms yourself.",
+   "verify_fix": "Test inbox receives a welcome email within minutes and an abandoned-checkout email within the timing set.",
+   "manual_check": "Use a test address: subscribe in the footer, note the welcome email. Add a product to cart, start checkout up to the email step, leave, and record every email received after 24 and 72 hours (sender, subject, offer, timing).",
+   "intentional_possible": false,
+   "tags": [
+    "email",
+    "retention"
+   ]
+  }
+ ],
+ "handoffs": [
+  {
+   "to": "copy-consistency",
+   "note": "Delivery time conflict: /pages/shipping \"2-4 business days\" vs /pages/shipping-returns \"5-10 business days\"; brand name Mlouye vs store name theme-dawn-demo."
+  }
+ ]
+}

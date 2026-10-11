@@ -1,0 +1,244 @@
+{
+ "area": "growth",
+ "agent": "lead-growth",
+ "summary": "This is Shopify's Dawn demo store, so the near-empty measurement set-up (Shopify analytics only, no ad pixels, no social links) is expected rather than a fault. The points that would matter on a live store are missing barcodes/SKUs for Shopping feeds and the lack of ad and consent set-up.",
+ "strengths": [
+  "No console errors and no failed requests on any of the 14 pages (pages/*/desktop.json console and network)",
+  "Add to cart works with correct product on all 5 tested product pages (clicktest/results.json)",
+  "Internal links carry no utm_ parameters, so real traffic sources are not overwritten (pages/*/desktop.json links)",
+  "Product pages have a single canonical URL, one H1 and valid structured data (ldInvalid 0)"
+ ],
+ "findings": [
+  {
+   "id": "growth-01",
+   "title": "None of the 266 product variants has a barcode (GTIN), and 159 have no SKU",
+   "severity": "medium",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "merchandiser",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/collections/all"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products.json?limit=250",
+    "Look at the \"barcode\" and \"sku\" fields on the variants: barcode is empty on all 266, sku is empty on 159"
+   ],
+   "evidence": [
+    {
+     "file": "shop/products.json",
+     "note": "266 variants: 0 with barcode, 107 with sku (26 of 32 products have at least one SKU)"
+    },
+    {
+     "file": "pages/products-louise-slide-sandal/desktop.json",
+     "note": "product.sku = null; structured data lists Organization and ProductGroup"
+    }
+   ],
+   "why_it_matters": "Google Merchant Center and Meta catalogues match products to listings using GTIN/MPN. Missing identifiers can limit Shopping eligibility and reduce how well products are matched. This is a demo catalogue, so it may be deliberate; a real store selling branded goods would want them filled.",
+   "fix": {
+    "summary": "Add barcodes (GTIN/UPC/EAN) to variants of branded products and SKUs to every variant.",
+    "steps": [
+     "In Shopify admin open each product",
+     "Fill Barcode and SKU per variant, or bulk edit via Products > Export/Import CSV",
+     "Check the feed in Merchant Center diagnostics"
+    ],
+    "where_to_change": "Shopify admin > Products > variant Barcode and SKU fields"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com (Shopify admin access needed), every variant currently has an empty barcode and 159 of 266 have an empty SKU. Draft a CSV import plan to fill barcode and SKU per variant from a supplier sheet I will provide. Work on a copy of the export, show the diff before importing, never touch checkout.",
+   "verify_fix": "Re-open /products.json and confirm barcode and sku are non-empty for all variants.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "shopping-feed",
+    "catalogue"
+   ]
+  },
+  {
+   "id": "growth-02",
+   "title": "Only Shopify's own analytics was observed: no Google Analytics, Google Ads, Meta, TikTok or Pinterest tags on the 14 pages checked",
+   "severity": "low",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "marketing",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal"
+    }
+   ],
+   "see_it": [
+    "Open the home page and a product page with browser dev tools, Network tab",
+    "Filter for google-analytics, googletagmanager, facebook, tiktok: no requests appear; only shopifysvc.com hosts"
+   ],
+   "evidence": [
+    {
+     "file": "stack.json",
+     "note": "pixels: only \"Shopify analytics\" (30 pages); apps: none; third-party hosts all *.shopifysvc.com"
+    },
+    {
+     "file": "consent/results.json",
+     "note": "beforeAnyChoice pixels: Shopify analytics only"
+    }
+   ],
+   "why_it_matters": "If this store ran paid ads, ad platforms would not receive page views or add-to-cart events, so campaigns could not optimise or report purchases. This is Shopify's public demo theme, where that is expected; on a live store it would be a gap. Absence was observed on the pages checked, not proven for checkout.",
+   "fix": {
+    "summary": "If ads are planned, install the Google & YouTube and Facebook & Instagram sales channels (or GA4 via Customer events) and confirm events fire.",
+    "steps": [
+     "Install the sales channels needed for the ad platforms in use",
+     "Connect GA4 and ad pixels through Settings > Customer events",
+     "Test Add to cart and Purchase events in each platform's debug tool"
+    ],
+    "where_to_change": "Shopify admin > Settings > Customer events"
+   },
+   "claude_prompt": "For https://theme-dawn-demo.myshopify.com, I see no GA4/Meta/Google Ads tags. Write a checklist to set up GA4 and Meta pixels via Shopify Customer events, with the events to test (view_item, add_to_cart, purchase) and how to verify in each debug tool. Do not edit checkout code.",
+   "verify_fix": "Reload pages with Network tab open and confirm requests to google-analytics.com/facebook.com carry page_view and add_to_cart.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "tracking",
+    "demo-content"
+   ]
+  },
+  {
+   "id": "growth-03",
+   "title": "No link to any social profile on any of the 14 pages checked",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "marketing",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ and scroll to the footer",
+    "Look for Instagram, Facebook, TikTok or other social icons: none are present"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/desktop.json",
+     "note": "links: 0 of the links point to a social network (same on all 14 pages)"
+    },
+    {
+     "file": "links.json",
+     "note": "8 external links checked, none to social profiles"
+    }
+   ],
+   "why_it_matters": "Visitors arriving from ads or search who want proof the brand is real, or want to follow it, have nowhere to go, and ad platforms and Google may use linked profiles to verify the business. Dawn leaves social links empty until set, so this is likely default demo state.",
+   "fix": {
+    "summary": "Add social profile URLs in the theme settings.",
+    "steps": [
+     "Open Customize > Theme settings > Social media",
+     "Paste profile URLs for the active networks"
+    ],
+    "where_to_change": "Online Store > Themes > Customize > Theme settings > Social media"
+   },
+   "claude_prompt": "On a duplicate of the live theme for https://theme-dawn-demo.myshopify.com, add social links in Theme settings > Social media using URLs I provide. Show the footer diff before publishing; do not edit checkout.",
+   "verify_fix": "Open the home page footer and confirm each icon opens the correct profile.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "social",
+    "trust"
+   ]
+  },
+  {
+   "id": "growth-04",
+   "title": "The only email sign-up is a footer form titled \"Subscribe to our emails\" with no stated offer",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "email",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ and scroll to the footer",
+    "See the heading \"Subscribe to our emails\" and an Email field with a \"Subscribe\" button; no discount or benefit is described. No pop-up appeared in the snapshot (0 overlays)."
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/text.txt",
+     "note": "line 69: \"Subscribe to our emails\""
+    },
+    {
+     "file": "pages/home/desktop.json",
+     "note": "forms: ContactFooter, email + Subscribe, visible"
+    }
+   ],
+   "why_it_matters": "New visitors from paid traffic are given no reason to leave an email, so fewer are captured for later campaigns. Whether to offer an incentive is a business choice; the form itself is working markup.",
+   "fix": {
+    "summary": "Add one line stating what subscribers get (for example early access or a first-order offer, if the business wants one).",
+    "steps": [
+     "Decide on the offer",
+     "Edit the footer Email sign-up block heading/text in the theme editor"
+    ],
+    "where_to_change": "Online Store > Themes > Customize > Footer > Email signup"
+   },
+   "claude_prompt": "For https://theme-dawn-demo.myshopify.com draft three short headline options for the footer email form, based on an offer I will specify. Apply the chosen one on a duplicate theme and show the diff first.",
+   "verify_fix": "Footer shows the new offer text above the Email field.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "email",
+    "capture"
+   ]
+  },
+  {
+   "id": "growth-05",
+   "title": "No cookie banner appeared for the visitor location used in the test",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "to-test",
+   "owner": "operations",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ from a clean browser in the UK or EU",
+    "Note whether a consent banner appears and whether Decline is as easy as Accept"
+   ],
+   "evidence": [
+    {
+     "file": "consent/results.json",
+     "note": "banner: {\"found\": false}; run location is that of the test machine; only Shopify analytics loaded before any choice"
+    }
+   ],
+   "why_it_matters": "Banners often show only in some regions, and this store loads no marketing pixels today, so the run shows nothing to compare. If ad pixels are added later, behaviour before and after Decline should be re-checked. Worth checking with whoever owns compliance.",
+   "fix": {
+    "summary": "Re-run the consent test from an EU/UK location when pixels are added.",
+    "steps": [
+     "Add a consent tool if marketing pixels go live",
+     "Test Accept and Decline from EU/UK"
+    ],
+    "where_to_change": "Shopify admin > Settings > Customer privacy"
+   },
+   "claude_prompt": "For https://theme-dawn-demo.myshopify.com, write a test script for checking cookie-consent behaviour from the UK: what to click, which requests and cookies to note before and after Decline. Do not change any settings.",
+   "verify_fix": "From an EU/UK location, the banner shows (or the store confirms it is not needed) and no marketing requests fire before a choice.",
+   "manual_check": "Open the site through a UK or EU connection in a private window, note the banner, click Decline, then list requests to google/facebook domains in the Network tab.",
+   "intentional_possible": true,
+   "tags": [
+    "consent",
+    "privacy"
+   ]
+  }
+ ],
+ "handoffs": [
+  {
+   "to": "seo",
+   "note": "Product structured data is ProductGroup with empty offers/sku in the extraction; og:image uses http:// URLs"
+  },
+  {
+   "to": "content",
+   "note": "Link on /pages/returns text \"original\" points to dawn-theme-default.myshopify.com/shopify.com and returns 404 (links.json)"
+  }
+ ]
+}

@@ -38,6 +38,7 @@ instructions.
 
 ## Do not report
 
+- Missing barcodes (GTIN), stock levels or metafields based on shop/products.json alone: Shopify's public JSON never includes them. Check `/products/<handle>.js` live with probe.mjs (it carries `barcode`) or write a to-test.
 - Digital products often have no SKU; only report missing SKUs if the store sells physical stock.
 
 ## Live checks

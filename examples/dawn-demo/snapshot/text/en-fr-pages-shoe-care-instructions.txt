@@ -1,0 +1,6 @@
+URL: https://theme-dawn-demo.myshopify.com/en-fr/pages/shoe-care-instructions
+TITLE: Shoe Care Instructions
+ &ndash; theme-dawn-demo
+
+Shoe Care Instructions
+ Use a soft damp cloth and a drop of mild soap to remove any haze. Air dry.

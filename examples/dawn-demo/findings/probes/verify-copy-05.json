@@ -1,0 +1,117 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+ "viewport": "phone",
+ "at": "2026-10-11T16:31:55.679Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+ "title": "Louise Slide Sandal – theme-dawn-demo",
+ "eval": {
+  "tabs": [
+   {
+    "summary": "Materials",
+    "content": "100% Italian leather upper. Leather insole, lining, outsole."
+   },
+   {
+    "summary": "Shipping & Returns",
+    "content": "Free shipping and returns available on all orders! We ship all US domestic orders within 5-10 business days!"
+   },
+   {
+    "summary": "Care Instructions",
+    "content": "Use a soft damp cloth and a drop of mild soap to remove any haze. Air dry."
+   }
+  ],
+  "sizeMentions": [],
+  "sizeLinks": [],
+  "checkedOptions": [
+   "Gummy",
+   "40"
+  ],
+  "optionInputs": [
+   {
+    "value": "Buttermilk",
+    "name": "Color-1\n",
+    "unavailable": true
+   },
+   {
+    "value": "Gummy",
+    "name": "Color-1\n",
+    "unavailable": false
+   },
+   {
+    "value": "White",
+    "name": "Color-1\n",
+    "unavailable": false
+   },
+   {
+    "value": "35",
+    "name": "Size-2\n",
+    "unavailable": true
+   },
+   {
+    "value": "36",
+    "name": "Size-2\n",
+    "unavailable": true
+   },
+   {
+    "value": "37",
+    "name": "Size-2\n",
+    "unavailable": true
+   },
+   {
+    "value": "38",
+    "name": "Size-2\n",
+    "unavailable": true
+   },
+   {
+    "value": "39",
+    "name": "Size-2\n",
+    "unavailable": true
+   },
+   {
+    "value": "40",
+    "name": "Size-2\n",
+    "unavailable": false
+   },
+   {
+    "value": "41",
+    "name": "Size-2\n",
+    "unavailable": true
+   }
+  ],
+  "addToCartPageTopPx": [
+   953
+  ],
+  "viewportHeight": 844,
+  "scrolledTo": 2459,
+  "addToCartAfterScroll": [
+   {
+    "text": "Add to cart",
+    "viewportTop": -1506,
+    "inViewport": false,
+    "position": "relative"
+   }
+  ],
+  "fixedOrStickyVisibleAfterScroll": [
+   {
+    "tag": "PRODUCT-MODAL",
+    "cls": "product-media-modal media-modal",
+    "text": ""
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "product-media-modal__toggle",
+    "text": ""
+   }
+  ]
+ },
+ "overlays": [],
+ "console": [
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 401 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens"
+  }
+ ],
+ "blockedBySafety": []
+}

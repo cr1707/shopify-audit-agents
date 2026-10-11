@@ -1,0 +1,1107 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/cart",
+ "viewport": "phone",
+ "slug": "cart",
+ "loadOk": true,
+ "loadMs": 659,
+ "firstScreen": "pages/cart/phone-first.jpg",
+ "overlays": [],
+ "scroll": {
+  "height": 2212,
+  "screens": 2.6
+ },
+ "title": "Your Shopping Cart – theme-dawn-demo",
+ "lang": "en",
+ "seo": {
+  "description": null,
+  "canonical": "https://theme-dawn-demo.myshopify.com/cart",
+  "robots": null,
+  "ogTitle": "Your Shopping Cart",
+  "ogImage": "http://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?height=628&pad_color=ffffff&v=1637111732&width=1200",
+  "h1Count": 2,
+  "hreflang": 3,
+  "structuredData": [
+   "Organization"
+  ],
+  "ldInvalid": 0
+ },
+ "product": null,
+ "shopify": {
+  "isShopify": true,
+  "shop": "theme-dawn-demo.myshopify.com",
+  "theme": {
+   "name": "Dawn",
+   "id": 129690763353,
+   "schema": "Dawn",
+   "version": "15.0.0"
+  },
+  "currency": "CAD",
+  "locale": "en",
+  "pageType": "cart"
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Your cart is empty",
+   "screen": 1.2
+  },
+  {
+   "tag": "h2",
+   "text": "Have an account?",
+   "screen": 1.4
+  },
+  {
+   "tag": "h2",
+   "text": "You may also like",
+   "screen": 1.5
+  },
+  {
+   "tag": "h3",
+   "text": "Art Deco",
+   "screen": 1.8
+  },
+  {
+   "tag": "h3",
+   "text": "Bo Ivy",
+   "screen": 1.8
+  },
+  {
+   "tag": "h3",
+   "text": "Bo Soft Strap",
+   "screen": 2.2
+  },
+  {
+   "tag": "h3",
+   "text": "Brick",
+   "screen": 2.2
+  },
+  {
+   "tag": "h2",
+   "text": "Quick links",
+   "screen": 2.4
+  },
+  {
+   "tag": "h2",
+   "text": "Info",
+   "screen": 2.7
+  },
+  {
+   "tag": "h2",
+   "text": "Our mission",
+   "screen": 3
+  },
+  {
+   "tag": "h2",
+   "text": "Subscribe to our emails",
+   "screen": 3.1
+  },
+  {
+   "tag": "h2",
+   "text": "Country/region",
+   "screen": 3.4
+  }
+ ],
+ "keyPositions": {
+  "h1": {
+   "screen": 1.2,
+   "text": "Your cart is empty"
+  },
+  "price": {
+   "screen": 1.9,
+   "text": "$390.00 CAD"
+  },
+  "addToCart": null,
+  "reviews": null,
+  "shipping": {
+   "screen": 1,
+   "text": "Free shipping available on all orders!"
+  },
+  "returns": null
+ },
+ "addToCartButtons": {
+  "total": 0,
+  "visible": 0,
+  "texts": [],
+  "soldOutButtons": 0,
+  "soldOutText": null,
+  "buyNowButtons": 0
+ },
+ "ctasFirstScreens": [
+  {
+   "text": "Skip to content",
+   "screen": 1,
+   "w": 122,
+   "h": 47,
+   "fixed": false,
+   "href": "#MainContent"
+  },
+  {
+   "text": "Cart",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/cart"
+  },
+  {
+   "text": "Continue shopping",
+   "screen": 1.3,
+   "w": 195,
+   "h": 47,
+   "fixed": false,
+   "href": "/collections/all"
+  },
+  {
+   "text": "Art Deco",
+   "screen": 1.8,
+   "w": 178,
+   "h": 16,
+   "fixed": false,
+   "href": "/products/art-deco-cyclamen"
+  },
+  {
+   "text": "Bo Ivy",
+   "screen": 1.8,
+   "w": 178,
+   "h": 16,
+   "fixed": false,
+   "href": "/products/bo-ivy-black"
+  }
+ ],
+ "images": {
+  "total": 5,
+  "missingAlt": 0,
+  "emptyAlt": 0,
+  "broken": [],
+  "oversized": [],
+  "sample": [
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&width=180",
+    "alt": "Dawn",
+    "w": 90,
+    "h": 22,
+    "rw": 90,
+    "rh": 22,
+    "broken": false,
+    "lazy": "eager",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-art-deco-cyclamen-1_ec8e69b6-92ea-4c48-b8b6-34601cf3c070.jpg?v=1637106934&width=360",
+    "alt": "Art Deco",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-bo-ivy-emerald-1_73c3987e-5ec7-4e72-879a-2ba2e560648f.jpg?v=1637107948&width=360",
+    "alt": "Bo Ivy",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-bo-soft-strap-brown-1.jpg?v=1637107682&width=360",
+    "alt": "Bo Soft Strap",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-brick-oil-yellow-1.jpg?v=1637107420&width=360",
+    "alt": "Brick",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   }
+  ]
+ },
+ "links": {
+  "total": 97,
+  "list": [
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#MainContent",
+    "text": "Skip to content",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "Dawn",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Tote bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "Shoulder bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "Crossbody bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "Top handle bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "Mini bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "Sandals",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "Boots",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "Cart",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/all",
+    "text": "Continue shopping",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/all",
+    "text": "Continue shopping",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/art-deco-cyclamen",
+    "text": "Art Deco",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/art-deco-cyclamen",
+    "text": "Art Deco",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/bo-ivy-black",
+    "text": "Bo Ivy",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/bo-ivy-black",
+    "text": "Bo Ivy",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/bo-soft-strap-brown",
+    "text": "Bo Soft Strap",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/bo-soft-strap-brown",
+    "text": "Bo Soft Strap",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/brick-apple",
+    "text": "Brick",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/brick-apple",
+    "text": "Brick",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/all",
+    "text": "View all",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Bags",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shoes",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/about",
+    "text": "About",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+    "text": "Contact us",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/shipping",
+    "text": "Shipping policy",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/blogs/news",
+    "text": "Blog",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "theme-dawn-demo",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+    "text": "Powered by Shopify",
+    "target": "_blank",
+    "rel": "nofollow",
+    "visible": true
+   }
+  ]
+ },
+ "forms": [
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "HeaderCountryMobileForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/search",
+   "method": "get",
+   "id": null,
+   "fields": [
+    {
+     "name": "q",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart",
+   "method": "post",
+   "id": "cart-notification-form",
+   "fields": [
+    {
+     "name": "checkout",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart",
+   "method": "post",
+   "id": "cart",
+   "fields": [
+    {
+     "name": "checkout",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/contact#ContactFooter",
+   "method": "post",
+   "id": "ContactFooter",
+   "fields": [
+    {
+     "name": "contact[email]",
+     "type": "email",
+     "required": true,
+     "label": "Email"
+    },
+    {
+     "name": "commit",
+     "type": "submit",
+     "label": "Subscribe"
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "FooterCountryForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": true
+  }
+ ],
+ "layout": {
+  "viewport": "390x844",
+  "pageHeight": 2212,
+  "screens": 2.6,
+  "horizontalOverflowPx": 0,
+  "wideElements": [],
+  "smallTapTargets": 6,
+  "smallTapExamples": [
+   {
+    "text": "Art Deco",
+    "size": "178x16"
+   },
+   {
+    "text": "Bo Ivy",
+    "size": "178x16"
+   },
+   {
+    "text": "Bo Soft Strap",
+    "size": "178x16"
+   },
+   {
+    "text": "Brick",
+    "size": "178x16"
+   },
+   {
+    "text": "theme-dawn-demo",
+    "size": "99x14"
+   },
+   {
+    "text": "Powered by Shopify",
+    "size": "103x14"
+   }
+  ],
+  "tinyTextCount": 1,
+  "tinyTextExamples": [
+   {
+    "text": "Powered by Shopify",
+    "px": 11
+   }
+  ],
+  "fixedBars": [
+   {
+    "top": 39,
+    "height": 65,
+    "text": "Cart"
+   }
+  ],
+  "fixedBarsTotalHeight": 65
+ },
+ "fullTiles": [
+  {
+   "file": "pages/cart/phone-full-01.jpg",
+   "screens": "1-3"
+  }
+ ],
+ "network": {
+  "requests": 252,
+  "bytes": 1350251,
+  "failed": [],
+  "http4xx5xx": [
+   {
+    "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens",
+    "status": 401
+   }
+  ]
+ },
+ "detected": {
+  "apps": [],
+  "tech": [],
+  "pixels": [
+   {
+    "name": "Shopify analytics",
+    "loaded": true,
+    "hits": 0,
+    "examples": []
+   }
+  ],
+  "thirdParty": [
+   {
+    "host": "otlp-http-production.shopifysvc.com",
+    "requests": 6,
+    "bytes": 201,
+    "types": [
+     "Other",
+     "Fetch",
+     "Ping"
+    ]
+   }
+  ]
+ },
+ "console": [
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 401 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens"
+  }
+ ],
+ "blockedBySafety": []
+}

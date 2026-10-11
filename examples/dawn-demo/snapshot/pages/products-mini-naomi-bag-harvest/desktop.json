@@ -1,0 +1,1424 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest",
+ "viewport": "desktop",
+ "slug": "products-mini-naomi-bag-harvest",
+ "loadOk": true,
+ "loadMs": 722,
+ "firstScreen": "pages/products-mini-naomi-bag-harvest/desktop-first.jpg",
+ "overlays": [],
+ "scroll": {
+  "height": 4544,
+  "screens": 5
+ },
+ "title": "Mini Naomi Bag – theme-dawn-demo",
+ "lang": "en",
+ "seo": {
+  "description": "Mlouye Naomi Belt Bag is perfectly proportioned for your essentials like a big screen phone, cardholder, and lipstick. You can wear it around your waist or slung over one shoulder, and it comes with an extra shoulder strap, so you can wear it crossbody.",
+  "canonical": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest",
+  "robots": null,
+  "ogTitle": "Mini Naomi Bag",
+  "ogImage": "http://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-1.jpg?v=1637107230",
+  "h1Count": 1,
+  "hreflang": 3,
+  "structuredData": [
+   "Organization",
+   "ProductGroup"
+  ],
+  "ldInvalid": 0
+ },
+ "product": {
+  "name": "Mini Naomi Bag",
+  "sku": null,
+  "brand": "Mlouye",
+  "rating": null,
+  "reviewCount": null,
+  "offers": []
+ },
+ "shopify": {
+  "isShopify": true,
+  "shop": "theme-dawn-demo.myshopify.com",
+  "theme": {
+   "name": "Dawn",
+   "id": 129690763353,
+   "schema": "Dawn",
+   "version": "15.0.0"
+  },
+  "currency": "CAD",
+  "locale": "en",
+  "pageType": "product",
+  "productId": 6920728805465
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Mini Naomi Bag",
+   "screen": 1.2
+  },
+  {
+   "tag": "h2",
+   "text": "Materials",
+   "screen": 2
+  },
+  {
+   "tag": "h2",
+   "text": "Shipping & Returns",
+   "screen": 2
+  },
+  {
+   "tag": "h2",
+   "text": "Dimensions",
+   "screen": 2.1
+  },
+  {
+   "tag": "h2",
+   "text": "Care Instructions",
+   "screen": 2.1
+  },
+  {
+   "tag": "h2",
+   "text": "A new kind of bag.",
+   "screen": 4.1
+  },
+  {
+   "tag": "h3",
+   "text": "Free Shipping",
+   "screen": 4.6
+  },
+  {
+   "tag": "h3",
+   "text": "Hassle-Free Exchanges",
+   "screen": 4.6
+  },
+  {
+   "tag": "h2",
+   "text": "You may also like",
+   "screen": 4.8
+  },
+  {
+   "tag": "h3",
+   "text": "Naomi Bag",
+   "screen": 5.2
+  },
+  {
+   "tag": "h3",
+   "text": "Small Naomi",
+   "screen": 5.2
+  },
+  {
+   "tag": "h3",
+   "text": "Naomi Mini Wallet",
+   "screen": 5.2
+  },
+  {
+   "tag": "h3",
+   "text": "Mini Woven Bag",
+   "screen": 5.2
+  },
+  {
+   "tag": "h2",
+   "text": "Quick links",
+   "screen": 5.4
+  },
+  {
+   "tag": "h2",
+   "text": "Info",
+   "screen": 5.4
+  },
+  {
+   "tag": "h2",
+   "text": "Our mission",
+   "screen": 5.4
+  },
+  {
+   "tag": "h2",
+   "text": "Subscribe to our emails",
+   "screen": 5.6
+  },
+  {
+   "tag": "h2",
+   "text": "Country/region",
+   "screen": 5.9
+  }
+ ],
+ "keyPositions": {
+  "h1": {
+   "screen": 1.2,
+   "text": "Mini Naomi Bag"
+  },
+  "price": {
+   "screen": 5.2,
+   "text": "$525.00 CAD"
+  },
+  "addToCart": null,
+  "reviews": null,
+  "shipping": {
+   "screen": 1,
+   "text": "Free shipping available on all orders!"
+  },
+  "returns": null
+ },
+ "addToCartButtons": {
+  "total": 0,
+  "visible": 0,
+  "texts": [],
+  "soldOutButtons": 1,
+  "soldOutText": "Sold out",
+  "buyNowButtons": 1
+ },
+ "ctasFirstScreens": [
+  {
+   "text": "Skip to content",
+   "screen": 1,
+   "w": 122,
+   "h": 47,
+   "fixed": false,
+   "href": "#MainContent"
+  },
+  {
+   "text": "Lookbook",
+   "screen": 1.1,
+   "w": 87,
+   "h": 42,
+   "fixed": true,
+   "href": "/pages/lookbook-summer"
+  },
+  {
+   "text": "Log in",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/account/login"
+  },
+  {
+   "text": "Cart",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/cart"
+  },
+  {
+   "text": "Skip to product information",
+   "screen": 1.2,
+   "w": 122,
+   "h": 47,
+   "fixed": true,
+   "href": "#ProductInfo-template--15968258293849__main"
+  },
+  {
+   "text": "Decrease quantity for Mini Naomi Bag",
+   "screen": 1.4,
+   "w": 45,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Increase quantity for Mini Naomi Bag",
+   "screen": 1.4,
+   "w": 45,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Sold out",
+   "screen": 1.5,
+   "w": 345,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Buy it now",
+   "screen": 1.6,
+   "w": 345,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  }
+ ],
+ "images": {
+  "total": 33,
+  "missingAlt": 0,
+  "emptyAlt": 15,
+  "broken": [],
+  "oversized": [],
+  "sample": [
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&width=90",
+    "alt": "Dawn",
+    "w": 90,
+    "h": 22,
+    "rw": 90,
+    "rh": 22,
+    "broken": false,
+    "lazy": "eager",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-1.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 713,
+    "rh": 713,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-2.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-3.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-4.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-5.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-6.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-7.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-8.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-naomi-bag-harvest-9.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/nbbp2_aa216480-61e3-4950-817c-e8b4cb27bd14.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/nbbp3_afe99ad1-a5aa-4a4d-85eb-af6bd002229a.jpg?v=1637107230&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/imgwithtext_1070x_91914dd5-dcb3-4f6b-a829-e6e75fb5813e.png?v=1642553858&width=750",
+    "alt": "A colorful collection of handbags against a blue background.",
+    "w": 550,
+    "h": 492,
+    "rw": 548,
+    "rh": 458,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-naomi-milky-2.jpg?v=1637107212&width=360",
+    "alt": "Naomi Bag",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-naomi-gummy-n1.jpg?v=1637107770&width=360",
+    "alt": "Small Naomi",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-naomi-mini-wallet-denim-1_0126fb79-9629-48bf-a1c1-b6229f5aaa91.jpg?v=1637107730&width=360",
+    "alt": "Naomi Mini Wallet",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/wl1.jpg?v=1637107610&width=360",
+    "alt": "Mini Woven Bag",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   }
+  ]
+ },
+ "links": {
+  "total": 97,
+  "list": [
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#MainContent",
+    "text": "Skip to content",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Tote bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "Shoulder bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "Crossbody bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "Top handle bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "Mini bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "Sandals",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "Boots",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "Dawn",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "Cart",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#ProductInfo-template--15968258293849__main",
+    "text": "Skip to product information",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest",
+    "text": "Mini Naomi Bag",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.mlouye.com/",
+    "text": "Mlouye",
+    "target": "_blank",
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest",
+    "text": "View full details",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/naomi-milky?pr_prod_strat=similar&pr_rec_id=e5457e2c0&pr_rec_pid=6920728707161&pr_ref_pid=6920728805465&pr_seq=uniform",
+    "text": "Naomi Bag",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/naomi-milky?pr_prod_strat=similar&pr_rec_id=e5457e2c0&pr_rec_pid=6920728707161&pr_ref_pid=6920728805465&pr_seq=uniform",
+    "text": "Naomi Bag",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-naomi-gummy?pr_prod_strat=similar&pr_rec_id=e5457e2c0&pr_rec_pid=6920733229145&pr_ref_pid=6920728805465&pr_seq=uniform",
+    "text": "Small Naomi",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-naomi-gummy?pr_prod_strat=similar&pr_rec_id=e5457e2c0&pr_rec_pid=6920733229145&pr_ref_pid=6920728805465&pr_seq=uniform",
+    "text": "Small Naomi",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/naomi-mini-wallet-cotton-candy?pr_prod_strat=similar&pr_rec_id=e5457e2c0&pr_rec_pid=6920732901465&pr_ref_pid=6920728805465&pr_seq=uniform",
+    "text": "Naomi Mini Wallet",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/naomi-mini-wallet-cotton-candy?pr_prod_strat=similar&pr_rec_id=e5457e2c0&pr_rec_pid=6920732901465&pr_ref_pid=6920728805465&pr_seq=uniform",
+    "text": "Naomi Mini Wallet",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-woven-bag-latte?pr_prod_strat=similar&pr_rec_id=e5457e2c0&pr_rec_pid=6920731623513&pr_ref_pid=6920728805465&pr_seq=uniform",
+    "text": "Mini Woven Bag",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-woven-bag-latte?pr_prod_strat=similar&pr_rec_id=e5457e2c0&pr_rec_pid=6920731623513&pr_ref_pid=6920728805465&pr_seq=uniform",
+    "text": "Mini Woven Bag",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Bags",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shoes",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/about",
+    "text": "About",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+    "text": "Contact us",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/shipping",
+    "text": "Shipping policy",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/blogs/news",
+    "text": "Blog",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-naomi-bag-harvest#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "theme-dawn-demo",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+    "text": "Powered by Shopify",
+    "target": "_blank",
+    "rel": "nofollow",
+    "visible": true
+   }
+  ]
+ },
+ "forms": [
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "HeaderCountryMobileForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/search",
+   "method": "get",
+   "id": null,
+   "fields": [
+    {
+     "name": "q",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart",
+   "method": "post",
+   "id": "cart-notification-form",
+   "fields": [
+    {
+     "name": "checkout",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart/add",
+   "method": "post",
+   "id": {},
+   "fields": [],
+   "visible": false
+  },
+  {
+   "action": "/cart/add",
+   "method": "post",
+   "id": {},
+   "fields": [
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Harvest Variant sold out or unavailable"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Pastel Variant sold out or unavailable"
+    },
+    {
+     "name": "quantity",
+     "type": "number",
+     "required": false,
+     "label": "Quantity"
+    },
+    {
+     "name": "add",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/contact#ContactFooter",
+   "method": "post",
+   "id": "ContactFooter",
+   "fields": [
+    {
+     "name": "contact[email]",
+     "type": "email",
+     "required": true,
+     "label": "Email"
+    },
+    {
+     "name": "commit",
+     "type": "submit",
+     "label": "Subscribe"
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "FooterCountryForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": true
+  }
+ ],
+ "layout": {
+  "viewport": "800x900",
+  "pageHeight": 4544,
+  "screens": 5,
+  "horizontalOverflowPx": 640,
+  "wideElements": [
+   {
+    "tag": "div",
+    "cls": "shopify-section shopify-section-group-header-group announcem",
+    "right": 1440,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "utility-bar color-background-1 gradient utility-bar--bottom-",
+    "right": 1440,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "page-width utility-bar__grid",
+    "right": 1320,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "announcement-bar",
+    "right": 1270,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "p",
+    "cls": "announcement-bar__message h5",
+    "right": 837,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "span",
+    "cls": "",
+    "right": 837,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "shopify-section shopify-section-group-header-group section-h",
+    "right": 1440,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   },
+   {
+    "tag": "sticky-header",
+    "cls": "header-wrapper color-background-1 gradient header-wrapper--b",
+    "right": 1440,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   }
+  ],
+  "smallTapTargets": 7,
+  "smallTapExamples": [
+   {
+    "text": "Mlouye",
+    "size": "52x21"
+   },
+   {
+    "text": "Naomi Bag",
+    "size": "269x17"
+   },
+   {
+    "text": "Small Naomi",
+    "size": "269x17"
+   },
+   {
+    "text": "Naomi Mini Wallet",
+    "size": "269x17"
+   },
+   {
+    "text": "Mini Woven Bag",
+    "size": "269x17"
+   },
+   {
+    "text": "theme-dawn-demo",
+    "size": "99x14"
+   },
+   {
+    "text": "Powered by Shopify",
+    "size": "103x14"
+   }
+  ],
+  "tinyTextCount": 1,
+  "tinyTextExamples": [
+   {
+    "text": "Powered by Shopify",
+    "px": 11
+   }
+  ],
+  "fixedBars": [
+   {
+    "top": 39,
+    "height": 85,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   },
+   {
+    "top": 160,
+    "height": 2523,
+    "text": "Skip to product information"
+   }
+  ],
+  "fixedBarsTotalHeight": 2608
+ },
+ "fullTiles": [
+  {
+   "file": "pages/products-mini-naomi-bag-harvest/desktop-full-01.jpg",
+   "screens": "1-2"
+  },
+  {
+   "file": "pages/products-mini-naomi-bag-harvest/desktop-full-02.jpg",
+   "screens": "3-4"
+  },
+  {
+   "file": "pages/products-mini-naomi-bag-harvest/desktop-full-03.jpg",
+   "screens": "5-5"
+  }
+ ],
+ "a11y": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+   "count": 5,
+   "examples": [
+    {
+     "target": "#FooterCountryLabel",
+     "html": "<h2 class=\"caption-large text-body\" id=\"FooterCountryLabel\">Country/region</h2>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fdfdfd, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast rati"
+    },
+    {
+     "target": "button[aria-controls=\"FooterCountry-country-results\"] > span",
+     "html": "<span>Canada |\n      CAD\n      $</span>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fdfdfd, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast rati"
+    },
+    {
+     "target": ".copyright__content:nth-child(1)",
+     "html": "<small class=\"copyright__content\">© 2026, <a href=\"/\" title=\"\">theme-dawn-demo</a></small>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fdfdfd, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast rati"
+    }
+   ]
+  }
+ ],
+ "network": {
+  "requests": 294,
+  "bytes": 2027912,
+  "failed": [],
+  "http4xx5xx": []
+ },
+ "detected": {
+  "apps": [],
+  "tech": [],
+  "pixels": [
+   {
+    "name": "Shopify analytics",
+    "loaded": true,
+    "hits": 0,
+    "examples": []
+   }
+  ],
+  "thirdParty": [
+   {
+    "host": "otlp-http-production.shopifysvc.com",
+    "requests": 9,
+    "bytes": 273,
+    "types": [
+     "Other",
+     "Fetch",
+     "Ping"
+    ]
+   },
+   {
+    "host": "error-analytics-sessions-production.shopifysvc.com",
+    "requests": 2,
+    "bytes": 0,
+    "types": [
+     "Other",
+     "Fetch"
+    ]
+   }
+  ]
+ },
+ "console": [],
+ "blockedBySafety": []
+}

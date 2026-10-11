@@ -1,0 +1,22 @@
+{
+ "id": 55192420441,
+ "name": "theme-dawn-demo",
+ "city": "Montreal",
+ "province": "Quebec",
+ "country": "CA",
+ "currency": "CAD",
+ "domain": "theme-dawn-demo.myshopify.com",
+ "url": "https://theme-dawn-demo.myshopify.com",
+ "myshopify_domain": "theme-dawn-demo.myshopify.com",
+ "description": "",
+ "ships_to_countries": [
+  "*",
+  "CA",
+  "US"
+ ],
+ "money_format": "${{amount}}",
+ "published_collections_count": 14,
+ "published_products_count": 32,
+ "shopify_pay_enabled_card_brands": [],
+ "offers_shop_pay_installments": false
+}

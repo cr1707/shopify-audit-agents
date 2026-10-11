@@ -1,0 +1,67 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/",
+ "viewport": "desktop",
+ "at": "2026-10-11T16:32:23.963Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/",
+ "title": "theme-dawn-demo",
+ "eval": {
+  "h1s": [
+   {
+    "outerHTML": "<h1 class=\"header__heading\"><a href=\"/\" class=\"header__heading-link link link--text focus-inset\"><div class=\"header__heading-logo-wrapper\"> <img src=\"//theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&amp;width=600\" alt=\"Dawn\" srcset=\"//theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&amp;width=90 90w, //theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&amp;width=135 135w, //theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&amp;width=180 180w\" width=\"90\" height=\"22.0\" loading=\"eager\" class=\"header__heading-logo motion-reduce\" sizes=\"(max-width: 180px) 50vw, 90px\"> </div></a></h1>",
+    "innerText": "",
+    "imgAlts": [
+     "Dawn"
+    ],
+    "linkText": [
+     ""
+    ]
+   }
+  ],
+  "meta": [
+   {
+    "key": "og:title",
+    "content": "theme-dawn-demo"
+   },
+   {
+    "key": "og:image",
+    "content": "http://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?height=628&pad_color=ffffff&v=1637111732&width=1200"
+   },
+   {
+    "key": "og:image:secure_url",
+    "content": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?height=628&pad_color=ffffff&v=1637111732&width=1200"
+   },
+   {
+    "key": "og:image:width",
+    "content": "1200"
+   },
+   {
+    "key": "og:image:height",
+    "content": "628"
+   },
+   {
+    "key": "twitter:card",
+    "content": "summary_large_image"
+   }
+  ],
+  "imageSizes": [
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?height=628&pad_color=ffffff&v=1637111732&width=1200",
+    "w": 1200,
+    "h": 628
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png",
+    "w": 180,
+    "h": 44
+   }
+  ],
+  "firstH2s": [
+   "Country/region",
+   ""
+  ]
+ },
+ "overlays": [],
+ "console": [],
+ "blockedBySafety": []
+}

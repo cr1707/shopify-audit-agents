@@ -1,0 +1,38 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+ "viewport": "desktop",
+ "at": "2026-10-11T16:30:56.011Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+ "title": "Helix – theme-dawn-demo",
+ "eval": {
+  "tabs": [
+   {
+    "summary": "Materials",
+    "content": "Crafted from Italian cow leather, and suede. You can carry it by the top handle or go hands-free with the shoulder strap. Silver hardware."
+   },
+   {
+    "summary": "Shipping & Returns",
+    "content": "Free shipping and returns available on all orders! We ship all US domestic orders within 5-10 business days!"
+   },
+   {
+    "summary": "Dimensions",
+    "content": "h:16 X w:19 cm (6.25 X 7.5 in)"
+   },
+   {
+    "summary": "Care Instructions",
+    "content": "Use a soft damp cloth and a drop of mild soap to remove any haze. Air dry."
+   }
+  ],
+  "linksToPolicyPages": [
+   "/pages/shipping"
+  ],
+  "shippingBlock": "We offer free worldwide express shipping on all orders. You'll receive your order an estimated 1–4 days after shipment.",
+  "exchangesBlock": "Exchanges are free. Try from the comfort of your home. We will collect from your home, work or an alternative address. ",
+  "demoNotice": "This is a demonstration store. You can purchase products like this from Mlouye."
+ },
+ "overlays": [],
+ "console": [],
+ "blockedBySafety": [],
+ "note": "shippingBlock filled from a second run of the same page with --text at 2026-10-11T16:31:21.329Z; the first regex missed it because the source uses non-breaking spaces."
+}

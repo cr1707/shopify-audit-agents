@@ -1,0 +1,1401 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+ "viewport": "phone",
+ "slug": "collections-tote-bags",
+ "loadOk": true,
+ "loadMs": 692,
+ "firstScreen": "pages/collections-tote-bags/phone-first.jpg",
+ "overlays": [],
+ "scroll": {
+  "height": 2129,
+  "screens": 2.5
+ },
+ "title": "Tote Bags – theme-dawn-demo",
+ "lang": "en",
+ "seo": {
+  "description": null,
+  "canonical": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+  "robots": null,
+  "ogTitle": "Tote Bags",
+  "ogImage": "http://theme-dawn-demo.myshopify.com/cdn/shop/collections/mlouye_-_tote_collection.jpg?v=1637110028",
+  "h1Count": 1,
+  "hreflang": 3,
+  "structuredData": [
+   "Organization"
+  ],
+  "ldInvalid": 0
+ },
+ "product": null,
+ "shopify": {
+  "isShopify": true,
+  "shop": "theme-dawn-demo.myshopify.com",
+  "theme": {
+   "name": "Dawn",
+   "id": 129690763353,
+   "schema": "Dawn",
+   "version": "15.0.0"
+  },
+  "currency": "CAD",
+  "locale": "en",
+  "pageType": "collection"
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Collection: Tote Bags",
+   "screen": 1.2
+  },
+  {
+   "tag": "h2",
+   "text": "",
+   "screen": 1.3
+  },
+  {
+   "tag": "h2",
+   "text": "6 products",
+   "screen": 1.2
+  },
+  {
+   "tag": "h3",
+   "text": "Puff",
+   "screen": 1.5
+  },
+  {
+   "tag": "h3",
+   "text": "Mini Sera Tote",
+   "screen": 1.5
+  },
+  {
+   "tag": "h3",
+   "text": "Puff Large",
+   "screen": 1.8
+  },
+  {
+   "tag": "h3",
+   "text": "Sera Tote",
+   "screen": 1.8
+  },
+  {
+   "tag": "h3",
+   "text": "Hobo Large",
+   "screen": 2.1
+  },
+  {
+   "tag": "h3",
+   "text": "Hobo Medium",
+   "screen": 2.1
+  },
+  {
+   "tag": "h2",
+   "text": "Quick links",
+   "screen": 2.3
+  },
+  {
+   "tag": "h2",
+   "text": "Info",
+   "screen": 2.6
+  },
+  {
+   "tag": "h2",
+   "text": "Our mission",
+   "screen": 2.9
+  },
+  {
+   "tag": "h2",
+   "text": "Subscribe to our emails",
+   "screen": 3
+  },
+  {
+   "tag": "h2",
+   "text": "Country/region",
+   "screen": 3.3
+  }
+ ],
+ "keyPositions": {
+  "h1": {
+   "screen": 1.2,
+   "text": "Collection: Tote Bags"
+  },
+  "price": {
+   "screen": 1.5,
+   "text": "$465.00 CAD"
+  },
+  "addToCart": null,
+  "reviews": null,
+  "shipping": {
+   "screen": 1,
+   "text": "Free shipping available on all orders!"
+  },
+  "returns": null
+ },
+ "addToCartButtons": {
+  "total": 0,
+  "visible": 0,
+  "texts": [],
+  "soldOutButtons": 0,
+  "soldOutText": null,
+  "buyNowButtons": 0
+ },
+ "ctasFirstScreens": [
+  {
+   "text": "Skip to content",
+   "screen": 1,
+   "w": 122,
+   "h": 47,
+   "fixed": false,
+   "href": "#MainContent"
+  },
+  {
+   "text": "Cart",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/cart"
+  },
+  {
+   "text": "Puff",
+   "screen": 1.5,
+   "w": 178,
+   "h": 16,
+   "fixed": false,
+   "href": "/products/puff-olive-leaf"
+  },
+  {
+   "text": "Mini Sera Tote",
+   "screen": 1.5,
+   "w": 178,
+   "h": 16,
+   "fixed": false,
+   "href": "/products/mini-sera-tote-butter"
+  },
+  {
+   "text": "Puff Large",
+   "screen": 1.8,
+   "w": 178,
+   "h": 16,
+   "fixed": false,
+   "href": "/products/puff-large-latte"
+  },
+  {
+   "text": "Sera Tote",
+   "screen": 1.8,
+   "w": 178,
+   "h": 16,
+   "fixed": false,
+   "href": "/products/sera-tote-pastel"
+  }
+ ],
+ "images": {
+  "total": 13,
+  "missingAlt": 0,
+  "emptyAlt": 6,
+  "broken": [],
+  "oversized": [],
+  "sample": [
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&width=180",
+    "alt": "Dawn",
+    "w": 90,
+    "h": 22,
+    "rw": 90,
+    "rh": 22,
+    "broken": false,
+    "lazy": "eager",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-puff-olive-leaf-1_d53c2dd6-b753-432a-85bd-373334b72994.jpg?v=1637108187&width=360",
+    "alt": "Puff",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-mini-sera-tote-butter-1a_3ffe65b3-bf80-4051-bdc1-c4dee5a10549.jpg?v=1637108000&width=360",
+    "alt": "Mini Sera Tote",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-puff-large-latte-1_cce305ff-ccd1-416f-80ea-5ec5b47740f4.jpg?v=1637108148&width=360",
+    "alt": "Puff Large",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-sera-tote-butter-1_40a894e5-2624-4582-b8f1-8fbd5e46776d.jpg?v=1637107252&width=360",
+    "alt": "Sera Tote",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-hobo-l-latte-n1.jpg?v=1637106830&width=360",
+    "alt": "Hobo Large",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-hobo-m-latte-n1.jpg?v=1637106779&width=360",
+    "alt": "Hobo Medium",
+    "w": 177,
+    "h": 177,
+    "rw": 178,
+    "rh": 178,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   }
+  ]
+ },
+ "links": {
+  "total": 106,
+  "list": [
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#MainContent",
+    "text": "Skip to content",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "Dawn",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Tote bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "Shoulder bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "Crossbody bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "Top handle bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "Mini bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "Sandals",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "Boots",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "Cart",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Reset",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Reset",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Reset",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Remove all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Remove all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/puff-olive-leaf",
+    "text": "Puff",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/puff-olive-leaf",
+    "text": "Puff",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-sera-tote-butter",
+    "text": "Mini Sera Tote",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/mini-sera-tote-butter",
+    "text": "Mini Sera Tote",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/puff-large-latte",
+    "text": "Puff Large",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/puff-large-latte",
+    "text": "Puff Large",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/sera-tote-pastel",
+    "text": "Sera Tote",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/sera-tote-pastel",
+    "text": "Sera Tote",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/hobo-l-latte",
+    "text": "Hobo Large",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/hobo-l-latte",
+    "text": "Hobo Large",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/hobo-m-latte",
+    "text": "Hobo Medium",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/hobo-m-latte",
+    "text": "Hobo Medium",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Bags",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shoes",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/about",
+    "text": "About",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+    "text": "Contact us",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/shipping",
+    "text": "Shipping policy",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/blogs/news",
+    "text": "Blog",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "theme-dawn-demo",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+    "text": "Powered by Shopify",
+    "target": "_blank",
+    "rel": "nofollow",
+    "visible": true
+   }
+  ]
+ },
+ "forms": [
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "HeaderCountryMobileForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/search",
+   "method": "get",
+   "id": null,
+   "fields": [
+    {
+     "name": "q",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart",
+   "method": "post",
+   "id": "cart-notification-form",
+   "fields": [
+    {
+     "name": "checkout",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": null,
+   "method": "get",
+   "id": "FacetFiltersForm",
+   "fields": [
+    {
+     "name": "filter.v.availability",
+     "type": "checkbox",
+     "required": false,
+     "label": "In stock (6) In stock (6 products)"
+    },
+    {
+     "name": "filter.v.availability",
+     "type": "checkbox",
+     "required": false,
+     "label": "Out of stock (3) Out of stock (3 products)"
+    },
+    {
+     "name": "filter.v.price.gte",
+     "type": "text",
+     "required": false,
+     "label": "From"
+    },
+    {
+     "name": "filter.v.price.lte",
+     "type": "text",
+     "required": false,
+     "label": "To"
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "sort_by",
+     "type": "select-one",
+     "required": false,
+     "label": "Sort by:"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": null,
+   "method": "get",
+   "id": "FacetFiltersFormMobile",
+   "fields": [
+    {
+     "name": "filter.v.availability",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.availability",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.price.gte",
+     "type": "text",
+     "required": false,
+     "label": "0"
+    },
+    {
+     "name": "filter.v.price.lte",
+     "type": "text",
+     "required": false,
+     "label": "615.00"
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "filter.v.m.custom.color_swatch",
+     "type": "checkbox",
+     "required": false,
+     "label": ""
+    },
+    {
+     "name": "sort_by",
+     "type": "select-one",
+     "required": false,
+     "label": ""
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/contact#ContactFooter",
+   "method": "post",
+   "id": "ContactFooter",
+   "fields": [
+    {
+     "name": "contact[email]",
+     "type": "email",
+     "required": true,
+     "label": "Email"
+    },
+    {
+     "name": "commit",
+     "type": "submit",
+     "label": "Subscribe"
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "FooterCountryForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": true
+  }
+ ],
+ "layout": {
+  "viewport": "390x844",
+  "pageHeight": 2129,
+  "screens": 2.5,
+  "horizontalOverflowPx": 0,
+  "wideElements": [],
+  "smallTapTargets": 8,
+  "smallTapExamples": [
+   {
+    "text": "Puff",
+    "size": "178x16"
+   },
+   {
+    "text": "Mini Sera Tote",
+    "size": "178x16"
+   },
+   {
+    "text": "Puff Large",
+    "size": "178x16"
+   },
+   {
+    "text": "Sera Tote",
+    "size": "178x16"
+   },
+   {
+    "text": "Hobo Large",
+    "size": "178x16"
+   },
+   {
+    "text": "Hobo Medium",
+    "size": "178x16"
+   },
+   {
+    "text": "theme-dawn-demo",
+    "size": "99x14"
+   },
+   {
+    "text": "Powered by Shopify",
+    "size": "103x14"
+   }
+  ],
+  "tinyTextCount": 1,
+  "tinyTextExamples": [
+   {
+    "text": "Powered by Shopify",
+    "px": 11
+   }
+  ],
+  "fixedBars": [
+   {
+    "top": 39,
+    "height": 65,
+    "text": "Cart"
+   }
+  ],
+  "fixedBarsTotalHeight": 65
+ },
+ "fullTiles": [
+  {
+   "file": "pages/collections-tote-bags/phone-full-01.jpg",
+   "screens": "1-3"
+  }
+ ],
+ "network": {
+  "requests": 266,
+  "bytes": 1468147,
+  "failed": [],
+  "http4xx5xx": [
+   {
+    "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens",
+    "status": 401
+   }
+  ]
+ },
+ "detected": {
+  "apps": [],
+  "tech": [],
+  "pixels": [
+   {
+    "name": "Shopify analytics",
+    "loaded": true,
+    "hits": 0,
+    "examples": []
+   }
+  ],
+  "thirdParty": [
+   {
+    "host": "otlp-http-production.shopifysvc.com",
+    "requests": 7,
+    "bytes": 275,
+    "types": [
+     "Other",
+     "Fetch",
+     "Ping"
+    ]
+   }
+  ]
+ },
+ "console": [
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 401 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens"
+  }
+ ],
+ "blockedBySafety": []
+}

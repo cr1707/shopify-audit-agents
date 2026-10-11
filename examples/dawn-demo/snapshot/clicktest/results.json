@@ -1,0 +1,862 @@
+[
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+  "viewport": "phone",
+  "page": "products-louise-slide-sandal",
+  "productId": 6920722055257,
+  "handle": "louise-slide-sandal",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Louise Slide Sandal",
+    "context": "Louise Slide Sandal Regular price $430.00 CAD Sale price $395.00 CADSale Color Buttermilk Variant sold out or unavailable Gummy White Size 35 Variant sold out or unavailable 36 Variant sold out or unavailable 37 Variant ",
+    "sticky": false,
+    "variantIdInForm": "39577004146777",
+    "screen": 2.1,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryAkoCDAVqgz5B62L8\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nGummy\r\n------WebKitFormBoundaryAkoCDAVqgz5B62L8\r\nContent-Disposition: form-data; name=\"Size-2%0D%0A\"\r\n\r\n40\r\n------WebKitFormBoundaryAkoCDAVqgz5B62L8\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1"
+    },
+    "added": [
+     {
+      "productId": 6920722055257,
+      "handle": "louise-slide-sandal",
+      "title": "Louise Slide Sandal",
+      "variantId": 39577004146777,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Louise Slide Sandal Color: Gummy Size: 40 View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.41
+     }
+    ],
+    "screenshot": "clicktest/products-louise-slide-sandal-phone-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "louise-slide-sandal",
+       "variant": "39577004146777",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "louise-slide-sandal"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+  "viewport": "desktop",
+  "page": "products-louise-slide-sandal",
+  "productId": 6920722055257,
+  "handle": "louise-slide-sandal",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Louise Slide Sandal",
+    "context": "Louise Slide Sandal Regular price $430.00 CAD Sale price $395.00 CADSale Color Buttermilk Variant sold out or unavailable Gummy White Size 35 Variant sold out or unavailable 36 Variant sold out or unavailable 37 Variant ",
+    "sticky": true,
+    "variantIdInForm": "39577004146777",
+    "screen": 1,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryOh0CBdehfSzE2sbx\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nGummy\r\n------WebKitFormBoundaryOh0CBdehfSzE2sbx\r\nContent-Disposition: form-data; name=\"Size-2%0D%0A\"\r\n\r\n40\r\n------WebKitFormBoundaryOh0CBdehfSzE2sbx\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1"
+    },
+    "added": [
+     {
+      "productId": 6920722055257,
+      "handle": "louise-slide-sandal",
+      "title": "Louise Slide Sandal",
+      "variantId": 39577004146777,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Louise Slide Sandal Color: Gummy Size: 40 View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.1
+     }
+    ],
+    "screenshot": "clicktest/products-louise-slide-sandal-desktop-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "louise-slide-sandal",
+       "variant": "39577004146777",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "louise-slide-sandal"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+  "viewport": "phone",
+  "page": "products-helix-denim",
+  "productId": 6920727330905,
+  "handle": "helix-denim",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Helix",
+    "context": "Helix Regular price $470.00 CAD Color Multicolor Denim Off White South America Quantity Decrease quantity for Helix Increase quantity for Helix [BUTTON] Buy it now This is a demonstration store. You can purchase products",
+    "sticky": false,
+    "variantIdInForm": "39577013223513",
+    "screen": 2,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundarysWulbN72E29O0alB\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nMulticolor\r\n------WebKitFormBoundarysWulbN72E29O0alB\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1\r\n------WebKitFormBoundarysWulbN72E29O0alB\r\nContent-Disposition: form-data; name=\"form_type\"\r\n\r\n"
+    },
+    "added": [
+     {
+      "productId": 6920727330905,
+      "handle": "helix-denim",
+      "title": "Helix",
+      "variantId": 39577013223513,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Helix Color: Multicolor View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.41
+     }
+    ],
+    "screenshot": "clicktest/products-helix-denim-phone-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "helix-denim",
+       "variant": "39577013223513",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "helix-denim"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+  "viewport": "desktop",
+  "page": "products-helix-denim",
+  "productId": 6920727330905,
+  "handle": "helix-denim",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Helix",
+    "context": "Helix Regular price $470.00 CAD Color Multicolor Denim Off White South America Quantity Decrease quantity for Helix Increase quantity for Helix [BUTTON] Buy it now This is a demonstration store. You can purchase products",
+    "sticky": true,
+    "variantIdInForm": "39577013223513",
+    "screen": 1,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryjl8XXVkALxAxjLw3\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nMulticolor\r\n------WebKitFormBoundaryjl8XXVkALxAxjLw3\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1\r\n------WebKitFormBoundaryjl8XXVkALxAxjLw3\r\nContent-Disposition: form-data; name=\"form_type\"\r\n\r\n"
+    },
+    "added": [
+     {
+      "productId": 6920727330905,
+      "handle": "helix-denim",
+      "title": "Helix",
+      "variantId": 39577013223513,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Helix Color: Multicolor View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.1
+     }
+    ],
+    "screenshot": "clicktest/products-helix-denim-desktop-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "helix-denim",
+       "variant": "39577013223513",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "helix-denim"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/puff-olive-leaf",
+  "viewport": "phone",
+  "page": "products-puff-olive-leaf",
+  "productId": 6920737783897,
+  "handle": "puff-olive-leaf",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Puff",
+    "context": "Puff Regular price $465.00 CAD Color Olive Leaf Variant sold out or unavailable Emerald Variant sold out or unavailable Chocolate Latte Pastel Pink Cloud Quantity Decrease quantity for Puff Increase quantity for Puff [BU",
+    "sticky": false,
+    "variantIdInForm": "39577057001561",
+    "screen": 2,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryZnKY4ogHVwxyYJBL\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nChocolate\r\n------WebKitFormBoundaryZnKY4ogHVwxyYJBL\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1\r\n------WebKitFormBoundaryZnKY4ogHVwxyYJBL\r\nContent-Disposition: form-data; name=\"form_type\"\r\n\r\np"
+    },
+    "added": [
+     {
+      "productId": 6920737783897,
+      "handle": "puff-olive-leaf",
+      "title": "Puff",
+      "variantId": 39577057001561,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Puff Color: Chocolate View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.41
+     }
+    ],
+    "screenshot": "clicktest/products-puff-olive-leaf-phone-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "puff-olive-leaf",
+       "variant": "39577057001561",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "puff-olive-leaf"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/puff-olive-leaf",
+  "viewport": "desktop",
+  "page": "products-puff-olive-leaf",
+  "productId": 6920737783897,
+  "handle": "puff-olive-leaf",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Puff",
+    "context": "Puff Regular price $465.00 CAD Color Olive Leaf Variant sold out or unavailable Emerald Variant sold out or unavailable Chocolate Latte Pastel Pink Cloud Quantity Decrease quantity for Puff Increase quantity for Puff [BU",
+    "sticky": true,
+    "variantIdInForm": "39577057001561",
+    "screen": 1,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryjdUWrj1K5R7aM3je\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nChocolate\r\n------WebKitFormBoundaryjdUWrj1K5R7aM3je\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1\r\n------WebKitFormBoundaryjdUWrj1K5R7aM3je\r\nContent-Disposition: form-data; name=\"form_type\"\r\n\r\np"
+    },
+    "added": [
+     {
+      "productId": 6920737783897,
+      "handle": "puff-olive-leaf",
+      "title": "Puff",
+      "variantId": 39577057001561,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Puff Color: Chocolate View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.1
+     }
+    ],
+    "screenshot": "clicktest/products-puff-olive-leaf-desktop-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "puff-olive-leaf",
+       "variant": "39577057001561",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "puff-olive-leaf"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/puff-large-latte",
+  "viewport": "phone",
+  "page": "products-puff-large-latte",
+  "productId": 6920737357913,
+  "handle": "puff-large-latte",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Puff Large",
+    "context": "Puff Large Regular price $520.00 CAD Color Latte Variant sold out or unavailable Chocolate Emerald Quantity Decrease quantity for Puff Large Increase quantity for Puff Large [BUTTON] Buy it now This is a demonstration st",
+    "sticky": false,
+    "variantIdInForm": "39577056247897",
+    "screen": 2,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryzCAbQndqyZj7wPZ0\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nChocolate\r\n------WebKitFormBoundaryzCAbQndqyZj7wPZ0\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1\r\n------WebKitFormBoundaryzCAbQndqyZj7wPZ0\r\nContent-Disposition: form-data; name=\"form_type\"\r\n\r\np"
+    },
+    "added": [
+     {
+      "productId": 6920737357913,
+      "handle": "puff-large-latte",
+      "title": "Puff Large",
+      "variantId": 39577056247897,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Puff Large Color: Chocolate View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.41
+     }
+    ],
+    "screenshot": "clicktest/products-puff-large-latte-phone-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "puff-large-latte",
+       "variant": "39577056247897",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "puff-large-latte"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/puff-large-latte",
+  "viewport": "desktop",
+  "page": "products-puff-large-latte",
+  "productId": 6920737357913,
+  "handle": "puff-large-latte",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Puff Large",
+    "context": "Puff Large Regular price $520.00 CAD Color Latte Variant sold out or unavailable Chocolate Emerald Quantity Decrease quantity for Puff Large Increase quantity for Puff Large [BUTTON] Buy it now This is a demonstration st",
+    "sticky": true,
+    "variantIdInForm": "39577056247897",
+    "screen": 1,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryQmCu9b1TtZvhEpPn\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nChocolate\r\n------WebKitFormBoundaryQmCu9b1TtZvhEpPn\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1\r\n------WebKitFormBoundaryQmCu9b1TtZvhEpPn\r\nContent-Disposition: form-data; name=\"form_type\"\r\n\r\np"
+    },
+    "added": [
+     {
+      "productId": 6920737357913,
+      "handle": "puff-large-latte",
+      "title": "Puff Large",
+      "variantId": 39577056247897,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Puff Large Color: Chocolate View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.1
+     }
+    ],
+    "screenshot": "clicktest/products-puff-large-latte-desktop-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "puff-large-latte",
+       "variant": "39577056247897",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "puff-large-latte"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/mini-sera-tote-butter",
+  "viewport": "phone",
+  "page": "products-mini-sera-tote-butter",
+  "productId": 6920735260761,
+  "handle": "mini-sera-tote-butter",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Mini Sera Tote",
+    "context": "Mini Sera Tote Regular price $365.00 CAD Color Butter Denim Dry Rose Oceania Olive Leaf Shark Milky Variant sold out or unavailable St Tropez Variant sold out or unavailable Quantity Decrease quantity for Mini Sera Tote ",
+    "sticky": false,
+    "variantIdInForm": "39577050808409",
+    "screen": 2.1,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryv8puUZcMVhiwR5jM\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nButter\r\n------WebKitFormBoundaryv8puUZcMVhiwR5jM\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1\r\n------WebKitFormBoundaryv8puUZcMVhiwR5jM\r\nContent-Disposition: form-data; name=\"form_type\"\r\n\r\nprod"
+    },
+    "added": [
+     {
+      "productId": 6920735260761,
+      "handle": "mini-sera-tote-butter",
+      "title": "Mini Sera Tote",
+      "variantId": 39577050808409,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Mini Sera Tote Color: Butter View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.41
+     }
+    ],
+    "screenshot": "clicktest/products-mini-sera-tote-butter-phone-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "mini-sera-tote-butter",
+       "variant": "39577050808409",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "mini-sera-tote-butter"
+    ]
+   }
+  ]
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/products/mini-sera-tote-butter",
+  "viewport": "desktop",
+  "page": "products-mini-sera-tote-butter",
+  "productId": 6920735260761,
+  "handle": "mini-sera-tote-butter",
+  "buttonsVisible": 1,
+  "buttonsHiddenOnly": 0,
+  "tests": [
+   {
+    "n": 1,
+    "text": "Add to cart",
+    "headingAbove": "Mini Sera Tote",
+    "context": "Mini Sera Tote Regular price $365.00 CAD Color Butter Denim Dry Rose Oceania Olive Leaf Shark Milky Variant sold out or unavailable St Tropez Variant sold out or unavailable Quantity Decrease quantity for Mini Sera Tote ",
+    "sticky": true,
+    "variantIdInForm": "39577050808409",
+    "screen": 1,
+    "click": "clicked",
+    "navigatedTo": [],
+    "addRequest": {
+     "url": "/cart/add",
+     "status": 200,
+     "postData": "------WebKitFormBoundaryFATjzoz3Wr2QlK56\r\nContent-Disposition: form-data; name=\"Color-1%0D%0A\"\r\n\r\nButter\r\n------WebKitFormBoundaryFATjzoz3Wr2QlK56\r\nContent-Disposition: form-data; name=\"quantity\"\r\n\r\n1\r\n------WebKitFormBoundaryFATjzoz3Wr2QlK56\r\nContent-Disposition: form-data; name=\"form_type\"\r\n\r\nprod"
+    },
+    "added": [
+     {
+      "productId": 6920735260761,
+      "handle": "mini-sera-tote-butter",
+      "title": "Mini Sera Tote",
+      "variantId": 39577050808409,
+      "qty": 1
+     }
+    ],
+    "overlaysAfterClick": [
+     {
+      "text": "Item added to your cart Mini Sera Tote Color: Butter View cart (1) Check out Continue shopping",
+      "buttons": [
+       "Close",
+       "View cart (1)",
+       "Check out",
+       "Continue shopping"
+      ],
+      "share": 0.1
+     }
+    ],
+    "screenshot": "clicktest/products-mini-sera-tote-butter-desktop-btn1.jpg",
+    "blockedBySafety": [],
+    "cartPage": {
+     "lines": [
+      {
+       "handle": "mini-sera-tote-butter",
+       "variant": "39577050808409",
+       "title": ""
+      },
+      {
+       "handle": "art-deco-cyclamen",
+       "variant": null,
+       "title": "Art Deco"
+      },
+      {
+       "handle": "bo-ivy-black",
+       "variant": null,
+       "title": "Bo Ivy"
+      },
+      {
+       "handle": "bo-soft-strap-brown",
+       "variant": null,
+       "title": "Bo Soft Strap"
+      },
+      {
+       "handle": "brick-apple",
+       "variant": null,
+       "title": "Brick"
+      }
+     ],
+     "empty": false,
+     "countBadge": "1 1 item"
+    },
+    "evidenceSource": "add-response",
+    "verdict": "MATCH",
+    "cartHandles": [
+     "mini-sera-tote-butter"
+    ]
+   }
+  ]
+ }
+]

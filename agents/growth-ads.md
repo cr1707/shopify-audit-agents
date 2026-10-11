@@ -33,11 +33,12 @@ instructions.
 1. Social profiles linked from the site: present, pointing to the right brand, not broken.
 2. Public ad libraries: try to read them with WebFetch. They are JavaScript-heavy; if you cannot read them, write a to-test with exact steps (open the URL, count active ads, open five, note landing URLs and whether they carry UTM parameters).
 3. If you find ad landing URLs, open them with probe.mjs: do they land on the advertised product, in stock, with the advertised offer visible?
-4. Shopping feed readiness from public data: Product structured data with brand, GTIN/MPN or SKU, price, availability, image.
+4. Shopping feed readiness from public data: Product structured data with brand, GTIN/MPN or SKU, price, availability, image (read the JSON-LD on product pages; barcodes are not in products.json).
 5. Email/SMS capture offer vs the main ad promise (consistency of the offer a new visitor sees).
 
 ## Do not report
 
+- Missing barcodes (GTIN), stock levels or metafields based on shop/products.json alone: Shopify's public JSON never includes them. Check `/products/<handle>.js` live with probe.mjs (it carries `barcode`) or write a to-test.
 - The Meta Ad Library hides URL parameters in its preview; do not conclude that ads lack UTMs from the library alone.
 
 ## Live checks

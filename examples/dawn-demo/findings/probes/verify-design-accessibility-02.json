@@ -1,0 +1,71 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/",
+ "viewport": "desktop",
+ "at": "2026-10-11T16:34:52.348Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/",
+ "title": "theme-dawn-demo",
+ "eval": {
+  "at300ms": [
+   {
+    "s": "#FooterCountryLabel",
+    "text": "Country/region",
+    "color": "rgba(18, 18, 18, 0.75)",
+    "ancestorOpacity": 0.01,
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13px",
+    "contrast": 1.02
+   },
+   {
+    "s": "button[aria-controls=\"FooterCountry-country-results\"] > span",
+    "text": "Canada | CAD $",
+    "color": "rgb(18, 18, 18)",
+    "ancestorOpacity": 0.01,
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13px",
+    "contrast": 1.02
+   },
+   {
+    "s": ".copyright__content",
+    "text": "© 2026, theme-dawn-demo",
+    "color": "rgba(18, 18, 18, 0.75)",
+    "ancestorOpacity": 0.01,
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "11px",
+    "contrast": 1.02
+   }
+  ],
+  "after4s": [
+   {
+    "s": "#FooterCountryLabel",
+    "text": "Country/region",
+    "color": "rgba(18, 18, 18, 0.75)",
+    "ancestorOpacity": 1,
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13px",
+    "contrast": 8.42
+   },
+   {
+    "s": "button[aria-controls=\"FooterCountry-country-results\"] > span",
+    "text": "Canada | CAD $",
+    "color": "rgb(18, 18, 18)",
+    "ancestorOpacity": 1,
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13px",
+    "contrast": 18.73
+   },
+   {
+    "s": ".copyright__content",
+    "text": "© 2026, theme-dawn-demo",
+    "color": "rgba(18, 18, 18, 0.75)",
+    "ancestorOpacity": 1,
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "11px",
+    "contrast": 8.42
+   }
+  ]
+ },
+ "overlays": [],
+ "console": [],
+ "blockedBySafety": []
+}

@@ -1,0 +1,26 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/collections/sale",
+ "viewport": "desktop",
+ "at": "2026-10-11T16:31:27.183Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/collections/sale",
+ "title": "Sale – theme-dawn-demo",
+ "eval": {
+  "h1": "Collection:\nSale",
+  "saleCount": 26,
+  "bagsCount": 26,
+  "sameSet": true,
+  "saleWithCompareAt": [
+   "small-convertible-flex-bag-cappuccino",
+   "mini-woven-bag-latte",
+   "mini-naomi-bag-harvest",
+   "art-deco-cyclamen"
+  ],
+  "cardsOnFirstPage": 16,
+  "visibleSaleBadges": 0,
+  "linksToSaleOnThisPage": 11
+ },
+ "overlays": [],
+ "console": [],
+ "blockedBySafety": []
+}

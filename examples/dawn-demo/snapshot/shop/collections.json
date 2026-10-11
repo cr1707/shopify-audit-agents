@@ -1,0 +1,197 @@
+[
+ {
+  "id": 263190970457,
+  "title": "Bags",
+  "handle": "bags",
+  "description": "",
+  "published_at": "2021-11-16T17:33:16-07:00",
+  "updated_at": "2026-10-08T05:13:06-06:00",
+  "image": {
+   "id": 1606501007449,
+   "created_at": "2021-11-16T17:33:14-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_Bags_collection.jpg?v=1637109194",
+   "alt": null
+  },
+  "products_count": 118
+ },
+ {
+  "id": 264521285721,
+  "title": "Boots",
+  "handle": "boots",
+  "description": "",
+  "published_at": "2022-01-17T14:52:54-07:00",
+  "updated_at": "2026-06-05T10:13:41-06:00",
+  "image": null,
+  "products_count": 10
+ },
+ {
+  "id": 263191298137,
+  "title": "Crossbody bags",
+  "handle": "crossbody-bags",
+  "description": "",
+  "published_at": "2021-11-16T17:44:12-07:00",
+  "updated_at": "2026-06-05T10:13:40-06:00",
+  "image": {
+   "id": 1606501138521,
+   "created_at": "2021-11-16T17:44:11-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_crossbody_collection.jpg?v=1637109851",
+   "alt": null
+  },
+  "products_count": 15
+ },
+ {
+  "id": 263190741081,
+  "title": "Featured collection 2",
+  "handle": "featured-collection-2",
+  "description": "",
+  "published_at": "2021-11-16T17:28:36-07:00",
+  "updated_at": "2026-10-08T05:13:06-06:00",
+  "image": null,
+  "products_count": 118
+ },
+ {
+  "id": 263191134297,
+  "title": "featured in lookbook",
+  "handle": "featured-in-lookbook",
+  "description": "",
+  "published_at": "2021-11-16T17:38:18-07:00",
+  "updated_at": "2026-09-01T05:13:41-06:00",
+  "image": null,
+  "products_count": 8
+ },
+ {
+  "id": 263189200985,
+  "title": "Homepage Featured Collection",
+  "handle": "frontpage",
+  "description": "",
+  "published_at": "2021-11-16T15:57:57-07:00",
+  "updated_at": "2026-10-08T05:13:06-06:00",
+  "image": {
+   "id": 1606500909145,
+   "created_at": "2021-11-16T17:27:41-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_Homepage_featured_collection.png?v=1642635968",
+   "alt": null
+  },
+  "products_count": 12
+ },
+ {
+  "id": 263190773849,
+  "title": "Mini bags",
+  "handle": "mini-bags",
+  "description": "",
+  "published_at": "2021-11-16T17:30:11-07:00",
+  "updated_at": "2026-10-07T05:12:29-06:00",
+  "image": {
+   "id": 1606500941913,
+   "created_at": "2021-11-16T17:30:09-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_mini_collection.jpg?v=1637109010",
+   "alt": null
+  },
+  "products_count": 31
+ },
+ {
+  "id": 263191265369,
+  "title": "Mules",
+  "handle": "mules",
+  "description": "",
+  "published_at": "2021-11-16T17:43:14-07:00",
+  "updated_at": "2026-06-05T10:13:40-06:00",
+  "image": {
+   "id": 1606501105753,
+   "created_at": "2021-11-16T17:43:13-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_Mules_collections.jpg?v=1637109794",
+   "alt": null
+  },
+  "products_count": 3
+ },
+ {
+  "id": 263190904921,
+  "title": "Sale",
+  "handle": "sale",
+  "description": "",
+  "published_at": "2021-11-16T17:31:41-07:00",
+  "updated_at": "2026-10-08T05:13:06-06:00",
+  "image": {
+   "id": 1606500974681,
+   "created_at": "2021-11-16T17:31:38-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_Sale_collection.jpg?v=1637109099",
+   "alt": null
+  },
+  "products_count": 118
+ },
+ {
+  "id": 263191396441,
+  "title": "Sandals",
+  "handle": "sandals",
+  "description": "",
+  "published_at": "2021-11-16T17:46:09-07:00",
+  "updated_at": "2026-10-08T05:13:06-06:00",
+  "image": {
+   "id": 1606501204057,
+   "created_at": "2021-11-16T17:46:08-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_Sandals_colletions.jpg?v=1637109968",
+   "alt": null
+  },
+  "products_count": 3
+ },
+ {
+  "id": 263191232601,
+  "title": "Shoes",
+  "handle": "shoes",
+  "description": "",
+  "published_at": "2021-11-16T17:42:24-07:00",
+  "updated_at": "2026-10-08T05:13:06-06:00",
+  "image": {
+   "id": 1606501072985,
+   "created_at": "2021-11-16T17:42:23-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_Shoe_collection.jpg?v=1637109743",
+   "alt": null
+  },
+  "products_count": 26
+ },
+ {
+  "id": 263191199833,
+  "title": "Shoulder bags",
+  "handle": "shoulder-bags",
+  "description": "",
+  "published_at": "2021-11-16T17:41:07-07:00",
+  "updated_at": "2026-10-08T05:13:06-06:00",
+  "image": {
+   "id": 1606501040217,
+   "created_at": "2021-11-16T17:41:06-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/Mlouye_-_Shoulder_bags_collection.jpg?v=1637109666",
+   "alt": null
+  },
+  "products_count": 29
+ },
+ {
+  "id": 263191363673,
+  "title": "Top handle bags",
+  "handle": "top-handle-bags",
+  "description": "",
+  "published_at": "2021-11-16T17:45:06-07:00",
+  "updated_at": "2026-09-01T05:13:41-06:00",
+  "image": {
+   "id": 1606501171289,
+   "created_at": "2021-11-16T17:45:05-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/mlouye_-_top_handle_bags_collection.jpg?v=1637109906",
+   "alt": null
+  },
+  "products_count": 14
+ },
+ {
+  "id": 263191429209,
+  "title": "Tote Bags",
+  "handle": "tote-bags",
+  "description": "",
+  "published_at": "2021-11-16T17:47:08-07:00",
+  "updated_at": "2026-10-08T05:13:06-06:00",
+  "image": {
+   "id": 1606501236825,
+   "created_at": "2021-11-16T17:47:07-07:00",
+   "src": "https://cdn.shopify.com/s/files/1/0551/9242/0441/collections/mlouye_-_tote_collection.jpg?v=1637110028",
+   "alt": null
+  },
+  "products_count": 27
+ }
+]

@@ -56,8 +56,20 @@ if (a[0] === '--merge') {
     for (const h of doc.handoffs || []) merged.handoffs.push({ from: doc.area, ...h });
   }
   const seen = new Set(); for (const x of merged.findings) { let id = x.id; let n = 2; while (seen.has(id)) id = `${x.id}-${n++}`; x.id = id; seen.add(id); }
+  // Leads work independently, so the same root cause often shows up in two areas. Flag likely pairs for the
+  // verifier and editor: shared page plus overlapping title words.
+  const words = (t) => new Set(String(t).toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter((w) => w.length > 3 || /^\d{2,}$/.test(w) || w === 'alt'));
+  const paths = (x) => new Set((x.where || []).map((w) => { try { return new URL(w.url).pathname; } catch { return w.url; } }));
+  merged.possibleDuplicates = [];
+  for (let i = 0; i < merged.findings.length; i++) for (let j = i + 1; j < merged.findings.length; j++) {
+    const a = merged.findings[i], b = merged.findings[j];
+    const wa = words(a.title), wb = words(b.title); const inter = [...wa].filter((w) => wb.has(w)).length;
+    const jac = inter / Math.max(1, new Set([...wa, ...wb]).size);
+    const samePage = [...paths(a)].some((p) => paths(b).has(p));
+    if (jac >= 0.45 || (samePage && jac >= 0.25)) merged.possibleDuplicates.push({ a: a.id, b: b.id, overlap: +jac.toFixed(2), samePage });
+  }
   writeFileSync(join(dir, 'findings', 'candidates.json'), JSON.stringify(merged, null, 1));
-  console.log(`merged ${files.length} area files, ${merged.findings.length} findings → findings/candidates.json`);
+  console.log(`merged ${files.length} area files, ${merged.findings.length} findings, ${merged.possibleDuplicates.length} possible duplicate pairs → findings/candidates.json`);
 } else if (a[0]) {
   const file = resolve(a[0]); const si = a.indexOf('--snapshot');
   let doc; try { doc = JSON.parse(readFileSync(file, 'utf8')); } catch (e) { console.error(`invalid JSON: ${e.message}`); process.exit(1); }

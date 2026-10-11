@@ -1,0 +1,78 @@
+{
+  "area": "qa",
+  "agent": "lead-qa",
+  "summary": "Buying works: all 10 add-to-cart clicks (5 products, phone and desktop) put the right product and variant in the cart, and no page shows console errors, failed requests or broken images. The two faults found are small and both sit on policy pages: a cut-off size table on phone and a dead link in the returns text.",
+  "strengths": [
+    "10 of 10 add-to-cart clicks on 5 in-stock product pages (phone and desktop) reached the cart as the right product and variant (clicktest/results.json, verdict MATCH)",
+    "0 console errors, 0 failed requests and 0 broken images on all 15 rendered pages (pages/*/desktop.json)",
+    "66 of 67 internal links and all checked external links resolve (links.json)",
+    "14 of 15 phone pages have no sideways scroll (horizontalOverflowPx 0) and the only fixed bar is the 65px header (pages/*/phone.json)"
+  ],
+  "findings": [
+    {
+      "id": "qa-01",
+      "title": "On phone, the Size Guide table is cut off after size 38 and the page scrolls sideways by 182px",
+      "severity": "medium",
+      "effort": "S",
+      "confidence": "verified",
+      "owner": "developer",
+      "where": [{ "url": "https://theme-dawn-demo.myshopify.com/pages/size-guide", "viewport": "phone" }],
+      "see_it": [
+        "Open https://theme-dawn-demo.myshopify.com/pages/size-guide on a phone (390px wide)",
+        "Look at the table under \"Fit tip: Runs large. Take a half size down.\": the columns stop at EUR 38 / US 8 / UK 5 / FR 39",
+        "Swipe sideways: the columns for EUR 39, 40 and 41 are off screen to the right"
+      ],
+      "evidence": [
+        { "file": "pages/pages-size-guide/phone-first.jpg", "note": "table visible only up to EUR 38; sizes 39-41 are not on screen" },
+        { "file": "pages/pages-size-guide/phone.json", "note": "layout.horizontalOverflowPx = 182; wide element table.ks-table right edge at 572px on a 390px screen" }
+      ],
+      "why_it_matters": "Phone shoppers cannot see the larger sizes (EUR 39 to 41, the sizes that matter if they take a half size down) without discovering a sideways swipe. The size guide is the page shoppers use to decide size, so a hidden part of it can lead to wrong-size orders and returns. It is the only one of 15 phone pages that overflows.",
+      "fix": {
+        "summary": "Make the size table fit or scroll inside its own box on phone.",
+        "steps": [
+          "Wrap the table in a container with overflow-x: auto, or let the table shrink with smaller cell padding on narrow screens",
+          "Check on a 390px wide phone that all seven sizes (EUR 35 to 41) are visible or clearly scrollable"
+        ],
+        "where_to_change": "Online Store > Pages > Size Guide (the table is built in the page's HTML), or the theme's custom CSS"
+      },
+      "claude_prompt": "On https://theme-dawn-demo.myshopify.com/pages/size-guide the size table (class ks-table) is 572px wide on a 390px phone, so columns EUR 39, 40 and 41 are cut off and the page scrolls sideways by 182px. Work on a duplicate or unpublished theme and do not touch checkout. Make the table fit the screen width on phones, or wrap it in a container with overflow-x: auto and a visible scroll hint, keeping the existing design system. Show me the diff before publishing. Check at 390px width that sizes 35 to 41 are all reachable and the page itself no longer scrolls sideways.",
+      "verify_fix": "Open the Size Guide on a 390px phone: all seven size columns are visible or scroll inside the table, and the page has no sideways scroll.",
+      "manual_check": null,
+      "intentional_possible": false,
+      "tags": ["mobile", "size-guide"]
+    },
+    {
+      "id": "qa-02",
+      "title": "The word \"original\" in the Returns page text links to a page that does not exist (404)",
+      "severity": "low",
+      "effort": "S",
+      "confidence": "verified",
+      "owner": "copywriter",
+      "where": [{ "url": "https://theme-dawn-demo.myshopify.com/pages/returns", "viewport": "both" }],
+      "see_it": [
+        "Open https://theme-dawn-demo.myshopify.com/pages/returns",
+        "In the paragraph that says \"All returns should be sent back to us in their original packaging\", click the word \"original\"",
+        "You land on \"404 Not Found\" on dawn-theme-default.myshopify.com/shopify.com, a different store address"
+      ],
+      "evidence": [
+        { "file": "links.json", "note": "broken[0]: text \"original\", foundOn /pages/returns, status 404" },
+        { "file": "pages/pages-returns/text.txt", "note": "line 12, the returns paragraph containing \"original packaging\"" }
+      ],
+      "why_it_matters": "It is the only dead link among 67 internal and 8 external links checked. A shopper who clicks it while reading the returns terms leaves the store for an error page, which looks careless on a page meant to build trust. This is Shopify's public demo store, so the stray link is probably leftover sample content, but a real store would want it gone.",
+      "fix": {
+        "summary": "Remove the link from the word \"original\" (it points to nothing useful).",
+        "steps": [
+          "Open the Returns page in the page editor, switch to the HTML view",
+          "Remove the <a> tag around \"original\" and save"
+        ],
+        "where_to_change": "Online Store > Pages > Returns"
+      },
+      "claude_prompt": "On https://theme-dawn-demo.myshopify.com/pages/returns the word \"original\" in \"their original packaging\" is a link to https://dawn-theme-default.myshopify.com/shopify.com, which returns 404. Using the Shopify connector, find the page with handle returns, remove only that link (keep the text), and leave all other wording unchanged. Show me the before and after HTML before saving. Then re-open the page and confirm the word is plain text.",
+      "verify_fix": "Open /pages/returns and click \"original\": nothing happens, no link is shown.",
+      "manual_check": null,
+      "intentional_possible": false,
+      "tags": ["links", "policy-page"]
+    }
+  ],
+  "handoffs": []
+}

@@ -1,0 +1,265 @@
+{
+ "publicDataLimits": "Shopify public products.json never includes barcodes (GTIN), inventory quantities, costs or metafields, and image alt text only on some stores (imagesMissingAlt is null when absent). Absence of these fields here is NOT evidence they are missing in the store; check /products/<handle>.js live (it carries barcode) or mark as to-test.",
+ "products": 32,
+ "variants": 266,
+ "priceMin": 119,
+ "priceMedian": 460,
+ "priceMax": 615,
+ "soldOutProducts": [
+  "studio-denim",
+  "mini-naomi-bag-harvest",
+  "small-convertible-flex-bag-cappuccino",
+  "thelma-sandal"
+ ],
+ "noImages": [],
+ "oneImage": [],
+ "imagesMissingAlt": null,
+ "shortDescriptions": [],
+ "compareAtNotHigher": [],
+ "discounted": [
+  {
+   "handle": "mini-woven-bag-latte",
+   "variant": "Mini Woven Bag",
+   "price": "245.00",
+   "compareAt": "375.00",
+   "pctOff": 35
+  },
+  {
+   "handle": "mini-woven-bag-latte",
+   "variant": "Mini Woven Bag",
+   "price": "245.00",
+   "compareAt": "375.00",
+   "pctOff": 35
+  },
+  {
+   "handle": "mini-naomi-bag-harvest",
+   "variant": "Mini Naomi Bag",
+   "price": "299.00",
+   "compareAt": "315.00",
+   "pctOff": 5
+  },
+  {
+   "handle": "small-convertible-flex-bag-cappuccino",
+   "variant": "Small Convertible Flex Bag",
+   "price": "320.00",
+   "compareAt": "395.00",
+   "pctOff": 19
+  },
+  {
+   "handle": "art-deco-cyclamen",
+   "variant": "Art Deco",
+   "price": "165.00",
+   "compareAt": "375.00",
+   "pctOff": 56
+  },
+  {
+   "handle": "art-deco-cyclamen",
+   "variant": "Art Deco",
+   "price": "165.00",
+   "compareAt": "375.00",
+   "pctOff": 56
+  },
+  {
+   "handle": "art-deco-cyclamen",
+   "variant": "Art Deco",
+   "price": "165.00",
+   "compareAt": "375.00",
+   "pctOff": 56
+  },
+  {
+   "handle": "art-deco-cyclamen",
+   "variant": "Art Deco",
+   "price": "165.00",
+   "compareAt": "375.00",
+   "pctOff": 56
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  },
+  {
+   "handle": "louise-slide-sandal",
+   "variant": "Louise Slide Sandal",
+   "price": "395.00",
+   "compareAt": "430.00",
+   "pctOff": 8
+  }
+ ],
+ "zeroPrice": [],
+ "duplicateTitles": [],
+ "missingSku": 159,
+ "placeholderText": [],
+ "mixedCurrencySymbols": [],
+ "productTypes": [
+  [
+   "(none)",
+   27
+  ],
+  [
+   "Shoes",
+   5
+  ]
+ ],
+ "vendors": [
+  "Mlouye"
+ ],
+ "newest": [
+  {
+   "handle": "puff-olive-leaf",
+   "published": "2021-11-16T17:16:13-07:00"
+  },
+  {
+   "handle": "puff-large-latte",
+   "published": "2021-11-16T17:15:34-07:00"
+  },
+  {
+   "handle": "studio-denim",
+   "published": "2021-11-16T17:15:16-07:00"
+  },
+  {
+   "handle": "mini-sera-tote-butter",
+   "published": "2021-11-16T17:13:08-07:00"
+  },
+  {
+   "handle": "bo-ivy-black",
+   "published": "2021-11-16T17:12:13-07:00"
+  }
+ ],
+ "lastUpdated": "2026-10-11T10:12:37-06:00"
+}

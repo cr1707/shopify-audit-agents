@@ -74,7 +74,7 @@ export const READ_PAGE = `(() => {
   const soldOutEls = q('button,input[type=submit]').filter((e) => SOLD.test(norm(e.innerText || e.value)) && vis(e));
   const buyNowEls = q('button,a,[role=button],shopify-buy-it-now-button,.shopify-payment-button').filter((e) => /buy it now|buy now|more payment options|shop pay/i.test(norm(e.innerText || e.getAttribute('aria-label'))) && vis(e) && !e.querySelector('button'));
   const keyPos = {
-    h1: (() => { const h = q('h1').find(vis); return h ? { screen: screen(h), text: norm(h.innerText).slice(0, 120) } : null; })(),
+    h1: (() => { const h = q('h1').find(vis); return h ? { screen: screen(h), text: (norm(h.innerText) || [...h.querySelectorAll('img[alt]')].map((i) => i.alt).join(' ')).slice(0, 120), image: !norm(h.innerText) && !!h.querySelector('img') } : null; })(),
     price: findFirst(/^[^a-z]{0,6}(\\$|€|£|¥|CHF|kr|zł|R\\$|A\\$|C\\$)\\s?\\d|\\d[\\d.,]*\\s?(€|\\$|£|CHF|kr|zł)$/i, 'span,div,p,strong,b,s,del,ins,small,dd'),
     addToCart: atcVis.length ? (() => { const s = atcVis.filter((e) => !fixedAnc(e)).sort((a, b) => docY(a) - docY(b))[0] || atcVis[0]; return { screen: screen(s), text: norm(s.innerText || s.value).slice(0, 60), sticky: !!fixedAnc(s) }; })() : null,
     reviews: findFirst(/(\\d(\\.\\d)?\\s?(\\/\\s?5|out of 5|stars?))|(\\(?\\d[\\d,.]*\\)?\\s?(reviews?|recensioni|avis|bewertungen|reseñas))/i, 'span,div,p,a,small'),
@@ -91,7 +91,9 @@ export const READ_PAGE = `(() => {
   const overflowX = Math.max(document.documentElement.scrollWidth, document.body ? document.body.scrollWidth : 0) - W;
   const wide = overflowX > 2 ? q('body *').filter((e) => { const r = e.getBoundingClientRect(); return r.right > W + 2 && r.width > 0 && vis(e) && getComputedStyle(e).position !== 'fixed'; }).slice(0, 8).map((e) => ({ tag: e.tagName.toLowerCase(), cls: String(e.className || '').slice(0, 60), right: Math.round(e.getBoundingClientRect().right), text: norm(e.innerText).slice(0, 60) })) : [];
   const tappables = q('a,button,input,select,textarea,[role=button]').filter(vis);
-  const smallTaps = tappables.filter((e) => { const r = e.getBoundingClientRect(); return (r.width < 24 || r.height < 24) && norm(e.innerText || e.getAttribute('aria-label')).length > 0; });
+  // Card links often stretch an absolutely positioned ::after over the whole card: the real target is the card.
+  const stretched = (e) => { const a = getComputedStyle(e, '::after'); return a.content !== 'none' && a.position === 'absolute'; };
+  const smallTaps = tappables.filter((e) => { const r = e.getBoundingClientRect(); return (r.width < 24 || r.height < 24) && norm(e.innerText || e.getAttribute('aria-label')).length > 0 && !stretched(e); });
   const tinyText = q('p,span,li,a,small,label,td').filter((e) => e.children.length === 0 && norm(e.innerText).length > 15 && parseFloat(getComputedStyle(e).fontSize) < 12 && vis(e));
   const fixedBars = q('body *').filter((e) => { const s = getComputedStyle(e); if (s.position !== 'fixed' && s.position !== 'sticky') return false; const r = e.getBoundingClientRect(); return r.width > W * 0.6 && r.height > 20 && r.top < H && r.bottom > 0 && vis(e); })
     .filter((e, i, a) => !a.some((o) => o !== e && o.contains(e))).map((e) => { const r = e.getBoundingClientRect(); return { top: Math.round(r.top), height: Math.round(r.height), text: norm(e.innerText).slice(0, 100) }; });

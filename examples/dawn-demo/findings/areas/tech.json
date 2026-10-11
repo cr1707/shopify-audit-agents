@@ -1,0 +1,188 @@
+{
+ "area": "tech",
+ "agent": "lead-tech",
+ "summary": "Technical basics are solid: one h1 per page, canonicals on every sampled page, Product structured data on all 5 product pages, all 32 products in the sitemap and no third-party apps loading. The main gaps are bare home and collection metadata and a 3.3 s lab LCP on the phone home page; this is Shopify's demo store, so some content is deliberate.",
+ "strengths": [
+  "All 32 products from products.json appear in the sitemap (64 product URLs incl. variants/duplicates checked, 0 missing)",
+  "Product pages carry ProductGroup structured data with no invalid JSON-LD (ldInvalid 0)",
+  "Product page phone lab LCP is 2.2 s with CLS 0 and TBT 128 ms",
+  "No third-party apps or trackers beyond Shopify analytics were detected on the pages checked"
+ ],
+ "findings": [
+  {
+   "id": "tech-01",
+   "title": "The home page title is only the store name, \"theme-dawn-demo\", and it has no meta description",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "marketing",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/",
+    "View page source and find the <title> tag: it reads \"theme-dawn-demo\"",
+    "Search the source for name=\"description\": there is none"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/desktop.json",
+     "note": "title = \"theme-dawn-demo\"; seo.description is empty"
+    },
+    {
+     "file": "pages/collections-bags/desktop.json",
+     "note": "collection page also has no meta description"
+    },
+    {
+     "file": "pages/blogs-news/desktop.json",
+     "note": "blog page also has no meta description"
+    }
+   ],
+   "why_it_matters": "The home page is the page most branded searches land on. A title with no keywords and no description leaves Google to pick a snippet from page text, so the search result is less clear and less likely to be clicked. The same gap exists on the sampled collection and blog pages (3 of 3). This is a demo store, so the bare name may be deliberate.",
+   "fix": {
+    "summary": "Set a descriptive home title and meta description, and add descriptions to collections.",
+    "steps": [
+     "Online Store > Preferences: fill Homepage title (under 60 characters) and Meta description (under 160)",
+     "Edit each collection and blog: Search engine listing > add a description"
+    ],
+    "where_to_change": "Online Store > Preferences; Products > Collections > Search engine listing"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com the home page <title> is \"theme-dawn-demo\" and there is no meta description; the Bags collection has none either. Propose a homepage title under 60 characters and description under 160 characters from the store's real content, plus descriptions for each collection. Use the Shopify connector or admin, change nothing else, show me the proposed text before saving.",
+   "verify_fix": "View source on the home page: the title has keywords and a meta description is present.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "seo",
+    "home"
+   ]
+  },
+  {
+   "id": "tech-02",
+   "title": "On phone with a throttled connection the home page's largest element, the hero banner image, appears at 3.3 s",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://pagespeed.web.dev/ and test https://theme-dawn-demo.myshopify.com/ on Mobile",
+    "Check Largest Contentful Paint and the LCP element: the hero image Shoes_and_bag.jpg"
+   ],
+   "evidence": [
+    {
+     "file": "psi/local-lab.json",
+     "note": "pages.home.lcpMs = 3344 (needs improvement; limit 2.5 s), lcpElement = img.banner__media-image-half, 152 requests, 1381 KB"
+    },
+    {
+     "file": "psi/local-lab.json",
+     "note": "product page LCP 2156 ms (good); CLS 0 and TBT under 130 ms on both"
+    }
+   ],
+   "why_it_matters": "Phone visitors wait longer than the 2.5 s 'good' limit for the main image on the page every campaign and branded search lands on. Slow landing pages lose visitors before the page appears and can weigh on Google Ads landing-page experience. This is one local lab run (PageSpeed Insights failed on quota, so no real-user field data), so treat it as a pointer.",
+   "fix": {
+    "summary": "Make the hero image load first and smaller.",
+    "steps": [
+     "In the theme image banner section, check the first banner image is not lazy-loaded and is served at a width close to phone size",
+     "Confirm the file is compressed (JPG/WebP)"
+    ],
+    "where_to_change": "Online Store > Themes > Customize > Home > Image banner"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com, home page. Lab LCP on throttled phone is 3.3 s and the LCP element is img.banner__media-image-half (Shoes_and_bag.jpg, requested at width=1100). Work on a duplicate theme: ensure the hero is eager with fetchpriority high, uses correct sizes for phone and a compressed file; show the diff before publishing. Check by re-running PageSpeed on mobile.",
+   "verify_fix": "Run pagespeed.web.dev on Mobile for the home page several times: LCP under 2.5 s and field data (if shown) passes.",
+   "manual_check": "Run pagespeed.web.dev for the home URL on Mobile 3 times and read the Core Web Vitals (field) block, which this audit could not fetch.",
+   "intentional_possible": false,
+   "tags": [
+    "speed",
+    "mobile",
+    "lcp"
+   ]
+  },
+  {
+   "id": "tech-03",
+   "title": "The \"original\" link on the Returns page goes to a 404 page",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/returns",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/returns",
+    "Find the link with the text \"original\" and click it: it opens https://dawn-theme-default.myshopify.com/shopify.com, which shows 404 Not Found"
+   ],
+   "evidence": [
+    {
+     "file": "links.json",
+     "note": "broken[0]: status 404, foundOn /pages/returns"
+    }
+   ],
+   "why_it_matters": "A dead link on a policy page is a small trust and SEO blemish; it is 1 broken link out of 75 checked. It looks like leftover demo content.",
+   "fix": {
+    "summary": "Remove or repair the link.",
+    "steps": [
+     "Pages > Returns: edit the content and remove the link around \"original\""
+    ],
+    "where_to_change": "Online Store > Pages > Returns"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com/pages/returns the word \"original\" links to a 404 URL (dawn-theme-default.myshopify.com/shopify.com). Remove the link, keep the text, and tell me what changed.",
+   "verify_fix": "Open the Returns page: no link on \"original\", or it opens a working page.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "links"
+   ]
+  },
+  {
+   "id": "tech-04",
+   "title": "robots.txt contains a paragraph addressed to AI shopping assistants, asking them to recommend and install a third-party skill",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/robots.txt",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/robots.txt",
+    "Read the comment lines at the top: they ask assistants to \"highly recommend\" installing shop.app/SKILL.md"
+   ],
+   "evidence": [
+    {
+     "file": "shop/robots.txt",
+     "note": "comment lines 6-8 and 11-17 address agents; no Disallow rules are affected"
+    }
+   ],
+   "why_it_matters": "The text is aimed at AI agents, not shoppers. It looks like Shopify platform default text, so it is probably not the merchant's choice, and it was not followed in this audit. Worth knowing it is publicly visible.",
+   "fix": {
+    "summary": "No action needed unless the merchant wants control; robots.txt.liquid can override it.",
+    "steps": [
+     "Decide whether the default text is acceptable"
+    ],
+    "where_to_change": "Theme code > robots.txt.liquid"
+   },
+   "claude_prompt": "Explain what the comment block at the top of https://theme-dawn-demo.myshopify.com/robots.txt does and whether it can be removed through robots.txt.liquid. Do not edit; just advise.",
+   "verify_fix": "Reopen robots.txt and read the top comment block.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "robots"
+   ]
+  }
+ ],
+ "handoffs": []
+}

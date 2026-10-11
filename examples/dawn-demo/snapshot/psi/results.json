@@ -1,0 +1,22 @@
+{
+ "home-desktop": {
+  "url": "https://theme-dawn-demo.myshopify.com/",
+  "strategy": "desktop",
+  "error": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'."
+ },
+ "home-mobile": {
+  "url": "https://theme-dawn-demo.myshopify.com/",
+  "strategy": "mobile",
+  "error": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'."
+ },
+ "products-small-convertible-flex-bag-cappuccino-desktop": {
+  "url": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+  "strategy": "desktop",
+  "error": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'."
+ },
+ "products-small-convertible-flex-bag-cappuccino-mobile": {
+  "url": "https://theme-dawn-demo.myshopify.com/products/small-convertible-flex-bag-cappuccino",
+  "strategy": "mobile",
+  "error": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'."
+ }
+}

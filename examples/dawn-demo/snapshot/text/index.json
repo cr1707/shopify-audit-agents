@@ -1,0 +1,108 @@
+[
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/policies/refund-policy",
+  "status": 404
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/policies/shipping-policy",
+  "status": 404
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/policies/terms-of-service",
+  "status": 404
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/policies/privacy-policy",
+  "status": 404
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/pages/shipping-returns",
+  "status": 200,
+  "title": "Shipping &amp; Returns\n &ndash; theme-dawn-demo",
+  "file": "text/pages-shipping-returns.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/pages/lookbook",
+  "status": 200,
+  "title": "Lookbook\n &ndash; theme-dawn-demo",
+  "file": "text/pages-lookbook.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+  "status": 200,
+  "title": "Lookbook Summer\n &ndash; theme-dawn-demo",
+  "file": "text/pages-lookbook-summer.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/pages/shoe-care-instructions",
+  "status": 200,
+  "title": "Shoe Care Instructions\n &ndash; theme-dawn-demo",
+  "file": "text/pages-shoe-care-instructions.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/pages/style-guide",
+  "status": 200,
+  "title": "Style Guide\n &ndash; theme-dawn-demo",
+  "file": "text/pages-style-guide.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/lookbook",
+  "status": 200,
+  "title": "Lookbook\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-lookbook.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/about",
+  "status": 200,
+  "title": "About\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-about.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/returns",
+  "status": 200,
+  "title": "Returns\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-returns.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/lookbook-summer",
+  "status": 200,
+  "title": "Lookbook Summer\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-lookbook-summer.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/size-guide",
+  "status": 200,
+  "title": "Size Guide\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-size-guide.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/shoe-care-instructions",
+  "status": 200,
+  "title": "Shoe Care Instructions\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-shoe-care-instructions.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/contact-us",
+  "status": 200,
+  "title": "Contact us\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-contact-us.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/shipping",
+  "status": 200,
+  "title": "Shipping\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-shipping.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/shipping-returns",
+  "status": 200,
+  "title": "Shipping &amp; Returns\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-shipping-returns.txt"
+ },
+ {
+  "url": "https://theme-dawn-demo.myshopify.com/en-fr/pages/style-guide",
+  "status": 200,
+  "title": "Style Guide\n &ndash; theme-dawn-demo",
+  "file": "text/en-fr-pages-style-guide.txt"
+ }
+]

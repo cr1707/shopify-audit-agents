@@ -1,0 +1,251 @@
+{
+ "area": "ux",
+ "agent": "lead-ux",
+ "summary": "The demo store is easy to read: the home page says what it sells in the first screen (\"Industrial design meets fashion.\", \"Atypical leather goods\", one \"Shop now\" button), there are no pop-ups, and Add to cart worked as expected on 5 of 5 products tested. The friction is small: sold-out items lead the home grid, Add to cart sits just below the first phone screen with no sticky bar, and there is no social proof near prices. Much of this is likely deliberate demo content.",
+ "strengths": [
+  "Home first screen on phone shows a clear headline, sub-headline and one primary CTA \"Shop now\" (pages/home/phone-first.jpg)",
+  "No pop-ups on any of 15 pages on phone, and none after 12 seconds (INDEX overlays column, pages/home/phone-after-12s.jpg)",
+  "Add to cart matched the product on 10 of 10 clicks (5 products, phone and desktop); a notification offers View cart, Check out and Continue shopping (clicktest/results.json)",
+  "Collection pages offer Filter (Availability, Price, Color) and 9 sort options; the header has Bags, Shoes, Lookbook, a search icon and cart on phone (pages/collections-bags/text.txt)",
+  "Sold-out and unavailable variants are struck through and the sold-out product page shows a disabled Sold out button (pages/products-small-convertible-flex-bag-cappuccino/phone-first.jpg)"
+ ],
+ "findings": [
+  {
+   "id": "ux-01",
+   "title": "3 of the first 4 products on the home page grid are marked \"Sold out\"",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "merchandiser",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ on a phone",
+    "Scroll to screen 2 to 3 of 5: the product grid starts",
+    "The first four cards are Small Convertible Flex Bag (Sold out), Studio Bag (Sold out), Louise Slide Sandal (Sale), Mini Naomi Bag (Sold out)"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/phone-full-01.jpg",
+     "note": "top of the grid: 3 of the first 4 cards carry a Sold out badge"
+    },
+    {
+     "file": "shop/catalogue-stats.json",
+     "note": "soldOutProducts lists studio-denim, mini-naomi-bag-harvest, small-convertible-flex-bag-cappuccino, thelma-sandal"
+    }
+   ],
+   "why_it_matters": "Phone visitors scanning the first products see mostly items they cannot buy, so the first impression of the range is of an empty shelf. The section sits above a \"Back in stock!\" heading, which sends mixed signals. This may be demo content kept as it is on purpose.",
+   "fix": {
+    "summary": "Feature in-stock products first in the home grid, or push sold-out items to the end.",
+    "steps": [
+     "In Online Store > Themes > Customize > Home page, open the featured collection section",
+     "Choose a collection that sorts available products first, or reorder the products manually",
+     "Optionally hide sold-out products from the section"
+    ],
+    "where_to_change": "Shopify admin > Online Store > Themes > Customize > Home page > Featured collection"
+   },
+   "claude_prompt": "On a duplicate theme of https://theme-dawn-demo.myshopify.com, the home page featured collection shows Small Convertible Flex Bag, Studio Bag and Mini Naomi Bag, all marked \"Sold out\", in the first four slots. Reorder the source collection so in-stock products come first without changing the design. Show me the change before publishing.",
+   "verify_fix": "Reload the home page on a phone: the first four cards have no Sold out badge.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "home",
+    "merchandising",
+    "mobile"
+   ]
+  },
+  {
+   "id": "ux-02",
+   "title": "On phone, the Add to cart button on product pages starts just below the first screen and there is no sticky buy bar",
+   "severity": "low",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal on a phone",
+    "The first screen shows the gallery, title, price ($395.00 CAD) and the Color and Size options",
+    "Scroll one more step: Add to cart appears at screen 2.1",
+    "Scroll further down: no fixed Add to cart bar follows you"
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-louise-slide-sandal/phone-first.jpg",
+     "note": "first screen ends in the size options, no button"
+    },
+    {
+     "file": "pages/products-louise-slide-sandal/phone.json",
+     "note": "keyPositions.addToCart.screen = 2.1, sticky = false"
+    }
+   ],
+   "why_it_matters": "A shopper who has picked colour and size must scroll to find the button. It is a small step, and the price and options are visible, but a sticky bar removes it. The same layout holds on 4 of 4 in-stock phone product pages tested (Add to cart at screen 2 to 2.1). On desktop the button is sticky.",
+   "fix": {
+    "summary": "Add a sticky Add to cart bar on phone, or shrink the gallery height so the button shows in the first screen.",
+    "steps": [
+     "Check the product template for a sticky add-to-cart option",
+     "Otherwise add one in the theme (developer)"
+    ],
+    "where_to_change": "Online Store > Themes > Customize > Product page"
+   },
+   "claude_prompt": "On a duplicate theme of https://theme-dawn-demo.myshopify.com, on phone product pages add a sticky Add to cart bar that appears once the main button leaves the screen, showing price and selected variant. Keep the Dawn design system, never edit checkout, show the diff before publishing.",
+   "verify_fix": "Open a product page on a phone and scroll: an Add to cart control stays visible.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "mobile",
+    "product-page"
+   ]
+  },
+  {
+   "id": "ux-03",
+   "title": "No product page shows star ratings or reviews near the price",
+   "severity": "medium",
+   "effort": "M",
+   "confidence": "verified",
+   "owner": "marketing",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+     "viewport": "phone"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/collections/bags",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal",
+    "Look around the title, price and the sections down to the footer: no stars, rating count or review section",
+    "Open https://theme-dawn-demo.myshopify.com/collections/bags: the cards show only name and price"
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-louise-slide-sandal/phone.json",
+     "note": "keyPositions.reviews = null (also null on the other 4 product pages)"
+    },
+    {
+     "file": "pages/collections-bags/text.txt",
+     "note": "cards list only name and price"
+    }
+   ],
+   "why_it_matters": "For items priced $119 to $615 CAD (median $460), shoppers have no peer proof next to the price. Fashion visitors who are unsure of fit or quality look for it. This is a demo store, so the absence may be deliberate.",
+   "fix": {
+    "summary": "Add a reviews app or theme block with ratings under the title and on collection cards.",
+    "steps": [
+     "Choose a review tool",
+     "Place the star summary under the product title",
+     "Show ratings on collection cards"
+    ],
+    "where_to_change": "Shopify admin > Apps, then Online Store > Themes > Customize"
+   },
+   "claude_prompt": "For https://theme-dawn-demo.myshopify.com, help me choose and install a product reviews solution compatible with Dawn, show the star rating under the product title and on collection cards. Work on an unpublished theme and show the diff first.",
+   "verify_fix": "A product page shows a star rating and review count near the price.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "product-page",
+    "trust"
+   ]
+  },
+  {
+   "id": "ux-04",
+   "title": "A link labelled \"original\" in the Returns page text goes to a 404 page",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/returns",
+     "viewport": "desktop"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/returns",
+    "In the sentence ending \"...in their original packaging\", click the word \"original\"",
+    "It leads to https://dawn-theme-default.myshopify.com/shopify.com, which shows 404 Not Found"
+   ],
+   "evidence": [
+    {
+     "file": "links.json",
+     "note": "broken[0]: status 404, foundOn /pages/returns"
+    }
+   ],
+   "why_it_matters": "A shopper reading the returns terms hits a dead end on the page that should reassure them. It is 1 broken link of 75 checked. Likely a leftover from the demo content.",
+   "fix": {
+    "summary": "Remove the link from the word \"original\" in the Returns page.",
+    "steps": [
+     "Edit the page and clear the link on \"original\""
+    ],
+    "where_to_change": "Shopify admin > Online Store > Pages > Returns"
+   },
+   "claude_prompt": "On https://theme-dawn-demo.myshopify.com/pages/returns, remove the hyperlink on the word \"original\" (it 404s) and leave the text as is. Show me the HTML diff.",
+   "verify_fix": "Open the page and click \"original\": nothing leads to a 404.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "links",
+    "policy-pages"
+   ]
+  },
+  {
+   "id": "ux-05",
+   "title": "The home page main heading (h1) is empty",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/",
+     "viewport": "phone"
+    }
+   ],
+   "see_it": [
+    "Open the page source or an accessibility tool on https://theme-dawn-demo.myshopify.com/",
+    "The h1 element has no text; the visible headline \"Industrial design meets fashion.\" is an h2"
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/phone.json",
+     "note": "headings[0] = h1 with empty text at screen 1.1; the headline is h2"
+    }
+   ],
+   "why_it_matters": "Screen readers and search engines get no main heading for the home page. Visitors do not notice. Passing to SEO and accessibility areas.",
+   "fix": {
+    "summary": "Make the hero headline the h1 or give the logo h1 text.",
+    "steps": [
+     "Set the hero heading level to h1 in the section settings or theme code"
+    ],
+    "where_to_change": "Online Store > Themes > Edit code"
+   },
+   "claude_prompt": "On a duplicate of the Dawn theme for https://theme-dawn-demo.myshopify.com, make the home hero headline the page h1 and keep the logo as plain link. Show the diff.",
+   "verify_fix": "Inspect the home page: one h1 with the headline text.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "home",
+    "accessibility"
+   ]
+  }
+ ],
+ "handoffs": [
+  {
+   "to": "seo",
+   "note": "Home page h1 is empty (ux-05); 419 product images lack alt text (shop/catalogue-stats.json)."
+  },
+  {
+   "to": "content",
+   "note": "Product page says \"Exchanges are free\" and returns page says returns within 14 days; shipping text says delivery 2-4 business days vs product page \"1-4 days after shipment\". Check wording consistency."
+  }
+ ]
+}

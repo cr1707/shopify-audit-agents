@@ -1,0 +1,1545 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+ "viewport": "desktop",
+ "slug": "products-helix-denim",
+ "loadOk": true,
+ "loadMs": 757,
+ "firstScreen": "pages/products-helix-denim/desktop-first.jpg",
+ "overlays": [],
+ "scroll": {
+  "height": 6535,
+  "screens": 7.3
+ },
+ "title": "Helix – theme-dawn-demo",
+ "lang": "en",
+ "seo": {
+  "description": "This is a demonstration store. You can purchase products like this from Mlouye. Featuring a unique combination of modern art and minimalist perspective, our Helix Bag is perfectly sized to fit just the essentials - think small wallet, keys, sunglasses and large phone. It has a wind spinner silhouette that will remind y",
+  "canonical": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+  "robots": null,
+  "ogTitle": "Helix",
+  "ogImage": "http://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-multicolor-2_1800x1800_10c62242-6743-4d46-a251-defa246dd195.jpg?v=1637107119",
+  "h1Count": 1,
+  "hreflang": 3,
+  "structuredData": [
+   "Organization",
+   "ProductGroup"
+  ],
+  "ldInvalid": 0
+ },
+ "product": {
+  "name": "Helix",
+  "sku": null,
+  "brand": "Mlouye",
+  "rating": null,
+  "reviewCount": null,
+  "offers": []
+ },
+ "shopify": {
+  "isShopify": true,
+  "shop": "theme-dawn-demo.myshopify.com",
+  "theme": {
+   "name": "Dawn",
+   "id": 129690763353,
+   "schema": "Dawn",
+   "version": "15.0.0"
+  },
+  "currency": "CAD",
+  "locale": "en",
+  "pageType": "product",
+  "productId": 6920727330905
+ },
+ "headings": [
+  {
+   "tag": "h1",
+   "text": "Helix",
+   "screen": 1.2
+  },
+  {
+   "tag": "h2",
+   "text": "Materials",
+   "screen": 2.2
+  },
+  {
+   "tag": "h2",
+   "text": "Shipping & Returns",
+   "screen": 2.3
+  },
+  {
+   "tag": "h2",
+   "text": "Dimensions",
+   "screen": 2.3
+  },
+  {
+   "tag": "h2",
+   "text": "Care Instructions",
+   "screen": 2.4
+  },
+  {
+   "tag": "h2",
+   "text": "A new kind of bag.",
+   "screen": 6.3
+  },
+  {
+   "tag": "h3",
+   "text": "Free Shipping",
+   "screen": 6.8
+  },
+  {
+   "tag": "h3",
+   "text": "Hassle-Free Exchanges",
+   "screen": 6.8
+  },
+  {
+   "tag": "h2",
+   "text": "You may also like",
+   "screen": 7
+  },
+  {
+   "tag": "h3",
+   "text": "Brick",
+   "screen": 7.4
+  },
+  {
+   "tag": "h3",
+   "text": "Stormi",
+   "screen": 7.4
+  },
+  {
+   "tag": "h3",
+   "text": "Small Naomi",
+   "screen": 7.4
+  },
+  {
+   "tag": "h3",
+   "text": "Lantern Bag",
+   "screen": 7.4
+  },
+  {
+   "tag": "h2",
+   "text": "Quick links",
+   "screen": 7.6
+  },
+  {
+   "tag": "h2",
+   "text": "Info",
+   "screen": 7.6
+  },
+  {
+   "tag": "h2",
+   "text": "Our mission",
+   "screen": 7.6
+  },
+  {
+   "tag": "h2",
+   "text": "Subscribe to our emails",
+   "screen": 7.9
+  },
+  {
+   "tag": "h2",
+   "text": "Country/region",
+   "screen": 8.1
+  }
+ ],
+ "keyPositions": {
+  "h1": {
+   "screen": 1.2,
+   "text": "Helix"
+  },
+  "price": {
+   "screen": 7.5,
+   "text": "$385.00 CAD"
+  },
+  "addToCart": {
+   "screen": 1.6,
+   "text": "Add to cart",
+   "sticky": true
+  },
+  "reviews": null,
+  "shipping": {
+   "screen": 1,
+   "text": "Free shipping available on all orders!"
+  },
+  "returns": null
+ },
+ "addToCartButtons": {
+  "total": 1,
+  "visible": 1,
+  "texts": [
+   "Add to cart"
+  ],
+  "soldOutButtons": 0,
+  "soldOutText": null,
+  "buyNowButtons": 1
+ },
+ "ctasFirstScreens": [
+  {
+   "text": "Skip to content",
+   "screen": 1,
+   "w": 122,
+   "h": 47,
+   "fixed": false,
+   "href": "#MainContent"
+  },
+  {
+   "text": "Lookbook",
+   "screen": 1.1,
+   "w": 87,
+   "h": 42,
+   "fixed": true,
+   "href": "/pages/lookbook-summer"
+  },
+  {
+   "text": "Log in",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/account/login"
+  },
+  {
+   "text": "Cart",
+   "screen": 1.1,
+   "w": 44,
+   "h": 44,
+   "fixed": true,
+   "href": "/cart"
+  },
+  {
+   "text": "Skip to product information",
+   "screen": 1.2,
+   "w": 122,
+   "h": 47,
+   "fixed": true,
+   "href": "#ProductInfo-template--15968258293849__main"
+  },
+  {
+   "text": "Decrease quantity for Helix",
+   "screen": 1.5,
+   "w": 45,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Increase quantity for Helix",
+   "screen": 1.5,
+   "w": 45,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Add to cart",
+   "screen": 1.6,
+   "w": 345,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  },
+  {
+   "text": "Buy it now",
+   "screen": 1.6,
+   "w": 345,
+   "h": 47,
+   "fixed": true,
+   "href": null
+  }
+ ],
+ "images": {
+  "total": 54,
+  "missingAlt": 0,
+  "emptyAlt": 26,
+  "broken": [],
+  "oversized": [],
+  "sample": [
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/Dawn_logo.png?v=1637111732&width=90",
+    "alt": "Dawn",
+    "w": 90,
+    "h": 22,
+    "rw": 90,
+    "rh": 22,
+    "broken": false,
+    "lazy": "eager",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-multicolor-2_1800x1800_10c62242-6743-4d46-a251-defa246dd195.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 713,
+    "rh": 713,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-multicolor-4_1800x1800_fccc27b4-a30a-49ee-b1b8-81aafe12034a.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-multicolor-5_1800x1800_ef94b6e8-ed0a-4b66-86b6-d03c16eb4427.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-multicolor-3_1800x1800_79f48f71-ecaa-472d-89cf-d949cd50ea8a.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 714,
+    "rw": 352,
+    "rh": 351,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-multicolor-1_1800x1800_7c637f9a-ef28-4f44-b2d6-cc59e0c9b769.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-denim-2.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-denim-3.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-denim-4.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-denim-5.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-denim-l2.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-off-white-2_955eda73-8aaf-4f6a-a5b2-4457e8ddd13d.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-off-white-4_a07189b3-8a87-4657-ad74-d0218349046e.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-off-white-5_5414fc3b-3573-4f5c-9813-db47223a2308.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-off-white-l11_0e310ef7-0539-4f11-a5b9-ba20293cc04e.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-south-america-2_ec4f0aa0-becb-450b-8166-1fd1fc44cdec.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-south-america-5_5f91874b-092a-4d42-9245-caeedc34963c.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-south-america-6_f8a6e8e3-a626-4ca4-bb00-fcc5d4cc14ea.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-helix-south-america-l1_6ab838ea-b993-4bd6-a04d-58a6bf14e32d.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-helix-multicolor-m2_1800x1800_88335d4c-ade7-4ac3-b80a-0bd4e36dada9.jpg?v=1637107119&width=823",
+    "alt": "",
+    "w": 715,
+    "h": 715,
+    "rw": 352,
+    "rh": 352,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/hqdefault_74a308c5-aef1-49b0-b2b3-1ec76ecc744c.jpg?v=1642631233&width=823",
+    "alt": "",
+    "w": 417,
+    "h": 312,
+    "rw": 713,
+    "rh": 535,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/files/imgwithtext_1070x_91914dd5-dcb3-4f6b-a829-e6e75fb5813e.png?v=1642553858&width=750",
+    "alt": "A colorful collection of handbags against a blue background.",
+    "w": 550,
+    "h": 492,
+    "rw": 548,
+    "rh": 458,
+    "broken": false,
+    "lazy": "auto",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-brick-oil-yellow-1.jpg?v=1637107420&width=360",
+    "alt": "Brick",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-stormi-cognac-olive-leaf-1.jpg?v=1637107747&width=360",
+    "alt": "Stormi",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-small-naomi-gummy-n1.jpg?v=1637107770&width=360",
+    "alt": "Small Naomi",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   },
+   {
+    "src": "https://theme-dawn-demo.myshopify.com/cdn/shop/products/mlouye-lantern-bag-earth-1.jpg?v=1637107175&width=360",
+    "alt": "Lantern Bag",
+    "w": 267,
+    "h": 267,
+    "rw": 269,
+    "rh": 269,
+    "broken": false,
+    "lazy": "lazy",
+    "visible": true
+   }
+  ]
+ },
+ "links": {
+  "total": 97,
+  "list": [
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#MainContent",
+    "text": "Skip to content",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "Tote bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "Shoulder bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "Crossbody bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "Top handle bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "Mini bags",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shop all",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "Sandals",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "Boots",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "Dawn",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/tote-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoulder-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/crossbody-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/top-handle-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/mini-bags",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/sandals",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/boots",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook-summer",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/account/login",
+    "text": "Log in",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "Cart",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/cart",
+    "text": "",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#ProductInfo-template--15968258293849__main",
+    "text": "Skip to product information",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+    "text": "Helix",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://www.mlouye.com/",
+    "text": "Mlouye",
+    "target": "_blank",
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+    "text": "View full details",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/brick-apple?pr_prod_strat=similar&pr_rec_id=a53b9098e&pr_rec_pid=6920730017881&pr_ref_pid=6920727330905&pr_seq=uniform",
+    "text": "Brick",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/brick-apple?pr_prod_strat=similar&pr_rec_id=a53b9098e&pr_rec_pid=6920730017881&pr_ref_pid=6920727330905&pr_seq=uniform",
+    "text": "Brick",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/stormi-olive-leaf?pr_prod_strat=similar&pr_rec_id=a53b9098e&pr_rec_pid=6920733065305&pr_ref_pid=6920727330905&pr_seq=uniform",
+    "text": "Stormi",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/stormi-olive-leaf?pr_prod_strat=similar&pr_rec_id=a53b9098e&pr_rec_pid=6920733065305&pr_ref_pid=6920727330905&pr_seq=uniform",
+    "text": "Stormi",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-naomi-gummy?pr_prod_strat=similar&pr_rec_id=a53b9098e&pr_rec_pid=6920733229145&pr_ref_pid=6920727330905&pr_seq=uniform",
+    "text": "Small Naomi",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/small-naomi-gummy?pr_prod_strat=similar&pr_rec_id=a53b9098e&pr_rec_pid=6920733229145&pr_ref_pid=6920727330905&pr_seq=uniform",
+    "text": "Small Naomi",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/lantern-bag-earth?pr_prod_strat=similar&pr_rec_id=a53b9098e&pr_rec_pid=6920728248409&pr_ref_pid=6920727330905&pr_seq=uniform",
+    "text": "Lantern Bag",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/lantern-bag-earth?pr_prod_strat=similar&pr_rec_id=a53b9098e&pr_rec_pid=6920728248409&pr_ref_pid=6920727330905&pr_seq=uniform",
+    "text": "Lantern Bag",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/bags",
+    "text": "Bags",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/collections/shoes",
+    "text": "Shoes",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/lookbook",
+    "text": "Lookbook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/about",
+    "text": "About",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/contact-us",
+    "text": "Contact us",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/pages/shipping",
+    "text": "Shipping policy",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/blogs/news",
+    "text": "Blog",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://facebook.com/shopify",
+    "text": "Facebook",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "http://instagram.com/shopify",
+    "text": "Instagram",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.youtube.com/shopify",
+    "text": "YouTube",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://tiktok.com/@shopify",
+    "text": "TikTok",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://twitter.com/shopify",
+    "text": "X (Twitter)",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Algeria DZD د.ج",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Australia AUD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Brazil CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Canada CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "China CNY ¥",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Egypt EGP ج.م",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "France EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Germany EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Italy EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Mexico CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "New Zealand NZD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Nigeria NGN ₦",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Saudi Arabia SAR ر.س",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Senegal XOF Fr",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "South Africa CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Spain EUR €",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Switzerland CHF CHF",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "Türkiye CAD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "United Kingdom GBP £",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/products/helix-denim#",
+    "text": "United States USD $",
+    "target": null,
+    "rel": null,
+    "visible": false
+   },
+   {
+    "href": "https://theme-dawn-demo.myshopify.com/",
+    "text": "theme-dawn-demo",
+    "target": null,
+    "rel": null,
+    "visible": true
+   },
+   {
+    "href": "https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+    "text": "Powered by Shopify",
+    "target": "_blank",
+    "rel": "nofollow",
+    "visible": true
+   }
+  ]
+ },
+ "forms": [
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "HeaderCountryMobileForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/search",
+   "method": "get",
+   "id": null,
+   "fields": [
+    {
+     "name": "q",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart",
+   "method": "post",
+   "id": "cart-notification-form",
+   "fields": [
+    {
+     "name": "checkout",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": false
+  },
+  {
+   "action": "/cart/add",
+   "method": "post",
+   "id": {},
+   "fields": [],
+   "visible": false
+  },
+  {
+   "action": "/cart/add",
+   "method": "post",
+   "id": {},
+   "fields": [
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Multicolor"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Denim"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "Off White"
+    },
+    {
+     "name": "Color-1\n",
+     "type": "radio",
+     "required": false,
+     "label": "South America"
+    },
+    {
+     "name": "quantity",
+     "type": "number",
+     "required": false,
+     "label": "Quantity"
+    },
+    {
+     "name": "add",
+     "type": "submit",
+     "label": ""
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/contact#ContactFooter",
+   "method": "post",
+   "id": "ContactFooter",
+   "fields": [
+    {
+     "name": "contact[email]",
+     "type": "email",
+     "required": true,
+     "label": "Email"
+    },
+    {
+     "name": "commit",
+     "type": "submit",
+     "label": "Subscribe"
+    }
+   ],
+   "visible": true
+  },
+  {
+   "action": "/localization",
+   "method": "post",
+   "id": "FooterCountryForm",
+   "fields": [
+    {
+     "name": "country_filter",
+     "type": "search",
+     "required": false,
+     "label": "Search"
+    }
+   ],
+   "visible": true
+  }
+ ],
+ "layout": {
+  "viewport": "800x900",
+  "pageHeight": 6535,
+  "screens": 7.3,
+  "horizontalOverflowPx": 640,
+  "wideElements": [
+   {
+    "tag": "div",
+    "cls": "shopify-section shopify-section-group-header-group announcem",
+    "right": 1440,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "utility-bar color-background-1 gradient utility-bar--bottom-",
+    "right": 1440,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "page-width utility-bar__grid",
+    "right": 1320,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "announcement-bar",
+    "right": 1270,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "p",
+    "cls": "announcement-bar__message h5",
+    "right": 837,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "span",
+    "cls": "",
+    "right": 837,
+    "text": "Free shipping available on all orders!"
+   },
+   {
+    "tag": "div",
+    "cls": "shopify-section shopify-section-group-header-group section-h",
+    "right": 1440,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   },
+   {
+    "tag": "sticky-header",
+    "cls": "header-wrapper color-background-1 gradient header-wrapper--b",
+    "right": 1440,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   }
+  ],
+  "smallTapTargets": 7,
+  "smallTapExamples": [
+   {
+    "text": "Mlouye",
+    "size": "52x21"
+   },
+   {
+    "text": "Brick",
+    "size": "269x17"
+   },
+   {
+    "text": "Stormi",
+    "size": "269x17"
+   },
+   {
+    "text": "Small Naomi",
+    "size": "269x17"
+   },
+   {
+    "text": "Lantern Bag",
+    "size": "269x17"
+   },
+   {
+    "text": "theme-dawn-demo",
+    "size": "99x14"
+   },
+   {
+    "text": "Powered by Shopify",
+    "size": "103x14"
+   }
+  ],
+  "tinyTextCount": 1,
+  "tinyTextExamples": [
+   {
+    "text": "Powered by Shopify",
+    "px": 11
+   }
+  ],
+  "fixedBars": [
+   {
+    "top": 39,
+    "height": 85,
+    "text": "Bags Shoes Lookbook Log in Cart"
+   },
+   {
+    "top": 160,
+    "height": 4514,
+    "text": "Skip to product information Play video"
+   }
+  ],
+  "fixedBarsTotalHeight": 4599
+ },
+ "fullTiles": [
+  {
+   "file": "pages/products-helix-denim/desktop-full-01.jpg",
+   "screens": "1-2"
+  },
+  {
+   "file": "pages/products-helix-denim/desktop-full-02.jpg",
+   "screens": "3-4"
+  },
+  {
+   "file": "pages/products-helix-denim/desktop-full-03.jpg",
+   "screens": "5-6"
+  },
+  {
+   "file": "pages/products-helix-denim/desktop-full-04.jpg",
+   "screens": "7-7"
+  }
+ ],
+ "a11y": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+   "count": 5,
+   "examples": [
+    {
+     "target": "#FooterCountryLabel",
+     "html": "<h2 class=\"caption-large text-body\" id=\"FooterCountryLabel\">Country/region</h2>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.76 (foreground color: #c3c3c3, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast rati"
+    },
+    {
+     "target": "button[aria-controls=\"FooterCountry-country-results\"] > span",
+     "html": "<span>Canada |\n      CAD\n      $</span>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #afafaf, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast rati"
+    },
+    {
+     "target": ".copyright__content:nth-child(1)",
+     "html": "<small class=\"copyright__content\">© 2026, <a href=\"/\" title=\"\">theme-dawn-demo</a></small>",
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.76 (foreground color: #c3c3c3, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast rati"
+    }
+   ]
+  }
+ ],
+ "network": {
+  "requests": 307,
+  "bytes": 2499671,
+  "failed": [],
+  "http4xx5xx": []
+ },
+ "detected": {
+  "apps": [],
+  "tech": [],
+  "pixels": [
+   {
+    "name": "Shopify analytics",
+    "loaded": true,
+    "hits": 0,
+    "examples": []
+   }
+  ],
+  "thirdParty": [
+   {
+    "host": "otlp-http-production.shopifysvc.com",
+    "requests": 13,
+    "bytes": 417,
+    "types": [
+     "Other",
+     "Fetch",
+     "Ping"
+    ]
+   },
+   {
+    "host": "error-analytics-sessions-production.shopifysvc.com",
+    "requests": 2,
+    "bytes": 0,
+    "types": [
+     "Fetch",
+     "Other"
+    ]
+   }
+  ]
+ },
+ "console": [],
+ "blockedBySafety": []
+}

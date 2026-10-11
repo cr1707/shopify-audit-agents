@@ -1,0 +1,113 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/collections/bags",
+ "viewport": "phone",
+ "at": "2026-10-11T16:35:19.776Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/collections/bags",
+ "title": "Bags – theme-dawn-demo",
+ "eval": [
+  {
+   "title": "Small Naomi",
+   "linkBox": {
+    "w": 178,
+    "h": 16
+   },
+   "after": {
+    "content": "\"\"",
+    "position": "absolute",
+    "top": "0px",
+    "right": "0px",
+    "bottom": "0px",
+    "left": "0px"
+   },
+   "cardBox": {
+    "w": 178,
+    "h": 251
+   },
+   "hits": {
+    "imageCentre": {
+     "tag": "A",
+     "linkHref": "/products/small-naomi-gummy",
+     "sameLinkAsTitle": true
+    },
+    "priceArea": {
+     "tag": "A",
+     "linkHref": "/products/small-naomi-gummy",
+     "sameLinkAsTitle": true
+    }
+   }
+  },
+  {
+   "title": "Bo Ivy",
+   "linkBox": {
+    "w": 178,
+    "h": 16
+   },
+   "after": {
+    "content": "\"\"",
+    "position": "absolute",
+    "top": "0px",
+    "right": "0px",
+    "bottom": "0px",
+    "left": "0px"
+   },
+   "cardBox": {
+    "w": 178,
+    "h": 251
+   },
+   "hits": {
+    "imageCentre": {
+     "tag": "A",
+     "linkHref": "/products/bo-ivy-black",
+     "sameLinkAsTitle": true
+    },
+    "priceArea": {
+     "tag": "A",
+     "linkHref": "/products/bo-ivy-black",
+     "sameLinkAsTitle": true
+    }
+   }
+  },
+  {
+   "title": "Stormi",
+   "linkBox": {
+    "w": 178,
+    "h": 16
+   },
+   "after": {
+    "content": "\"\"",
+    "position": "absolute",
+    "top": "0px",
+    "right": "0px",
+    "bottom": "0px",
+    "left": "0px"
+   },
+   "cardBox": {
+    "w": 178,
+    "h": 251
+   },
+   "hits": {
+    "imageCentre": {
+     "tag": "A",
+     "linkHref": "/products/stormi-olive-leaf",
+     "sameLinkAsTitle": true
+    },
+    "priceArea": {
+     "tag": "A",
+     "linkHref": "/products/stormi-olive-leaf",
+     "sameLinkAsTitle": true
+    }
+   }
+  }
+ ],
+ "overlays": [],
+ "console": [
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 401 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens"
+  }
+ ],
+ "blockedBySafety": []
+}

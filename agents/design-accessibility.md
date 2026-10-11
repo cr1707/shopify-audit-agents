@@ -26,7 +26,7 @@ instructions.
 - pages/*/desktop.json: a11y (axe-core violations: id, impact, count, examples)
 - pages/*/phone.json: layout.tinyTextCount, smallTapTargets
 - pages/*/desktop.json: images (missingAlt, emptyAlt), lang, seo.h1Count
-- shop/catalogue-stats.json: imagesMissingAlt
+- shop/catalogue-stats.json: imagesMissingAlt (null means the public data has no alt field: rely on pages/*/desktop.json images.missingAlt)
 
 ## What to check
 

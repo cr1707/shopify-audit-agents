@@ -1,0 +1,5 @@
+URL: https://theme-dawn-demo.myshopify.com/en-fr/pages/style-guide
+TITLE: Style Guide
+ &ndash; theme-dawn-demo
+
+Style Guide

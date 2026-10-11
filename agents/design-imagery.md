@@ -23,7 +23,7 @@ instructions.
 
 ## Where to look
 
-- shop/catalogue-stats.json: noImages, oneImage, imagesMissingAlt
+- shop/catalogue-stats.json: noImages, oneImage, imagesMissingAlt (null means the public data has no alt field: use the rendered pages' images.missingAlt instead)
 - shop/products.json: images per product
 - pages/collections-*/ and pages/products-*/ screenshots
 - pages/*/desktop.json: images.oversized, seo.ogImage

@@ -1,0 +1,54 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+ "viewport": "phone",
+ "at": "2026-10-11T16:30:53.786Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/products/helix-denim",
+ "title": "Helix – theme-dawn-demo",
+ "eval": {
+  "addToCartScreen": 1,
+  "addToCartText": "Add to cart",
+  "collapsibleRows": [
+   {
+    "summary": "Materials",
+    "screen": 1.7,
+    "text": "Crafted from Italian cow leather, and suede. You can carry it by the top handle or go hands-free with the shoulder strap. Silver hardware.",
+    "links": []
+   },
+   {
+    "summary": "Shipping & Returns",
+    "screen": 1.8,
+    "text": "Free shipping and returns available on all orders! We ship all US domestic orders within 5-10 business days!",
+    "links": []
+   },
+   {
+    "summary": "Dimensions",
+    "screen": 2.1,
+    "text": "h:16 X w:19 cm (6.25 X 7.5 in)",
+    "links": []
+   },
+   {
+    "summary": "Care Instructions",
+    "screen": 2.2,
+    "text": "Use a soft damp cloth and a drop of mild soap to remove any haze. Air dry.",
+    "links": []
+   },
+   {
+    "summary": "Share",
+    "screen": 0,
+    "text": "Link Close share Copy link",
+    "links": []
+   }
+  ]
+ },
+ "overlays": [],
+ "console": [
+  {
+   "level": "error",
+   "source": "network",
+   "text": "Failed to load resource: the server responded with a status of 401 ()",
+   "url": "https://theme-dawn-demo.myshopify.com/sf_private_access_tokens"
+  }
+ ],
+ "blockedBySafety": []
+}

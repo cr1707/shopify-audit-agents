@@ -130,7 +130,7 @@ code{font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;backgrou
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
 .top{border-bottom:1px solid var(--line);padding:18px 0;font:500 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
 .top .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-h1{font-size:40px;line-height:1.08;letter-spacing:-.025em;margin:44px 0 14px;max-width:900px}
+h1{font-size:40px;line-height:1.08;letter-spacing:-.025em;margin:44px 0 14px;max-width:900px}h1.long{font-size:30px;line-height:1.18;max-width:980px}
 h2{font-size:26px;letter-spacing:-.02em;margin:0 0 6px}
 h3{font-size:19px;line-height:1.3;letter-spacing:-.01em;margin:8px 0 4px}
 h4{font:600 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:18px 0 8px}
@@ -175,12 +175,12 @@ button.copy{margin:0 12px 12px;font:600 12px/1 inherit;padding:8px 10px;border:0
 .lim{color:var(--mute);font-size:14px}
 dialog{border:0;padding:0;max-width:96vw;max-height:94vh;background:transparent}dialog::backdrop{background:rgba(0,0,0,.75)}dialog img{display:block;max-width:96vw;max-height:94vh}
 footer{border-top:1px solid var(--line);margin-top:56px;padding:22px 0 40px;color:var(--mute);font-size:13px}
-@media (max-width:800px){h1{font-size:30px}.cols{grid-template-columns:1fr;gap:0}ul.strengths{columns:1}.wrap{padding:0 16px}.finding{padding:16px}.thumb img{width:110px}.stats div{border-right:0;border-bottom:1px solid var(--line)}}
+@media (max-width:800px){h1,h1.long{font-size:26px}.cols{grid-template-columns:1fr;gap:0}ul.strengths{columns:1}.wrap{padding:0 16px}.finding{padding:16px}.thumb img{width:110px}.stats div{border-right:0;border-bottom:1px solid var(--line)}}
 @media print{.filters,button.copy,dialog{display:none!important}details.prompt{display:block}details.prompt>*{display:block}body{font-size:12px}.finding{page-break-inside:avoid}h1{margin-top:10px}a{color:var(--ink)}}
 </style></head><body>
 <div class="top"><div class="wrap"><span>Store audit · ${esc(host)}</span><span>${esc(date)} · ${esc(F.mode || 'quick')} mode</span></div></div>
 <main class="wrap">
-<h1>${esc(F.summary?.headline || 'Store audit')}</h1>
+<h1${(F.summary?.headline || '').length > 120 ? ' class="long"' : ''}>${esc(F.summary?.headline || 'Store audit')}</h1>
 <p class="lede">${esc(F.summary?.read_first || '')}</p>
 <div class="stats">
   <div><b>${overall ?? '–'}</b><span>Overall score / 100</span></div>

@@ -1,0 +1,43 @@
+{
+ "url": "https://theme-dawn-demo.myshopify.com/",
+ "viewport": "desktop",
+ "at": "2026-10-11T16:33:44.249Z",
+ "loaded": true,
+ "finalUrl": "https://theme-dawn-demo.myshopify.com/",
+ "title": "theme-dawn-demo",
+ "eval": {
+  "webPixelsConfigFound": true,
+  "pixelTypes": [
+   "APP",
+   "CUSTOM"
+  ],
+  "pixelIds": [
+   "shopify-app-pixel",
+   "shopify-custom-pixel",
+   "6920727593049",
+   "39577013452889",
+   "6920736931929",
+   "39577054543961",
+   "6920722055257",
+   "39577003753561",
+   "6920728805465",
+   "39577036161113"
+  ],
+  "configExcerpt": "webPixelsConfigList: [{\"id\":\"shopify-app-pixel\",\"configuration\":\"{}\",\"eventPayloadVersion\":\"v1\",\"runtimeContext\":\"STRICT\",\"scriptVersion\":\"0530\",\"apiClientId\":\"shopify-pixel\",\"type\":\"APP\",\"privacyPurposes\":[\"ANALYTICS\",\"MARKETING\"]},{\"id\":\"shopify-custom-pixel\",\"eventPayloadVersion\":\"v1\",\"runtimeContext\":\"LAX\",\"scriptVersion\":\"0530\",\"apiClientId\":\"shopify-pixel\",\"type\":\"CUSTOM\",\"privacyPurposes\":[\"ANALYTICS\",\"MARKETING\"]}],isMerchantRequest: false,initData: {\"shop\":{\"name\":\"theme-dawn-demo\",\"paymentSettings\":{\"currencyCode\":\"CAD\"},\"myshopifyDomain\":\"theme-dawn-demo.myshopify.com\",\"countryCode\"",
+  "resourceHosts": [
+   "theme-dawn-demo.myshopify.com",
+   "cdn.shopify.com",
+   "otlp-http-production.shopifysvc.com"
+  ],
+  "globals": {
+   "gtag": "undefined",
+   "fbq": "undefined",
+   "ttq": "undefined",
+   "pintrk": "undefined",
+   "dataLayer": false
+  }
+ },
+ "overlays": [],
+ "console": [],
+ "blockedBySafety": []
+}

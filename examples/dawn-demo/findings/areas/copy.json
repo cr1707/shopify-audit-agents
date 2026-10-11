@@ -1,0 +1,315 @@
+{
+ "area": "copy",
+ "agent": "lead-copy",
+ "summary": "The offer is clear on the home page (\"Industrial design meets fashion. Atypical leather goods\") and product descriptions are specific, but delivery and return terms contradict each other across four pages. Several issues (placeholder contact details, mixed brand names) come from deliberate Dawn demo content.",
+ "strengths": [
+  "Product descriptions on the 3 sampled bags state shape, material, size contents and use, e.g. the Studio Bag fits \"wallet, phone, 500ml water bottle, and sunglasses\".",
+  "Home page headline and sub-headline state what is sold: \"Functional handbags made of luxurious materials\".",
+  "All 15 rendered pages carry lang=\"en\" and the copy is in English throughout, with no spelling errors found on the sampled pages.",
+  "Add to cart, Buy it now and Sold out buttons say what happens next."
+ ],
+ "findings": [
+  {
+   "id": "copy-01",
+   "title": "Delivery time is stated three ways: \"2-4 business days\", \"1-4 days after shipment\" and \"5-10 business days\"",
+   "severity": "high",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/shipping"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/shipping-returns"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/shipping: it says \"Delivery takes between 2-4 business days depending on your location\" and a 2-business-day wait for the shipping notification.",
+    "Open https://theme-dawn-demo.myshopify.com/pages/shipping-returns: it says \"We ship all US domestic orders within 5-10 business days\".",
+    "Open https://theme-dawn-demo.myshopify.com/products/helix-denim, section after the description: \"You'll receive your order an estimated 1\u20134 days after shipment.\""
+   ],
+   "evidence": [
+    {
+     "file": "pages/pages-shipping/text.txt",
+     "note": "\"2-4 business days\" plus up to 2 days for the notification email"
+    },
+    {
+     "file": "text/pages-shipping-returns.txt",
+     "note": "\"5-10 business days\" for US domestic"
+    },
+    {
+     "file": "pages/products-helix-denim/text.txt",
+     "note": "\"estimated 1\u20134 days after shipment\""
+    }
+   ],
+   "why_it_matters": "A buyer cannot tell whether an order arrives in about a week or in two. Three different promises mean support questions (\"where is my order?\") and a risk that the shortest claim is the one the buyer relies on when deciding. The shipping-returns page is also reachable only by direct URL, so shoppers see the two shorter promises and later may find the longer one.",
+   "fix": {
+    "summary": "Pick one real delivery window per region and use it on the shipping page, the product-page block and the announcement bar.",
+    "steps": [
+     "Decide the true handling time and transit time per region.",
+     "Rewrite the Shipping page, the product-page \"Free Shipping\" block and delete or fix the Shipping & Returns page.",
+     "State handling and transit separately (e.g. dispatch in X days, delivery in Y days)."
+    ],
+    "where_to_change": "Online Store > Pages > Shipping, Shipping & Returns; Themes > Customize > Product page > Shipping block"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. Three pages give different delivery times: /pages/shipping \"2-4 business days\", /pages/shipping-returns \"5-10 business days\" for US domestic, product pages \"1-4 days after shipment\". I will give you the true handling and transit times per region. Draft one consistent wording for each of the three places and list the exact pages and theme blocks to edit. Work on a duplicate theme, show me the diff before publishing, do not touch checkout.",
+   "verify_fix": "Search each page for \"days\": every delivery claim now matches the single agreed window.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "shipping",
+    "consistency"
+   ]
+  },
+  {
+   "id": "copy-02",
+   "title": "Return terms disagree: \"free returns\", a 14-day return window, and free home-collected exchanges are described on different pages",
+   "severity": "high",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/returns"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/shipping-returns"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/helix-denim"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/about"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/shipping-returns: \"Free shipping and returns available on all orders!\"",
+    "Open https://theme-dawn-demo.myshopify.com/pages/returns: return within 14 days, unused, original packaging; it does not say who pays return postage or mention a free collection.",
+    "Open a product page (e.g. /products/helix-denim): \"Hassle-Free Exchanges ... We will collect from your home, work or an alternative address.\" Only exchanges are mentioned, not refunds.",
+    "Open https://theme-dawn-demo.myshopify.com/pages/about: \"If our product doesn't satisfy you, we'll take it back.\" with no time limit."
+   ],
+   "evidence": [
+    {
+     "file": "text/pages-shipping-returns.txt",
+     "note": "\"Free shipping and returns\""
+    },
+    {
+     "file": "pages/pages-returns/text.txt",
+     "note": "14 days, original packaging, no mention of return cost"
+    },
+    {
+     "file": "pages/products-helix-denim/text.txt",
+     "note": "\"Hassle-Free Exchanges\" with home collection"
+    },
+    {
+     "file": "pages/pages-about/text.txt",
+     "note": "\"we'll take it back\" with no window"
+    }
+   ],
+   "why_it_matters": "Buyers of a 400+ CAD item look for a clear refund promise. Here the free-returns claim, the 14-day window and the collect-from-home exchange are never reconciled, so a shopper cannot tell if returns are free, who collects, or whether they get money back or only an exchange. That raises pre-purchase hesitation and returns disputes.",
+   "fix": {
+    "summary": "Write one returns policy that covers window, refund versus exchange, who pays shipping, and pickup, and reuse its wording on product pages and About.",
+    "steps": [
+     "Decide the facts: window, refund/exchange, return postage, pickup.",
+     "Update the Returns page, delete or align the Shipping & Returns page, and edit the product-page \"Hassle-Free Exchanges\" block and About text."
+    ],
+    "where_to_change": "Online Store > Pages > Returns; Themes > Customize > Product page"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. Return terms conflict: /pages/shipping-returns says \"Free shipping and returns\", /pages/returns says \"within 14 days\" with no cost info, product pages say \"Hassle-Free Exchanges ... We will collect from your home\", /pages/about says \"we'll take it back\". I will tell you the real policy. Draft one consistent policy and short versions for the product page and About page. Use a duplicate theme, show the diff first.",
+   "verify_fix": "Read the Returns page and the product-page block side by side: window, refund/exchange and who pays are the same.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "returns",
+    "consistency"
+   ]
+  },
+  {
+   "id": "copy-03",
+   "title": "The Contact us page shows template placeholders: \"Your Business Name Inc.\" and \"yourbusinessemail@address.com",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/contact-us"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/pages/contact-us.",
+    "Read the business details block: \"Trade name: Your Business Name Inc.\", \"Email: yourbusinessemail@address.com\", \"VAT number: FRXX999999999\", \"Trade number: 123456789\", \"Phone number: +1 123-456-7891\"."
+   ],
+   "evidence": [
+    {
+     "file": "pages/pages-contact-us/text.txt",
+     "note": "placeholder business name, email, VAT and phone values"
+    }
+   ],
+   "why_it_matters": "A shopper who wants to ask about delivery or returns finds a fake email and company name, which reads as an untrustworthy store. This is the standard Dawn demo content, so likely deliberate here; on a live store it would be a trust problem on the page people use to reach you.",
+   "fix": {
+    "summary": "Replace each placeholder with the real business details, or remove lines that do not apply (for example the VAT number).",
+    "steps": [
+     "Edit the Contact us page text with the real trade name, email, phone, address and tax number."
+    ],
+    "where_to_change": "Online Store > Pages > Contact us"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com, page /pages/contact-us shows template values (\"Your Business Name Inc.\", \"yourbusinessemail@address.com\", \"FRXX999999999\"). I will give you the real details; update the page with them on a duplicate theme or draft page and show me the result before publishing.",
+   "verify_fix": "Open the Contact us page: no placeholder text remains.",
+   "manual_check": "Check with the merchant which of the shown details are real.",
+   "intentional_possible": true,
+   "tags": [
+    "placeholder",
+    "trust"
+   ]
+  },
+  {
+   "id": "copy-04",
+   "title": "The brand is called three different things: \"Mlouye\" (About and product pages), \"Rure\" (home quote), and the footer shows \"theme-dawn-demo\"",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/about"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ and read the quote on screen 3 of the phone page: \"...tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand.\"",
+    "Open https://theme-dawn-demo.myshopify.com/pages/about: \"Mlouye\u2019s founder and creative director Meb Rure ...\" and \"company's headquarters is now split between the US, and Turkey\".",
+    "Footer on any page: \"\u00a9 2026, theme-dawn-demo\". Contact page address is in Ontario, Canada."
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/text.txt",
+     "note": "quote mentions \"Rure\" as a place"
+    },
+    {
+     "file": "pages/pages-about/text.txt",
+     "note": "\"Mlouye\" and founder \"Meb Rure\""
+    },
+    {
+     "file": "pages/pages-contact-us/text.txt",
+     "note": "Ontario address vs US/Turkey HQ"
+    }
+   ],
+   "why_it_matters": "A visitor sees a quote that treats \"Rure\" as a location, a different brand name in the About story, and the store handle in the footer. Where the company is based also differs between About (US and Turkey) and Contact (Ontario). It weakens trust in the origin story, which is the main brand claim. The product pages say \"This is a demonstration store\", so this is likely sample content.",
+   "fix": {
+    "summary": "Use one brand name and one set of origin facts across home, About, footer and Contact.",
+    "steps": [
+     "Pick the official brand name and base.",
+     "Fix the home quote, About, footer text and Contact address."
+    ],
+    "where_to_change": "Themes > Customize > Home page > quote blocks; Pages > About; Settings > Store details"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com. The brand appears as \"Mlouye\", \"Rure\" and \"theme-dawn-demo\", and headquarters as Istanbul/US/Turkey (About) versus Ontario (Contact). I will give you the correct facts; list every place to change and draft the corrected text. Use a duplicate theme and show the diff first.",
+   "verify_fix": "Search the site for the old names: only the agreed brand name and location remain.",
+   "manual_check": "Confirm the real brand name and headquarters with the merchant.",
+   "intentional_possible": true,
+   "tags": [
+    "brand",
+    "demo-content"
+   ]
+  },
+  {
+   "id": "copy-05",
+   "title": "The sandal product page has no sizing guidance in its description; the only fit tip (\"Runs large. Take a half size down.\") sits on a separate Size Guide page",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal"
+    },
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/pages/size-guide"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/products/louise-slide-sandal and read the description: no fit advice, no sizing link.",
+    "Open https://theme-dawn-demo.myshopify.com/pages/size-guide: \"Fit tip: Runs large. Take a half size down.\"",
+    "On the product page, sizes 35 to 41 are shown, 6 of 7 marked \"Variant sold out or unavailable\" for Buttermilk."
+   ],
+   "evidence": [
+    {
+     "file": "pages/products-louise-slide-sandal/text.txt",
+     "note": "description with no size or fit information"
+    },
+    {
+     "file": "pages/pages-size-guide/text.txt",
+     "note": "fit tip, EUR/US/UK/FR table"
+    }
+   ],
+   "why_it_matters": "A shopper choosing a size for an expensive shoe must leave the page to learn it runs large, and the size table is generic for all shoes. Buyers who guess wrong return the item.",
+   "fix": {
+    "summary": "Add the fit tip and a size-guide link to shoe product descriptions, and say whether the advice is specific to this style.",
+    "steps": [
+     "Add one line of fit advice per shoe style.",
+     "Link the Size Guide page under the size selector."
+    ],
+    "where_to_change": "Products > Louise Slide Sandal > Description; Themes > Customize > Product page"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com, product /products/louise-slide-sandal. Its description has no fit advice while /pages/size-guide says \"Runs large. Take a half size down.\" Draft a one-line fit note for each shoe product that I confirm, and where to place a size-guide link. Work on a duplicate theme or draft and show the diff.",
+   "verify_fix": "The shoe page shows the fit tip and a size guide link without leaving the page.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "tags": [
+    "product-page",
+    "sizing"
+   ]
+  },
+  {
+   "id": "copy-06",
+   "title": "The home page claims \"environmentally friendly tanneries\" with no proof next to it",
+   "severity": "low",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "https://theme-dawn-demo.myshopify.com/"
+    }
+   ],
+   "see_it": [
+    "Open https://theme-dawn-demo.myshopify.com/ and find the quote: \"The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey...\"",
+    "Look for a certification, link or detail nearby: none on the home page."
+   ],
+   "evidence": [
+    {
+     "file": "pages/home/text.txt",
+     "note": "sustainability claim with no supporting detail"
+    }
+   ],
+   "why_it_matters": "Environmental claims with no named standard or link are easy for shoppers to doubt; a short proof point makes the main brand promise believable.",
+   "fix": {
+    "summary": "Name the tannery standard or certification, or link to a page that explains it.",
+    "steps": [
+     "Add the certification name or a link to the sourcing explanation."
+    ],
+    "where_to_change": "Themes > Customize > Home page > quote block"
+   },
+   "claude_prompt": "Store https://theme-dawn-demo.myshopify.com home page claims \"environmentally friendly tanneries\". I will provide the certifications we hold. Draft a one-sentence proof line and a short sourcing page, using a duplicate theme.",
+   "verify_fix": "The claim is followed by a named standard or link.",
+   "manual_check": "Ask the merchant for any tannery certifications.",
+   "intentional_possible": false,
+   "tags": [
+    "claims"
+   ]
+  }
+ ],
+ "handoffs": [
+  {
+   "to": "ux",
+   "note": "The page /pages/shipping-returns, /pages/style-guide and /pages/lookbook-summer exist but are not in the footer; the style guide page is an empty template page."
+  }
+ ]
+}
