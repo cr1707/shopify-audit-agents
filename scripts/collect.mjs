@@ -63,6 +63,8 @@ if (isShopify) {
     products.push(...list);
     if (list.length < 250) break;
   }
+  const published = metaJ.json?.published_products_count;
+  if (published && products.length < published) notes.push(`Catalogue stats cover the first ${products.length} of ${published} published products (public data is read up to 1,000); state counts as "in the first ${products.length}", never as store-wide totals.`);
   save('shop/products.json', products);
   const cols = await getJSON(`${ORIGIN}/collections.json?limit=250`);
   save('shop/collections.json', cols.json?.collections || []);
@@ -380,7 +382,7 @@ if (products.length) {
   const symbols = (h) => [...new Set((htmlToText(h || '').match(/[€$£¥]/g) || []))];
   catalogue = {
     publicDataLimits: 'Shopify public products.json never includes barcodes (GTIN), inventory quantities, costs or metafields, and image alt text only on some stores (imagesMissingAlt is null when absent). Absence of these fields here is NOT evidence they are missing in the store; check /products/<handle>.js live (it carries barcode) or mark as to-test.',
-    products: products.length, variants: variants.length,
+    products: products.length, publishedProducts: metaJ.json?.published_products_count ?? null, variants: variants.length,
     priceMin: prices[0], priceMedian: prices[Math.floor(prices.length / 2)], priceMax: prices[prices.length - 1],
     soldOutProducts: products.filter((p) => p.variants.every((v) => v.available === false)).map((p) => p.handle),
     noImages: products.filter((p) => !p.images?.length).map((p) => p.handle),
