@@ -1,0 +1,10 @@
+{
+  "name": "shopify-audit-agents",
+  "version": "0.1.0",
+  "description": "Audit any online store with a team of AI agents: 8 area leads, 24 specialists, a verifier and an editor. Read-only snapshot, evidence for every finding, a ranked report and copy-paste fixes for Claude.",
+  "author": { "name": "Christian Rana", "url": "https://christianrana.com" },
+  "homepage": "https://github.com/cr1707/shopify-audit-agents",
+  "repository": "https://github.com/cr1707/shopify-audit-agents",
+  "license": "MIT",
+  "keywords": ["shopify", "ecommerce", "audit", "cro", "ux", "seo", "accessibility", "agents"]
+}

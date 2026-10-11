@@ -1,0 +1,12 @@
+{
+  "name": "shopify-audit-agents",
+  "owner": { "name": "Christian Rana", "url": "https://christianrana.com" },
+  "description": "E-commerce store audits by a team of Claude Code agents.",
+  "plugins": [
+    {
+      "name": "shopify-audit-agents",
+      "source": "./",
+      "description": "Audit any online store with 8 area leads, 24 specialists, a verifier and an editor. Evidence-only findings, a ranked report and copy-paste fixes for Claude."
+    }
+  ]
+}

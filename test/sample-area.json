@@ -1,0 +1,27 @@
+{
+  "area": "qa",
+  "agent": "lead-qa",
+  "summary": "The main buttons work, but one product page has a second Add to cart that puts a different product in the cart. One footer link is dead.",
+  "strengths": ["The main Add to cart on both product pages adds the right product on phone and desktop (clicktest/results.json)."],
+  "handoffs": [{ "to": "copy", "note": "Refund policy says 30 days, FAQ says 14 days." }],
+  "findings": [
+    {
+      "id": "qa-buy-buttons-01",
+      "title": "The second \"Add to cart\" on the Alpha Lamp page adds the Beta Shade instead",
+      "severity": "critical",
+      "effort": "S",
+      "confidence": "verified",
+      "owner": "developer",
+      "where": [{ "url": "{{STORE}}/products/alpha", "viewport": "any" }],
+      "see_it": ["Open /products/alpha", "Scroll to \"Complete the look\"", "Tap the Add to cart under it", "Open the cart: it holds Beta Shade, not Alpha Lamp"],
+      "evidence": [{ "file": "clicktest/results.json", "note": "products-alpha btn2 verdict MISMATCH, cart handles: beta" }],
+      "why_it_matters": "Shoppers who scroll before buying put the wrong product in their cart. Some will check out without noticing and ask for a refund; others will leave.",
+      "fix": { "summary": "Label the second button with the product it adds, or make it add the page product.", "steps": ["Rename the button to \"Add Beta Shade\"", "Or point its form at variant 111"], "where_to_change": "Theme > Product page > Complete the look section" },
+      "claude_prompt": "In this Shopify theme, the product page for Alpha Lamp has a second Add to cart in the \"Complete the look\" section that adds Beta Shade (variant 222). Change its label to \"Add Beta Shade\" so shoppers know what it adds. Work only in this unpublished theme copy, show me the diff, and do not touch checkout.",
+      "verify_fix": "Re-run the audit: the click test shows MATCH or a clearly labelled cross-sell button.",
+      "manual_check": null,
+      "intentional_possible": true,
+      "tags": ["cart", "product-page"]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cr1707/shopify-audit-agents/reference/finding.schema.json",
+  "title": "Agent output: findings for one area or specialist",
+  "type": "object",
+  "required": ["area", "agent", "summary", "findings"],
+  "properties": {
+    "area": { "enum": ["qa", "ux", "design", "copy", "products", "tech", "growth", "trust"] },
+    "agent": { "type": "string" },
+    "summary": { "type": "string" },
+    "strengths": { "type": "array", "items": { "type": "string" } },
+    "handoffs": { "type": "array", "items": { "type": "object", "required": ["to", "note"], "properties": { "to": { "type": "string" }, "note": { "type": "string" } } } },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "severity", "effort", "confidence", "owner", "where", "see_it", "evidence", "why_it_matters", "fix", "claude_prompt", "verify_fix"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string", "maxLength": 160 },
+          "severity": { "enum": ["critical", "high", "medium", "low"] },
+          "effort": { "enum": ["S", "M", "L"] },
+          "confidence": { "enum": ["verified", "to-test"] },
+          "owner": { "enum": ["developer", "designer", "copywriter", "merchandiser", "marketing", "email", "support", "operations", "founder"] },
+          "where": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["url"], "properties": { "url": { "type": "string" }, "viewport": { "enum": ["phone", "desktop", "any"] } } } },
+          "see_it": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "evidence": { "type": "array", "minItems": 1, "items": { "type": "object", "properties": { "file": { "type": "string" }, "url": { "type": "string" }, "quote": { "type": "string" }, "note": { "type": "string" } } } },
+          "why_it_matters": { "type": "string" },
+          "fix": { "type": "object", "required": ["summary"], "properties": { "summary": { "type": "string" }, "steps": { "type": "array", "items": { "type": "string" } }, "where_to_change": { "type": "string" } } },
+          "claude_prompt": { "type": "string" },
+          "verify_fix": { "type": "string" },
+          "manual_check": { "type": ["string", "null"] },
+          "intentional_possible": { "type": "boolean" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "verification": { "type": "object", "description": "Added by the verifier", "properties": { "status": { "enum": ["confirmed", "downgraded", "rejected"] }, "note": { "type": "string" }, "probe": { "type": "string" } } },
+          "rank": { "type": "integer", "description": "Added by the editor: 1 = fix first" }
+        }
+      }
+    }
+  }
+}

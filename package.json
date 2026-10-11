@@ -1,0 +1,15 @@
+{
+  "name": "shopify-audit-agents",
+  "version": "0.1.0",
+  "description": "Claude Code plugin: audit an online store with a team of AI agents.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "doctor": "node scripts/doctor.mjs",
+    "collect": "node scripts/collect.mjs",
+    "report": "node scripts/report.mjs",
+    "test": "node test/run.mjs"
+  }
+}

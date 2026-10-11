@@ -1,0 +1,174 @@
+{
+ "store": "{{STORE}}",
+ "collectedAt": "2026-10-11T00:00:00Z",
+ "mode": "quick",
+ "summary": {
+  "headline": "A tidy small store where one cross-sell button adds the wrong product and two pages disagree on returns.",
+  "top": [
+   "qa-buy-buttons-01",
+   "copy-consistency-01"
+  ],
+  "strengths": [
+   "Main Add to cart buttons work on phone and desktop",
+   "Free-shipping threshold is stated on the product page"
+  ],
+  "read_first": "Start with the table: the first two rows take under a day together.",
+  "limits": "Checkout, emails and the admin were not visible to this audit."
+ },
+ "areas": {
+  "qa": {
+   "summary": "The main buttons work, but one product page has a second Add to cart that puts a different product in the cart. One footer link is dead.",
+   "strengths": [
+    "The main Add to cart on both product pages adds the right product on phone and desktop (clicktest/results.json)."
+   ]
+  },
+  "copy": {
+   "summary": "One contradiction on returns.",
+   "strengths": []
+  },
+  "trust": {
+   "summary": "Lifecycle emails need a manual test.",
+   "strengths": []
+  }
+ },
+ "findings": [
+  {
+   "id": "qa-buy-buttons-01",
+   "title": "The second \"Add to cart\" on the Alpha Lamp page adds the Beta Shade instead",
+   "severity": "critical",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "developer",
+   "where": [
+    {
+     "url": "{{STORE}}/products/alpha",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open /products/alpha",
+    "Scroll to \"Complete the look\"",
+    "Tap the Add to cart under it",
+    "Open the cart: it holds Beta Shade, not Alpha Lamp"
+   ],
+   "evidence": [
+    {
+     "file": "clicktest/results.json",
+     "note": "products-alpha btn2 verdict MISMATCH, cart handles: beta"
+    }
+   ],
+   "why_it_matters": "Shoppers who scroll before buying put the wrong product in their cart. Some will check out without noticing and ask for a refund; others will leave.",
+   "fix": {
+    "summary": "Label the second button with the product it adds, or make it add the page product.",
+    "steps": [
+     "Rename the button to \"Add Beta Shade\"",
+     "Or point its form at variant 111"
+    ],
+    "where_to_change": "Theme > Product page > Complete the look section"
+   },
+   "claude_prompt": "In this Shopify theme, the product page for Alpha Lamp has a second Add to cart in the \"Complete the look\" section that adds Beta Shade (variant 222). Change its label to \"Add Beta Shade\" so shoppers know what it adds. Work only in this unpublished theme copy, show me the diff, and do not touch checkout.",
+   "verify_fix": "Re-run the audit: the click test shows MATCH or a clearly labelled cross-sell button.",
+   "manual_check": null,
+   "intentional_possible": true,
+   "tags": [
+    "cart",
+    "product-page"
+   ],
+   "area": "qa",
+   "verification": {
+    "status": "confirmed",
+    "note": "Click test MISMATCH reproduced",
+    "probe": null
+   }
+  },
+  {
+   "id": "copy-consistency-01",
+   "area": "copy",
+   "title": "The refund policy promises 30 days to return; the FAQ says 14 days",
+   "severity": "high",
+   "effort": "S",
+   "confidence": "verified",
+   "owner": "copywriter",
+   "where": [
+    {
+     "url": "{{STORE}}/policies/refund-policy",
+     "viewport": "any"
+    },
+    {
+     "url": "{{STORE}}/pages/faq",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Open /policies/refund-policy: \"within 30 days of delivery\"",
+    "Open /pages/faq: \"Yes, within 14 days\""
+   ],
+   "evidence": [
+    {
+     "file": "text/policies-refund-policy.txt",
+     "quote": "You can return any item within 30 days of delivery."
+    },
+    {
+     "file": "pages/pages-faq/text.txt",
+     "quote": "Yes, within 14 days."
+    }
+   ],
+   "why_it_matters": "A buyer who reads the FAQ believes they have 14 days; one who reads the policy expects 30. Either way, support has to settle the argument and trust drops.",
+   "fix": {
+    "summary": "Pick one return window and use it everywhere.",
+    "steps": [
+     "Decide 14 or 30 days",
+     "Update the FAQ and policy",
+     "Search product descriptions for other mentions"
+    ]
+   },
+   "claude_prompt": "My store's refund policy says returns are accepted within 30 days of delivery, but the FAQ says 14 days. Draft one clear returns paragraph for 30 days that I can paste into both pages, and list every other place on a typical Shopify store where the return window is usually mentioned.",
+   "verify_fix": "Both pages show the same number of days.",
+   "manual_check": null,
+   "intentional_possible": false,
+   "verification": {
+    "status": "confirmed",
+    "note": "Both quotes found",
+    "probe": null
+   }
+  },
+  {
+   "id": "trust-retention-01",
+   "area": "trust",
+   "title": "Abandoned-checkout reminder emails could not be observed from outside",
+   "severity": "medium",
+   "effort": "S",
+   "confidence": "to-test",
+   "owner": "email",
+   "where": [
+    {
+     "url": "{{STORE}}/cart",
+     "viewport": "any"
+    }
+   ],
+   "see_it": [
+    "Add a product to the cart",
+    "Start checkout with a test email",
+    "Leave"
+   ],
+   "evidence": [
+    {
+     "note": "No inbox access during the audit"
+    }
+   ],
+   "why_it_matters": "Checkout reminders recover a share of buyers who leave at the last step; if none are sent, those sales are simply lost.",
+   "fix": {
+    "summary": "Confirm a reminder flow exists and is live."
+   },
+   "claude_prompt": "Using the Klaviyo connector, list my flows triggered by Started Checkout and tell me whether each is live, how many emails it has and their delays.",
+   "verify_fix": "A reminder arrives within 24 hours of leaving checkout with a test email.",
+   "manual_check": "Leave a checkout with a test email and note any reminder within 24 and 72 hours.",
+   "intentional_possible": false,
+   "verification": {
+    "status": "confirmed",
+    "note": "Kept as to-test",
+    "probe": null
+   }
+  }
+ ]
+}
