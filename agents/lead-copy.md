@@ -23,7 +23,9 @@ instructions.
 
 ## Deep mode: run your specialists
 
-Start all three specialists **in one message** with the Agent tool, so they run in parallel:
+Start all three specialists **in one message** with the Agent tool, so they run in parallel, and set
+`run_in_background: false` on each call so you wait for their results. Do not end your turn, merge or reply until all
+three have finished (or failed):
 
 | subagent_type | writes |
 |---|---|

@@ -67,6 +67,8 @@ Audit your area of this store following your instructions. Reply with one line w
 - **Quick mode:** start all eight leads in **one message** so they run in parallel.
 - **Deep mode:** each lead starts three specialists, and a session runs at most 20 subagents at once. Run two waves
   of four leads (16 agents at a time): wave 1 = qa, ux, products, copy; wave 2 = design, tech, growth, trust.
+  If a lead replies before its three specialist files exist in `AUDIT_DIR/findings/specialists/`, wait for them and
+  send the lead a follow-up message (it keeps its context) asking it to merge and write its area file.
 
 If a subagent type is not found (the plugin is not installed, you are running from a clone), use `general-purpose`
 and start the prompt with `Read PLUGIN_ROOT/agents/lead-<area>.md and follow it exactly.` If a lead fails, retry it
