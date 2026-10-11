@@ -219,6 +219,8 @@ if (!flag('no-cart') && clickPages.length) {
       const t = { n: i + 1, text: want.d?.text, headingAbove: want.d?.headingAbove, context: want.d?.context, sticky: want.fixed === 'fixed' || want.fixed === 'sticky', variantIdInForm: want.d?.variantId,
         screen: +((want.fixed ? want.scrollY : want.docY) / (scan.vh || 1) + 1).toFixed(1) };
       out.tests.push(t);
+      // A disabled button (for example a configurator waiting for options) is reported, never clicked.
+      if (want.d?.disabled) { t.verdict = 'DISABLED (not clicked)'; t.reason = 'button is disabled for a new visitor; it may need options chosen first'; log('click', name, vp, `btn${i + 1}`, `"${t.text}"`, '→ disabled, not clicked'); continue; }
       const page = await browser.newPage(vp); page.blockRules = SAFETY_RULES;
       await page.addInitScript(OVERLAY_WATCH);
       await page.goto(url, { settle: 2500 });
@@ -461,8 +463,8 @@ function buildIndex() {
   }
   p(); p('Each page folder has: `phone.json` / `desktop.json` (SEO tags, headings, key element positions in screens, CTAs, images, links, forms, layout problems, pop-ups with time of appearance, console, network, detected apps; desktop also has axe-core `a11y`), `phone-first.jpg` / `desktop-first.jpg` (first screen), `*-full-NN.jpg` (whole page in tiles of 3 phone screens / 2 desktop screens), and `*-after-12s.jpg` on the home page and first product page (what a visitor sees after 12 seconds).'); p();
   p('## Other evidence'); p();
-  p(`- clicktest/results.json: every visible add-to-cart button on ${clickPages.length} in-stock product pages, phone and desktop, clicked by a fresh visitor; what reached the cart (MATCH / MISMATCH / NOTHING ADDED), overlays that opened, screenshots clicktest/*.jpg`);
-  const mism = clickResults.flatMap((r) => (r.tests || []).filter((t) => t.verdict !== 'MATCH').map((t) => `${r.page} ${r.viewport} btn${t.n} "${t.text}" → ${t.verdict}`));
+  p(`- clicktest/results.json: every visible add-to-cart button on ${clickPages.length} in-stock product pages, phone and desktop, clicked by a fresh visitor; what reached the cart (MATCH / MISMATCH / NOTHING ADDED; disabled buttons are listed as DISABLED and not clicked), overlays that opened, screenshots clicktest/*.jpg`);
+  const mism = clickResults.flatMap((r) => (r.tests || []).filter((t) => t.verdict !== 'MATCH' && !t.verdict?.startsWith('DISABLED')).map((t) => `${r.page} ${r.viewport} btn${t.n} "${t.text}" → ${t.verdict}`));
   if (mism.length) p(`  - Non-matching results: ${mism.slice(0, 10).join('; ')}`);
   p(`- consent/results.json: cookie banner test (trackers before any choice, after "decline"); screenshots consent/*.jpg. Banner shown: ${consent.banner?.found ? 'yes' : 'no'}`);
   p(`- links.json: ${linkReport.skipped ? 'skipped' : `${linkReport.checkedInternal} internal + ${linkReport.checkedExternal} external links checked, ${linkReport.broken.length} problems`}`);

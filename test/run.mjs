@@ -29,6 +29,8 @@ const alpha = click.filter((r) => r.page === 'products-alpha');
 const verdicts = alpha.flatMap((r) => (r.tests || []).map((t) => `${r.viewport}:${t.verdict}`));
 check('click test: second button on Alpha adds the wrong product (MISMATCH)', verdicts.some((v) => v.endsWith('MISMATCH')), verdicts.join(', '));
 check('click test: main button on Alpha adds Alpha (MATCH)', verdicts.some((v) => v.endsWith('MATCH') && !v.endsWith('MISMATCH')));
+const betaV = click.filter((r) => r.page === 'products-beta').flatMap((r) => (r.tests || []).map((t) => t.verdict));
+check('disabled builder button reported as DISABLED, not clicked', betaV.some((v) => v.startsWith('DISABLED')) && !betaV.includes('NOTHING ADDED'), betaV.join(', '));
 const homePhone = j('pages/home/phone.json');
 check('pop-up captured with its close button', (homePhone.overlays || []).some((o) => /10% off/.test(o.text) && o.buttons.includes('No thanks')), JSON.stringify((homePhone.overlays || []).map((o) => o.text.slice(0, 30))));
 check('phone page wider than the screen detected', homePhone.layout.horizontalOverflowPx > 100, `${homePhone.layout.horizontalOverflowPx}px`);

@@ -139,7 +139,7 @@ npm test                          # runs the collector against a local fixture s
 claude plugin validate --strict . # checks the plugin, agents and skill
 ```
 
-The fixture store (`test/fixture/server.mjs`) plants a wrong-product Add to cart button, a pop-up, a page wider than
+The fixture store (`test/fixture/server.mjs`) plants a wrong-product Add to cart button, a disabled builder button, a pop-up, a page wider than
 a phone, a dead link, a JavaScript error, a cookie banner, a fake discount and contradictory return windows. See
 [CONTRIBUTING.md](CONTRIBUTING.md).
 

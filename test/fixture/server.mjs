@@ -1,5 +1,5 @@
 // A tiny fake Shopify-like store with planted problems, used to regression-test the collector.
-// Planted: a second "Add to cart" that adds another product, a newsletter pop-up after 2 s, a page wider than a
+// Planted: a second "Add to cart" that adds another product, a disabled builder button, a newsletter pop-up after 2 s, a page wider than a
 // phone screen, a dead internal link, a JavaScript error, an image without alt text, a cookie banner, a fake
 // discount (compare-at below price), a 30-day vs 14-day returns contradiction, and a page blocked by robots.txt.
 import http from 'node:http';
@@ -44,7 +44,7 @@ export function start(port = 0) {
     if (p === '/') return send(200, 'text/html', layout('Fixture store', `<h1>Lamps for slow evenings</h1><img src="/img/alpha.svg" width="200"><p><a href="/products/alpha">Alpha Lamp</a> · <a href="/products/beta">Beta Shade</a></p>`, { popup: true, wide: true, error: true, banner: true }));
     if (p === '/products/alpha') return send(200, 'text/html', layout('Alpha Lamp', `<h1>Alpha Lamp</h1><p><s>€39,00</s> €49,00</p>${atc(111)}<p>Free shipping over €60.</p><section id="shopify-section-related"><h2>Complete the look</h2><p>Beta Shade</p>${atc(222)}</section>
       <script>window.ShopifyAnalytics={meta:{product:{id:1001,variants:[{id:111}]},page:{pageType:'product'}}}</script>`));
-    if (p === '/products/beta') return send(200, 'text/html', layout('Beta Shade', `<h1>Beta Shade</h1><p>€19,00</p>${atc(222)}<script>window.ShopifyAnalytics={meta:{product:{id:1002,variants:[{id:222}]},page:{pageType:'product'}}}</script>`));
+    if (p === '/products/beta') return send(200, 'text/html', layout('Beta Shade', `<h1>Beta Shade</h1><p>€19,00</p>${atc(222)}<section id="shopify-section-builder"><h2>Build a set</h2><form action="/cart/add" method="post"><input type="hidden" name="id" value="111"><button type="submit" disabled>Add to cart</button></form></section><script>window.ShopifyAnalytics={meta:{product:{id:1002,variants:[{id:222}]},page:{pageType:'product'}}}</script>`));
     if (p === '/collections/all') return send(200, 'text/html', layout('All', `<h1>All products</h1><a href="/products/alpha">Alpha Lamp</a> <a href="/products/beta">Beta Shade</a>`));
     if (p === '/pages/faq') return send(200, 'text/html', layout('FAQ', `<h1>FAQ</h1><p>Can I return my order? Yes, within 14 days.</p>`));
     if (p === '/policies/refund-policy') return send(200, 'text/html', layout('Refund policy', `<h1>Refund policy</h1><p>You can return any item within 30 days of delivery.</p>`));

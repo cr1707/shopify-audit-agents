@@ -15,6 +15,7 @@ if (!url) { console.error('Usage: node probe.mjs <url> [--phone|--desktop] [--wa
 
 const b = await Browser.launch();
 const out = { url, viewport: has('phone') ? 'phone' : 'desktop', at: new Date().toISOString() };
+// Live checks use the same "reduce motion" setting as the collector (set in cdp.mjs) so results match the snapshot.
 try {
   const page = await b.newPage(out.viewport);
   page.blockRules = SAFETY_RULES;
@@ -37,7 +38,11 @@ try {
   if (has('eval')) out.eval = await page.eval(opt('eval'), { awaitPromise: true });
   if (has('text')) out.text = (await page.eval('document.body.innerText'))?.replace(/\n\s*\n+/g, '\n').slice(0, 20000);
   out.overlays = await page.eval(OVERLAYS_NOW);
-  if (has('shot')) out.screenshot = await page.screenshot(opt('shot'), { fullPage: has('full'), scale: has('full') ? 0.6 : 1 });
+  if (has('shot')) {
+    const saved = await page.screenshot(opt('shot'), { fullPage: has('full'), scale: has('full') ? 0.6 : 1 });
+    // Record the path from the audit folder down (findings/probes/x.jpg), never the machine's absolute path.
+    out.screenshot = saved && (saved.match(/(?:^|\/)(findings\/.+|snapshot\/.+)$/)?.[1] || saved.split('/').pop());
+  }
   out.console = page.console.slice(0, 20);
   out.blockedBySafety = page.blocked;
   await page.close();
