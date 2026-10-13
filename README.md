@@ -29,6 +29,26 @@ each one against the evidence and the live store and rejected 13: 7 as wrong or 
 live probes in `findings/probes/`). The editor merged the remaining duplicates into 24 ranked findings
 (`findings.json`).
 
+## How accurate is it?
+
+Every run keeps its audit trail, so you can see what the agents got wrong before you read the report. Two runs so far:
+
+| Run | Findings proposed | Removed by the verifiers | Severity lowered | In the report |
+|---|---|---|---|---|
+| Shopify's Dawn demo store, quick mode (the example above) | 40 | 13: 7 wrong or unsupported, 6 duplicates | 5 | 24 |
+| A UK made-to-order furniture store on Shopify, deep mode | 75 | 22: at least 5 wrong or unsupported, the rest duplicates or out of scope | 17 | 49 (44 verified, 5 to test) |
+
+What this tells you:
+
+- **Deep mode is more accurate.** Dedicated specialists produced far fewer wrong claims than leads covering a whole
+  area alone.
+- **The verifier step matters.** The mistakes it caught were claims that something is missing (read from data that
+  never contains it), measurement glitches, and misreadings of a page. Each one became a fix in the collector or a
+  rule in the agents.
+- **Severity is the weakest part.** Agents tend to overstate how serious a finding is; the verifier lowers it.
+- **Not yet measured:** how many final findings a store owner would mark as wrong, and how many real problems the
+  audit misses. Treat findings marked *to test* as questions, not facts.
+
 ## Install
 
 Requirements: Claude Code, Node 22 or newer, and Google Chrome (or Chromium, Edge, Brave). No npm install.
@@ -51,12 +71,17 @@ Requirements: Claude Code, Node 22 or newer, and Google Chrome (or Chromium, Edg
 | `quick` (default) | 8 leads, 2 verifiers, 1 editor | A first look, a sales conversation, a monthly check |
 | `deep` | 8 leads, 24 specialists, 4 verifiers, 1 editor | A paid audit, a relaunch, a new client |
 
-Deep mode costs roughly three to four times as much as quick mode in tokens. The snapshot takes 5 to 15 minutes
-because the collector is deliberately slow and polite.
+On a mid-size store, a quick audit takes about 35 minutes and a deep audit about an hour, most of it the polite
+snapshot (8 to 16 minutes) and the verifiers. Deep mode uses roughly three times the tokens of quick mode, and runs
+the leads in two waves to stay under Claude Code's limit of 20 agents at once.
 
 Collector options: `--products N` (product pages to render, default 5), `--pages N` (pages to render, default 16),
-`--no-cart` (skip the click test), `--no-psi` (skip PageSpeed), `--no-links`, `--no-a11y`. Set `PSI_API_KEY` for
-reliable PageSpeed runs.
+`--no-cart` (skip the click test), `--no-psi` (skip PageSpeed), `--no-links`, `--no-a11y`.
+
+Speed data: Google's PageSpeed Insights API without a key usually runs out of its shared daily quota. Set
+`PSI_API_KEY` (a free key for the PageSpeed Insights API from the Google Cloud console) to get real-user Core Web
+Vitals. Without it, the collector still measures each page itself on a throttled phone (LCP, CLS, blocking time) and
+the report says so.
 
 ## What you get
 
@@ -135,7 +160,7 @@ node scripts/report.mjs audits/your-store          # after findings.json exists
 ## Development
 
 ```
-npm test                          # runs the collector against a local fixture store with planted problems
+npm test                          # 19 checks: the collector against a local fixture store with planted problems
 claude plugin validate --strict . # checks the plugin, agents and skill
 ```
 
@@ -147,7 +172,8 @@ a phone, a dead link, a JavaScript error, a cookie banner, a fake discount and c
 
 - It sees what a new visitor sees from the country it runs in. Checkout, emails, the admin and logged-in pages are
   out of reach: those become manual checks.
-- PageSpeed lab scores vary between runs; the report leans on real-user field data when Google has it.
+- Speed measurements vary between runs; the report leans on real-user field data when Google has it and a key is set.
+- Public catalogue data covers the first 1,000 products and never includes barcodes, stock levels or metafields.
 - App detection works from scripts and requests on the pages sampled; an installed app may not load on them.
 - The agents are good, not infallible. The verifier catches most mistakes; findings marked *to test* need a human.
 
